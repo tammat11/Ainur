@@ -173,6 +173,7 @@ function finishLoader() {
   setTimeout(() => {
     if (heroName) heroName.classList.add("is-revealed");
     if (heroInner) heroInner.classList.add("is-revealed");
+    initObservers();
   }, loader ? 200 : 0);
 }
 
@@ -183,6 +184,7 @@ if (loader && !prefersReducedMotion.matches) {
   body.classList.remove("is-loading");
   if (heroName) heroName.classList.add("is-revealed");
   if (heroInner) heroInner.classList.add("is-revealed");
+  initObservers();
 }
 
 /* ── Init ─────────────────────────────────────────────────────────── */
@@ -279,30 +281,13 @@ const scrollReviews = (dir) => {
 revPrev?.addEventListener("click", () => scrollReviews(-1));
 revNext?.addEventListener("click", () => scrollReviews(1));
 
-/* ── Scroll reveal ────────────────────────────────────────────────── */
-const clipRevealNodes = [];
-if (prefersReducedMotion.matches) {
-  revealNodes.forEach((n) => n.classList.add("is-visible"));
-} else {
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((e) => {
-        if (!e.isIntersecting) return;
-        e.target.classList.add("is-visible");
-        obs.unobserve(e.target);
-      });
-    },
-    { threshold: 0.05, rootMargin: "0px 0px -40px 0px" }
-  );
-  revealNodes.forEach((n) => {
-    if (n.dataset.reveal === "clip") {
-      clipRevealNodes.push(n);
-    } else {
-      observer.observe(n);
-    }
-  });
-  if (clipRevealNodes.length) {
-    const clipObs = new IntersectionObserver(
+/* ── Scroll reveal and Counters observer ────────────────────────────── */
+function initObservers() {
+  const clipRevealNodes = [];
+  if (prefersReducedMotion.matches) {
+    revealNodes.forEach((n) => n.classList.add("is-visible"));
+  } else {
+    const observer = new IntersectionObserver(
       (entries, obs) => {
         entries.forEach((e) => {
           if (!e.isIntersecting) return;
@@ -310,45 +295,64 @@ if (prefersReducedMotion.matches) {
           obs.unobserve(e.target);
         });
       },
-      { threshold: 0, rootMargin: "0px 0px 0px 0px" }
+      { threshold: 0.05, rootMargin: "0px 0px -40px 0px" }
     );
-    clipRevealNodes.forEach((n) => clipObs.observe(n));
-  }
-
-  /* Fallback: scroll-based check for clip-reveal elements */
-  const checkClipReveal = () => {
-    clipRevealNodes.forEach((n) => {
-      if (n.classList.contains("is-visible")) return;
-      const r = n.getBoundingClientRect();
-      if (r.bottom > 0 && r.top < window.innerHeight) {
-        n.classList.add("is-visible");
+    revealNodes.forEach((n) => {
+      if (n.dataset.reveal === "clip") {
+        clipRevealNodes.push(n);
+      } else {
+        observer.observe(n);
       }
     });
-  };
-  window.addEventListener("scroll", checkClipReveal, { passive: true });
-  setTimeout(checkClipReveal, 500);
-}
+    if (clipRevealNodes.length) {
+      const clipObs = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            e.target.classList.add("is-visible");
+            obs.unobserve(e.target);
+          });
+        },
+        { threshold: 0, rootMargin: "0px 0px 0px 0px" }
+      );
+      clipRevealNodes.forEach((n) => clipObs.observe(n));
+    }
 
-/* ── Counter observer ─────────────────────────────────────────────── */
-const counterEls = document.querySelectorAll("[data-count-to]");
-if (counterEls.length) {
-  if (prefersReducedMotion.matches) {
-    counterEls.forEach((el) => {
-      const prefix = el.dataset.countPrefix || "";
-      const suffix = el.dataset.countSuffix || "";
-      el.textContent = prefix + el.dataset.countTo + suffix;
-    });
-  } else {
-    const counterObs = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((e) => {
-          if (!e.isIntersecting) return;
-          animateCounter(e.target);
-          obs.unobserve(e.target);
-        });
-      },
-      { threshold: 0.3 }
-    );
-    counterEls.forEach((el) => counterObs.observe(el));
+    /* Fallback: scroll-based check for clip-reveal elements */
+    const checkClipReveal = () => {
+      clipRevealNodes.forEach((n) => {
+        if (n.classList.contains("is-visible")) return;
+        const r = n.getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight) {
+          n.classList.add("is-visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", checkClipReveal, { passive: true });
+    setTimeout(checkClipReveal, 500);
+  }
+
+  /* ── Counter observer ─────────────────────────────────────────────── */
+  const counterEls = document.querySelectorAll("[data-count-to]");
+  if (counterEls.length) {
+    if (prefersReducedMotion.matches) {
+      counterEls.forEach((el) => {
+        const prefix = el.dataset.countPrefix || "";
+        const suffix = el.dataset.countSuffix || "";
+        el.textContent = prefix + el.dataset.countTo + suffix;
+      });
+    } else {
+      const counterObs = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            animateCounter(e.target);
+            obs.unobserve(e.target);
+          });
+        },
+        { threshold: 0.3 }
+      );
+      counterEls.forEach((el) => counterObs.observe(el));
+    }
   }
 }
