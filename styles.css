@@ -55,6 +55,136 @@ input, textarea { font: inherit; }
 .site-shell { transition: opacity .22s ease, transform .22s ease; }
 
 /* ===================================================================
+   HERO SCROLL PROMPT
+   =================================================================== */
+.hero-scroll-prompt {
+  position: absolute;
+  bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center;
+  gap: 12px; opacity: 0.6; z-index: 10;
+  transition: opacity 0.5s ease;
+}
+.hero-scroll-prompt:hover { opacity: 1; }
+.scroll-arrow { width: 24px; height: 24px; stroke: #fff; }
+.scroll-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.3em;
+  color: #fff; opacity: 0.7;
+}
+.arrow-path {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: arrowDraw 2.5s infinite ease-in-out;
+}
+
+@keyframes arrowDraw {
+  0% { stroke-dashoffset: 40; opacity: 0; }
+  30% { stroke-dashoffset: 0; opacity: 1; }
+  70% { stroke-dashoffset: -40; opacity: 1; }
+  100% { stroke-dashoffset: -80; opacity: 0; }
+}
+
+/* ===================================================================
+   SVG DECORATIVE ELEMENTS
+   =================================================================== */
+.svg-particles {
+  position: fixed; inset: 0;
+  z-index: -1; pointer-events: none;
+}
+.svg-particles svg { width: 100%; height: 100%; }
+.particle { animation: particleFloat 15s infinite alternate ease-in-out; transform-origin: center; }
+.particle:nth-child(2) { animation-duration: 22s; animation-delay: -3s; }
+.particle:nth-child(3) { animation-duration: 18s; animation-delay: -7s; }
+.particle:nth-child(4) { animation-duration: 25s; animation-delay: -1s; }
+
+@keyframes particleFloat {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+  50% { transform: translate(5vw, 10vh) scale(1.5); opacity: 0.6; }
+  100% { transform: translate(-5vw, -5vh) scale(1); opacity: 0.3; }
+}
+
+.h-line {
+  display: block; width: 60px; height: 2px;
+  margin-top: 12px; margin-bottom: 24px;
+  overflow: visible;
+}
+.h-line path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.is-visible .h-line path {
+  stroke-dashoffset: 0;
+}
+.audience-head .h-line, .services-head .h-line { margin-inline: auto; }
+
+/* SVG Corner Accents */
+.about-text-content { position: relative; }
+.about-text-content::before,
+.about-text-content::after {
+  content: ""; position: absolute;
+  width: 40px; height: 40px;
+  border: 1px solid var(--accent);
+  opacity: 0.15; pointer-events: none;
+  z-index: 1; transition: all 0.6s ease;
+}
+.about-text-content::before { top: 20px; left: 20px; border-right: 0; border-bottom: 0; }
+.about-text-content::after { bottom: 20px; right: 20px; border-left: 0; border-top: 0; }
+.about-text-content:hover::before { transform: translate(-6px, -6px); opacity: 0.4; }
+.about-text-content:hover::after { transform: translate(6px, 6px); opacity: 0.4; }
+
+/* ===================================================================
+   BACKGROUND SVG AURA
+   =================================================================== */
+.bg-aura {
+  position: fixed; inset: 0;
+  z-index: -2; pointer-events: none;
+  opacity: 0.6; overflow: hidden;
+}
+.bg-aura svg { width: 100%; height: 100%; opacity: 0.8; }
+.aura-1 { animation: drift1 25s infinite alternate ease-in-out; transform-origin: center; }
+.aura-2 { animation: drift2 30s infinite alternate-reverse ease-in-out; transform-origin: center; }
+.aura-3 { animation: drift3 20s infinite alternate ease-in-out; transform-origin: center; }
+
+@keyframes drift1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(10%, 15%) scale(1.15); }
+}
+@keyframes drift2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-10%, -12%) scale(1.1); }
+}
+@keyframes drift3 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(8%, -8%) scale(1.05); }
+}
+
+/* ===================================================================
+   SERVICE TAB ICONS
+   =================================================================== */
+.tab-icon {
+  width: 22px; height: 22px;
+  margin-right: 12px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  stroke: var(--accent); opacity: 0.6;
+}
+.service-tab:hover .tab-icon,
+.service-tab.is-active .tab-icon {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.service-tab.is-active .tab-icon {
+  animation: svgDraw 0.8s ease-out forwards;
+}
+
+@keyframes svgDraw {
+  from { stroke-dasharray: 0 100; opacity: 0; }
+  to { stroke-dasharray: 100 0; opacity: 1; }
+}
+
+/* ===================================================================
    SCROLL PROGRESS
    =================================================================== */
 .scroll-progress {

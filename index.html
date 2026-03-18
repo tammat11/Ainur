@@ -17,6 +17,33 @@
       <span class="intro-loader-name">Айнура Рысбекова</span>
     </div>
 
+    <!-- BACKGROUND SVG AURA -->
+    <div class="bg-aura" aria-hidden="true">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#auraBlur)">
+          <circle class="aura-1" cx="200" cy="300" r="300" fill="var(--accent)" fill-opacity="0.04" />
+          <circle class="aura-2" cx="800" cy="700" r="350" fill="var(--accent)" fill-opacity="0.06" />
+          <circle class="aura-3" cx="500" cy="500" r="250" fill="var(--accent)" fill-opacity="0.03" />
+        </g>
+        <defs>
+          <filter id="auraBlur" x="-500" y="-500" width="2000" height="2000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feGaussianBlur stdDeviation="100" result="blur" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- SVG PARTICLES -->
+    <div class="svg-particles" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <circle class="particle" cx="15" cy="20" r="0.15" fill="var(--accent)" fill-opacity="0.3" />
+            <circle class="particle" cx="85" cy="45" r="0.1" fill="var(--accent)" fill-opacity="0.2" />
+            <circle class="particle" cx="50" cy="75" r="0.2" fill="var(--accent)" fill-opacity="0.25" />
+            <circle class="particle" cx="30" cy="60" r="0.08" fill="var(--accent)" fill-opacity="0.15" />
+            <circle class="particle" cx="70" cy="15" r="0.12" fill="var(--accent)" fill-opacity="0.2" />
+        </svg>
+    </div>
+
     <div class="site-shell">
 
       <div class="scroll-progress" aria-hidden="true">
@@ -59,6 +86,14 @@
             </div>
           </div>
 
+          <!-- SCROLL PROMPT -->
+          <div class="hero-scroll-prompt">
+            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path class="arrow-path" d="M12 5v14M7 14l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="scroll-text">Scroll to explore</span>
+          </div>
+
           <div class="proof-band">
             <div class="container">
               <div class="proof-band-inner">
@@ -95,6 +130,7 @@
                 <div class="about-text-content" data-reveal>
                   <span class="eyebrow">Обо мне</span>
                   <h2>Защита бизнеса<br><em>с первого шага</em></h2>
+                  <svg class="h-line" viewBox="0 0 100 2" preserveAspectRatio="none"><path d="M0 1 L100 1" stroke="var(--accent)" stroke-width="2" /></svg>
                   <p>
                     Я — аттестованный патентный поверенный РК и IP-юрист с 16-летним стажем. Помогаю предпринимателям, стартапам и крупным компаниям защищать бренды, патенты и авторские права.
                   </p>
@@ -143,13 +179,26 @@
             <div class="services-head">
               <span class="eyebrow">Услуги</span>
               <h2 data-reveal>Что я делаю<br><em>для вас</em></h2>
+              <svg class="h-line" viewBox="0 0 100 2" preserveAspectRatio="none"><path d="M0 1 L100 1" stroke="var(--accent)" stroke-width="2" /></svg>
             </div>
 
             <div class="service-tabs" data-reveal>
-              <button class="service-tab is-active" data-tab="0">Товарные знаки</button>
-              <button class="service-tab" data-tab="1">Патенты</button>
-              <button class="service-tab" data-tab="2">Авторское право</button>
-              <button class="service-tab" data-tab="3">IP-аудит</button>
+              <button class="service-tab is-active" data-tab="0">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 11l3 3 5-5"/></svg>
+                <span>Товарные знаки</span>
+              </button>
+              <button class="service-tab" data-tab="1">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                <span>Патенты</span>
+              </button>
+              <button class="service-tab" data-tab="2">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l5 2"/><path d="M2 2l2 5"/></svg>
+                <span>Авторское право</span>
+              </button>
+              <button class="service-tab" data-tab="3">
+                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                <span>IP-аудит</span>
+              </button>
             </div>
 
             <div class="service-panels">
@@ -246,6 +295,7 @@
             <div class="audience-head">
               <span class="eyebrow" data-reveal>Нам доверяют</span>
               <h2 data-reveal style="--reveal-delay:100">Лидеры рынка</h2>
+              <svg class="h-line" viewBox="0 0 100 2" preserveAspectRatio="none"><path d="M0 1 L100 1" stroke="var(--accent)" stroke-width="2" /></svg>
             </div>
             
             <div class="logo-grid-premium">
