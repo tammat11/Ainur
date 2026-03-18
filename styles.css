@@ -1536,7 +1536,10 @@ h2 {
     padding: 14px 0 !important;
   }
 
+  /* ── Hero ── */
   .hero-name { font-size: clamp(42px, 11vw, 72px); }
+  .hero-content { padding: 80px var(--pad-x) 0; }
+  .hero-scroll-prompt { display: none; }
   .proof-band-inner { flex-direction: column; }
   .proof-cell {
     border-right: none;
@@ -1546,20 +1549,63 @@ h2 {
   }
   .proof-cell:last-child { border-bottom: none; }
 
+  /* ── About ── */
+  .about-photo-wrap { max-width: 280px !important; }
+  .about-experience-badge { width: 90px !important; height: 90px !important; }
+  .about-experience-badge b { font-size: 24px !important; }
+  .about-experience-badge span { font-size: 11px; }
+  .about-svg-stamp { width: 90px !important; height: 90px !important; }
+  .about-bg-letter { display: none; }
+  .about-text-content::before,
+  .about-text-content::after { display: none; }
+
+  /* ── Pull Quote ── */
+  .pull-quote-mark { font-size: 48px; }
+
+  /* ── Service Tabs ── */
+  .service-tab { padding: 10px 16px; font-size: 11px; }
+  .tab-icon { display: none; }
+  .service-panel-num { font-size: 32px; }
+
+  /* ── Photo Break ── */
+  .photo-break { min-height: 240px; }
+
+  /* ── Audience ── */
+  .audience-head { margin-bottom: 32px; }
+
+  /* ── Reviews ── */
   .marquee-tag { font-size: 13px; padding: 11px 24px; }
   .logo-tile { flex: 1 1 calc(33.333% - 4px); }
-
   .reviews-topbar { flex-direction: column; align-items: flex-start; gap: 20px; }
   .review-card { flex: 0 0 85vw; }
 
-  .footer-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+  /* ── FAQ ── */
+  .faq-aside-label { font-size: 32px; }
 
+  /* ── CTA ── */
+  .cta-photo { padding-block: 60px; }
   .cta-group { flex-direction: column; }
   .cta-group .btn { width: 100%; justify-content: center; }
+
+  /* ── Contacts ── */
+  .btn-contact-minimal { font-size: 11px; padding: 10px 20px; }
+
+  /* ── Footer ── */
+  .footer-row { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .footer-nav { gap: 16px; }
 
   .page-hero { min-height: 42vh; }
 }
 
 @media (max-width: 480px) {
   .logo-tile { flex: 1 1 calc(50% - 4px); }
+  .hero-subtitle { font-size: 13px; }
+  .logo-card { padding: 16px 12px; }
+  .logo-card span { font-size: 14px; }
+  .logo-info { font-size: 9px; }
+  .proof-cell { padding: 16px 0; }
+  .about-photo-wrap { max-width: 240px !important; }
+  .about-experience-badge { width: 75px !important; height: 75px !important; }
+  .about-experience-badge b { font-size: 20px !important; }
+  .about-svg-stamp { width: 75px !important; height: 75px !important; }
 }
