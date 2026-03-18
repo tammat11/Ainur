@@ -3,314 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Прочие услуги по защите интеллектуальной собственности: консультации, договоры, споры, регистрация, аудит и Таможенный реестр."
-    />
+    <meta name="description" content="Патенты, промышленные образцы, IP-аудит, споры и таможенный реестр. Айнура Рысбекова — патентный поверенный РК." />
     <title>Прочие услуги — Айнура Рысбекова</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="site-shell">
+      <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" data-progress-bar></div></div>
+
       <header class="site-header" data-header>
         <div class="container header-row">
           <a class="brand" href="./index.html">Айнура Рысбекова</a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
-            <span></span>
-            <span></span>
-          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle><span></span><span></span></button>
           <nav class="header-nav" data-menu>
             <a href="./index.html">Главная</a>
             <a href="./trademark.html">Товарные знаки</a>
             <a href="./copyright.html">Авторское право</a>
-            <a href="./other.html">Прочие услуги</a>
-            <a class="header-cta" href="./other.html#consultation">Консультация</a>
+            <a href="./other.html" class="is-current">Прочие услуги</a>
+            <a class="header-cta" href="./index.html#consultation">Консультация</a>
           </nav>
         </div>
       </header>
 
-      <main id="top">
-        <section class="hero" data-reveal>
+      <main>
+
+        <!-- HERO -->
+        <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format')">
+          <div class="page-hero-overlay"></div>
+          <div class="container page-hero-content">
+            <span class="eyebrow eyebrow-light" data-reveal>Прочие услуги</span>
+            <h1 data-reveal>Патенты,<br><em>аудит и споры</em></h1>
+            <p data-reveal style="--reveal-delay:80">Патентование изобретений, IP-аудит, защита в судах, таможенный реестр, лицензионные договоры.</p>
+            <div class="cta-group" data-reveal style="--reveal-delay:160">
+              <a href="./index.html#consultation" class="btn btn-light">Получить консультацию</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- УСЛУГИ -->
+        <section class="section">
           <div class="container">
-            <div class="hero-card">
-              <div class="hero-grid">
-                <div class="hero-copy" data-reveal data-delay="0">
-                  <div class="eyebrow">Other Services</div>
-                  <h1><span class="accent-phrase">Прочие услуги</span></h1>
-                  <p class="hero-text">Айнура Рысбекова</p>
-                  <div class="hero-actions">
-                    <a class="btn btn-primary" href="./other.html#services">Услуги</a>
-                    <a class="btn btn-secondary" href="./other.html#consultation">Получить консультацию</a>
-                  </div>
+            <span class="eyebrow">Все направления</span>
+            <h2 data-reveal>Полный спектр<br><em>IP-услуг</em></h2>
+
+            <div class="services-accordion">
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">01</span>
+                  <h3>Патенты на изобретения и полезные модели</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Формула изобретения, описание, чертежи. Подача в НИИС РК и ЕАПО. Переписка с экспертизой, поддержание в силе.</p></div></div>
+              </div>
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">02</span>
+                  <h3>Промышленные образцы</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Регистрация дизайна упаковки, мебели, одежды, интерфейсов. Международная через Гаагскую систему ВОИС.</p></div></div>
+              </div>
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">03</span>
+                  <h3>IP-аудит бизнеса</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Анализ нематериальных активов: права, риски, пробелы. Необходим перед M&amp;A, инвестициями, IPO.</p></div></div>
+              </div>
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">04</span>
+                  <h3>Защита от нарушений и споры</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Претензии, возражения в Апелляционный совет НИИС, жалобы, представительство в судах всех инстанций.</p></div></div>
+              </div>
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">05</span>
+                  <h3>Таможенный реестр</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Включение ТЗ и авторских прав в таможенный реестр — автоматическая задержка контрафакта на границе.</p></div></div>
+              </div>
+              <div class="service-acc-item" data-acc-item>
+                <button class="service-acc-btn" type="button">
+                  <span class="service-acc-num">06</span>
+                  <h3>Лицензионные и IP-договоры</h3>
+                  <span class="service-acc-arrow"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 10h8M10 6l4 4-4 4"/></svg></span>
+                </button>
+                <div class="service-acc-body"><div class="service-acc-inner"><p>Лицензии, уступки, NDA, договоры подряда с условиями об ИС. На русском, казахском, английском.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- IP-АУДИТ ЭТАПЫ -->
+        <section class="section section-surface">
+          <div class="container">
+            <span class="eyebrow">IP-аудит</span>
+            <h2 data-reveal>Как проходит<br><em>аудит</em></h2>
+
+            <div class="steps-list" data-reveal style="--reveal-delay:80">
+              <div class="step">
+                <span class="step-n">01</span>
+                <div class="step-body"><h3>Инвентаризация активов</h3><p>Собираю и систематизирую все объекты ИС: права, договоры, незарегистрированное.</p></div>
+              </div>
+              <div class="step">
+                <span class="step-n">02</span>
+                <div class="step-body"><h3>Анализ рисков</h3><p>Пробелы в охране, истёкшие сроки, конфликты с правами третьих лиц.</p></div>
+              </div>
+              <div class="step">
+                <span class="step-n">03</span>
+                <div class="step-body"><h3>Оценка стоимости</h3><p>По запросу — оценка нематериальных активов для баланса или сделок.</p></div>
+              </div>
+              <div class="step">
+                <span class="step-n">04</span>
+                <div class="step-body"><h3>Дорожная карта</h3><p>Отчёт с рекомендациями: что зарегистрировать, обновить, усилить.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+          <div class="container">
+            <div class="faq-layout">
+              <div class="faq-aside" data-reveal>
+                <span class="faq-aside-label">FAQ</span>
+                <h3>Вопросы о патентах и услугах</h3>
+                <p>Ответы на типичные вопросы.</p>
+                <div class="faq-tags"><span class="faq-tag">Патенты</span><span class="faq-tag">IP-аудит</span><span class="faq-tag">Споры</span></div>
+              </div>
+              <div class="faq-list" data-reveal style="--reveal-delay:100">
+                <div class="faq-item">
+                  <button class="faq-btn" type="button"><span>Сколько стоит патент в Казахстане?</span><span class="faq-plus">+</span></button>
+                  <div class="faq-answer"><div class="faq-answer-inner"><p>Зависит от типа объекта, числа пунктов формулы и документации. Свяжитесь — рассчитаю бесплатно.</p></div></div>
                 </div>
-
-                <div class="hero-aside" data-reveal data-delay="140">
-                  <div class="portrait-stage">
-                    <div class="portrait-frame">
-                      <img
-                        class="portrait-image"
-                        src="https://static.tildacdn.pro/tild3762-6435-4736-b065-353264356531/e7f4821b-295a-4a36-a.jpg"
-                        alt="Айнура Рысбекова"
-                      />
-                    </div>
-                  </div>
-                  <div class="hero-note">
-                    <span>Системная IP-архитектура бизнеса: от консультаций и договоров до споров, суда и защиты на границе.</span>
-                  </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button"><span>Можно ли запатентовать идею?</span><span class="faq-plus">+</span></button>
+                  <div class="faq-answer"><div class="faq-answer-inner"><p>Нет — патентуется конкретное техническое решение: устройство, вещество или метод.</p></div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button"><span>Когда нужен IP-аудит?</span><span class="faq-plus">+</span></button>
+                  <div class="faq-answer"><div class="faq-answer-inner"><p>Перед инвестициями, M&amp;A, IPO, выходом на новые рынки. Рекомендую раз в 2–3 года.</p></div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button"><span>Сколько рассматривается возражение?</span><span class="faq-plus">+</span></button>
+                  <div class="faq-answer"><div class="faq-answer-inner"><p>3–6 месяцев. Правильно составленное возражение существенно повышает шансы.</p></div></div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section" data-reveal>
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Для кого</div>
-              <div>
-                <h2>Кому я предоставляю <span class="accent-word">услуги</span>?</h2>
-              </div>
+        <!-- CTA -->
+        <section class="cta-photo" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80&auto=format')">
+          <div class="cta-photo-overlay"></div>
+          <div class="container cta-photo-content">
+            <span class="eyebrow eyebrow-light" data-reveal>Начать</span>
+            <h2 data-reveal>Обсудим<br><em>вашу задачу</em></h2>
+            <p data-reveal style="--reveal-delay:80">Расскажите о проблеме — найдём оптимальное решение.</p>
+            <div class="cta-group" data-reveal style="--reveal-delay:160">
+              <a href="https://wa.me/77054816699" class="btn btn-light" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:rysbekova-ainura@mail.ru" class="btn btn-ghost-light">rysbekova-ainura@mail.ru</a>
             </div>
-
-            <div class="badge-list">
-              <span>Собственникам бизнеса с портфелем интеллектуальных активов</span>
-              <span>Компаниям, привлекающим стратегических инвесторов</span>
-              <span>Бизнесам на этапе продажи доли (M&amp;A)</span>
-              <span>Холдингам и группам компаний</span>
-              <span>IT- и финтех-проектам с собственными разработками</span>
-              <span>Компаниям с международной структурой и зарубежными партнёрами</span>
-              <span>Брендам, выходящим на новые рынки</span>
-              <span>Франчайзинговым сетям</span>
-              <span>Официальным дистрибуторам</span>
-              <span>Бизнесам, которым необходима системная IP-архитектура</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-alt" id="services" data-reveal>
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Услуги</div>
-              <div>
-                <h2>Полный список <span class="accent-word">услуг</span></h2>
-              </div>
-            </div>
-
-            <div class="faq-list">
-              <article class="faq-item is-open">
-                <button class="faq-question" type="button"><span>Индивидуальные консультации</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Разбор правовой ситуации, принятие стратегических решений по защите ИС, оценка рисков и получение плана действий. Кому подходит: ИП, ТОО, АО, стартапы, блогеры, IT-проекты, производственные и сервисные компании. Этапы: анализ запроса и документов; устная или письменная консультация; формирование рекомендаций. Вы получаете: письменную консультацию с выводами и рекомендациями. Срок: 1 рабочий день.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Проведение поиска товарных знаков</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Проверка возможности регистрации бренда, избежание отказа в регистрации и финансовых потерь, оценка рисков конфликтов. Кому подходит: бизнес, стартапы, франчайзеры, блогеры, маркетинговые агентства. Этапы: поиск по базам Казпатента и международным реестрам; анализ сходства; подготовка юридического заключения. Вы получаете: отчет о поиске с рекомендациями. Срок: 1–3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Регистрация товарного знака</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Закрепление исключительных прав на бренд, запрет третьим лицам использовать сходные обозначения, защита от копирования, возможность использования во франшизах и рекламе, повышение стоимости бизнеса, выход на маркетплейсы и судебная защита. Кому подходит: ИП, ТОО, АО, стартапы, онлайн-проекты, блогеры, производственные и сервисные компании, франчайзеры, иностранные компании. Этапы: предварительная проверка; подбор классов МКТУ; подготовка и подача заявки в Казпатент; сопровождение экспертизы; регистрация и получение свидетельства. Срок: 7 месяцев.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Внесение изменений в Госреестр ТЗ</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Актуализация данных в государственном реестре при смене адреса, наименования компании или правообладателя. Кому подходит: компании после реорганизации, сделок или переименований. Этапы: подготовка заявления; подача документов; получение подтверждения о внесении изменений. Вы получаете: уведомление о внесении изменений в Госреестр. Срок: 10 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Продление срока действия товарного знака</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Сохранение исключительных прав на бренд на следующий 10-летний период, избежание аннулирования регистрации. Кому подходит: все правообладатели товарных знаков. Этапы: проверка сроков действия; подготовка и подача заявления; продление регистрации. Вы получаете: уведомление о продлении срока действия товарного знака. Срок: 10 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Признание товарного знака общеизвестным</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Получение максимального уровня правовой защиты и охраны товарного знака в отношении всех товаров и услуг на территории Республики Казахстан. Кому подходит: крупные бренды, широко известные на рынке. Этапы: сбор доказательств известности бренда; подготовка и подача заявления; прохождение процедуры признания. Вы получаете: свидетельство на общеизвестный товарный знак. Срок: 6–12 месяцев.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Экспертиза договоров</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Лицензионные договоры, франшиза, уступка. Выявление юридических рисков, проверка на соответствие законодательству РК, оценка возможности регистрации и защиты в суде. Кому подходит: бизнес, инвесторы, франчайзи, IT-проекты. Этапы: детальный анализ договора; письменное заключение; рекомендации по доработке. Вы получаете: договор с рекомендуемыми правками. Срок: 3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Разработка лицензионного договора / договора уступки</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Законная передача прав на использование или владение ИС, защита правообладателя от утраты контроля над объектом. Кому подходит: правообладатели, франчайзеры, холдинги, IT-компании. Этапы: анализ объекта и целей сделки; подготовка проекта договора; сопровождение регистрации. Вы получаете: лицензионный договор или договор уступки. Срок: 3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Разработка договора франшизы</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Законное масштабирование бизнеса, обеспечение контроля качества работы партнеров, защита бренда и репутации сети. Кому подходит: франчайзеры, торговые сети, производственные компании. Этапы: анализ бизнес-модели; подготовка проекта договора; адаптация под требования регистрации и сопровождение по запросу. Вы получаете: договор франшизы. Срок: 5 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Разработка допсоглашения / соглашения о расторжении</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Изменение условий действующих лицензий или франшиз, продление сроков, корректное прекращение договорных отношений без рисков. Кому подходит: компании с действующими договорами в сфере интеллектуальной собственности. Этапы: анализ основного договора; подготовка проекта соглашения; консультация по правовым последствиям. Вы получаете: дополнительное соглашение или соглашение о расторжении. Срок: 3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Подача на регистрацию договоров и допсоглашений</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Придание договору юридической силы для третьих лиц, исключение налоговых и правовых рисков при использовании ИС. Кому подходит: все правообладатели объектов интеллектуальной собственности. Этапы: проверка документов; подача в Казпатент; сопровождение процедуры регистрации. Вы получаете: уведомление о регистрации договора или допсоглашения в Госреестре. Срок: 10 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Расторжение договора франшизы / лицензионного договора</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Официальное прекращение отношений без штрафных санкций и судов, защита бренда от действий бывшего франчайзи. Кому подходит: франчайзеры и франчайзи. Этапы: анализ условий договора; выбор стратегии расторжения; подготовка документов и уведомлений. Вы получаете: уведомление о расторжении договора франшизы. Срок: 10 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Представление интересов в Апелляционном совете</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Обжалование решений об отказе в регистрации, инициирование процедур отмены регистрации чужих товарных знаков. Кому подходит: правообладатели интеллектуальной собственности и заявители. Этапы: анализ перспектив обжалования; подготовка возражения; участие в заседаниях совета. Вы получаете: решение Апелляционного совета. Срок: 6 месяцев.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Регистрация авторских прав</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>В том числе на ПО и курсы. Фиксация авторства, защита произведений от плагиата, обеспечение возможности коммерциализации и лицензирования контента или софта. Кому подходит: авторы, IT-компании, создатели образовательных программ и курсов. Этапы: подготовка материалов объекта; подача заявки; получение свидетельства о государственной регистрации. Вы получаете: авторское свидетельство. Срок: 3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Внутренняя документация по защите ИС</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Защита прав на служебные произведения, снижение рисков утечки интеллектуальных прав внутри компании. Кому подходит: работодатели и компании с существенным интеллектуальным капиталом. Этапы: анализ внутренних бизнес-процессов; разработка регламентов, положений и локальных актов. Вы получаете: политику защиты интеллектуальной собственности компании и процедуру регистрации товарных знаков и их защиты от контрафакта. Срок: 5 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Предупредительные письма</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Прекращение нарушения прав без обращения в суд, официальная фиксация позиции правообладателя. Кому подходит: правообладатели интеллектуальной собственности. Этапы: подготовка текста письма и отправка документа нарушителю. Вы получаете: предупредительное письмо. Срок: 1–2 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Досудебные претензии</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Соблюдение обязательного досудебного порядка урегулирования споров, взыскание компенсации без обращения в суд. Кому подходит: правообладатели интеллектуальной собственности. Этапы: подготовка текста претензии; направление документа стороне-нарушителю. Вы получаете: досудебную претензию и проведение переговоров. Срок: 3 рабочих дня.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Подача обращения в ДЮ и ДАЗРК</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Защита прав при выявленных нарушениях, инициирование государственных проверок деятельности нарушителей. Кому подходит: правообладатели, столкнувшиеся с нарушениями интеллектуальных прав. Этапы: подготовка обращения; подача в Департамент юстиции или ДАЗРК; мониторинг процесса рассмотрения и участие в процессе. Вы получаете: постановление административного суда о привлечении к административной ответственности. Срок: 20 рабочих дней.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Представление интересов в суде</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Защита прав на бренд, взыскание компенсации за нарушения, признание регистрации чужих товарных знаков недействительными. Кому подходит: правообладатели, компании, франчайзеры. Этапы: анализ спора; подготовка искового заявления; судебное представительство во всех инстанциях. Вы получаете: решение суда. Срок: от 2 месяцев.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Включение ТЗ в Таможенный реестр РК</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Блокировка ввоза и вывоза контрафактной продукции на границе, защита законного импорта и экспорта от параллельного импорта. Кому подходит: импортеры, экспортеры, правообладатели товарных знаков. Этапы: подготовка пакета документов; подача заявления в таможенные органы; включение объекта в реестр. Вы получаете: уведомление о включении в ТРОИС. Срок: 20 рабочих дней.</p></div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section contact-section" id="consultation" data-reveal>
-          <div class="container">
-            <div class="contact-card">
-              <div class="eyebrow">Консультация</div>
-              <h2>Оставьте заявку на <span class="accent-word accent-word-light">консультацию</span></h2>
-              <p>Узнайте все о преимуществах и возможностях защиты интеллектуальной собственности.</p>
-              <form class="contact-form inline-form">
-                <label>
-                  <span>Ваше имя</span>
-                  <input type="text" placeholder="Как к вам обращаться" />
-                </label>
-                <label>
-                  <span>Телефон или WhatsApp</span>
-                  <input type="text" placeholder="+7 (___) ___-__-__" />
-                </label>
-                <button class="btn btn-primary" type="button">Отправить</button>
-              </form>
-              <p style="margin-top: 14px;">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="faq" data-reveal>
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">FAQ</div>
-              <div>
-                <h2>Частые <span class="accent-word">вопросы</span></h2>
-              </div>
-            </div>
-
-            <div class="faq-list">
-              <article class="faq-item is-open">
-                <button class="faq-question" type="button"><span>Нужно ли регистрировать товарный знак, если я уже давно использую бренд?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Да. Использование без регистрации не даёт исключительного права. Без свидетельства вы не сможете эффективно запрещать конкурентам использование обозначения, защищаться от претензий и масштабировать бизнес через франшизу или лицензирование.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Что делать, если пришёл предварительный отказ?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Предварительный отказ — это рабочий этап. Анализируются причины, формируется правовая позиция и подаётся мотивированный ответ или возражение. Во многих случаях регистрация возможна при правильно выстроенной тактике.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Что можно защитить авторским правом?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Онлайн-курсы, методики, тексты, дизайн, фотографии, программы для ЭВМ, базы данных, сценарии, презентации, аудио- и видеоконтент. Охраняется форма выражения, структура и конкретное воплощение идеи.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Что даёт признание товарного знака общеизвестным?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Общеизвестный знак получает расширенную охрану фактически в отношении всех товаров и услуг, независимо от классов МКТУ. Это высший уровень защиты бренда и серьёзное усиление позиции в спорах.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Как защитить интеллектуальную собственность при привлечении инвестора или продаже доли бизнеса?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Перед сделкой необходимо провести аудит портфеля товарных знаков и других объектов ИС, проверить чистоту прав, срок их действия, наличие лицензионных договоров и рисков оспаривания. Неподготовленная IP-структура может снизить стоимость бизнеса или сорвать сделку. Грамотно выстроенная система, наоборот, повышает инвестиционную привлекательность и усиливает позицию собственника в переговорах.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Нужно ли регистрировать авторское право, если оно возникает автоматически?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Авторское право возникает с момента создания произведения, но регистрация фиксирует дату и авторство. Это существенно упрощает защиту в случае копирования и усиливает позицию в суде.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Сколько длится регистрация товарного знака?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>В среднем 7 месяцев при отсутствии споров и отказов. В сложных случаях срок зависит от позиции экспертизы и наличия конфликтующих обозначений.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Зачем включать товарный знак в Таможенный реестр?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Это позволяет блокировать ввоз контрафактной продукции на границе. Таможенные органы приостанавливают выпуск подозрительных товаров и уведомляют правообладателя.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Можно ли защитить бренд при выходе на международный рынок?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Да. Возможна международная регистрация через Мадридскую систему или национальные процедуры в выбранных странах. Стратегия определяется с учётом географии бизнеса и бюджета.</p></div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button"><span>Что делать, если конкурент зарегистрировал сходный товарный знак?</span><span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Возможны несколько стратегий: подача возражения в Апелляционный совет, иск о признании регистрации недействительной, аннулирование по неиспользованию, защита через статус общеизвестного знака. Тактика зависит от стадии регистрации и доказательной базы. Во многих случаях права можно восстановить даже спустя несколько лет после регистрации конкурента.</p></div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section contact-section" data-reveal>
-          <div class="container">
-            <div class="contact-card">
-              <div class="eyebrow">WhatsApp</div>
-              <h2>Не нашли свой вопрос? <span class="accent-word accent-word-light">Опишите ситуацию</span></h2>
-              <p>Разберём риски и предложим стратегию защиты.</p>
-              <div class="contact-actions">
-                <a class="btn btn-primary" href="https://wa.me/77054816699" target="_blank" rel="noreferrer">Написать в WhatsApp</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="contacts" data-reveal>
-          <div class="container contact-grid">
-            <article class="content-card contact-info-card">
-              <h3>Контакты</h3>
-              <div class="contact-lines">
-                <a href="mailto:rysbekova-ainura@mail.ru">E-mail: rysbekova-ainura@mail.ru</a>
-                <a href="tel:+77054816699">Тел: +7 705 481-66-99</a>
-                <span>Адрес проживания: г. Астана, 010000, пр. Аль-Фараби, д. 11/1, кв. 205</span>
-              </div>
-            </article>
-            <article class="contact-form-card">
-              <h3>Реквизиты</h3>
-              <p>ИП Рысбекова Айнура Сериковна<br />ИИН 850617450628</p>
-              <p>KZ49722S000001698012<br />АО "Kaspi Bank"<br />БИК CASPKZKA</p>
-            </article>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div class="container footer-row">
-          <div>
-            <a class="brand footer-brand" href="./index.html">Айнура Рысбекова</a>
-            <p class="footer-copy">© 2026 Айнура Рысбекова</p>
-          </div>
-          <nav class="footer-nav">
-            <a href="./other.html#services">Услуги</a>
-            <a href="./other.html#faq">FAQ</a>
-            <a href="./other.html#contacts">Контакты</a>
-            <a href="./other.html#top">Наверх</a>
-          </nav>
-        </div>
+        <div class="container"><div class="footer-row">
+          <div><span class="footer-brand">Айнура Рысбекова</span><p class="footer-copy">&copy; 2026 Патентный поверенный РК.</p></div>
+          <nav class="footer-nav"><a href="./index.html">Главная</a><a href="./trademark.html">Товарные знаки</a><a href="./copyright.html">Авторское право</a><a href="./other.html">Прочие услуги</a></nav>
+        </div></div>
       </footer>
     </div>
-
     <script src="./script.js"></script>
   </body>
 </html>

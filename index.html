@@ -3,766 +3,598 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Айнура Рысбекова — IP-юрист и патентный поверенный Республики Казахстан. Защита интеллектуальной собственности, товарных знаков и авторских прав."
-    />
-    <title>Айнура Рысбекова</title>
+    <meta name="description" content="Айнура Рысбекова — IP-юрист и патентный поверенный Республики Казахстан. Защита интеллектуальной собственности, товарных знаков и авторских прав." />
+    <title>Айнура Рысбекова — Патентный поверенный РК</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@300..800&family=Caveat:wght@400..700&display=swap&subset=cyrillic" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body class="is-loading">
+
+    <!-- INTRO LOADER -->
+    <div class="intro-loader" data-loader>
+      <span class="intro-loader-name">Айнура Рысбекова</span>
+    </div>
+
     <div class="site-shell">
+
+      <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress__bar" data-progress-bar></div>
+      </div>
+
+      <!-- HEADER -->
       <header class="site-header" data-header>
         <div class="container header-row">
           <a class="brand" href="./index.html">Айнура Рысбекова</a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
-            <span></span>
-            <span></span>
+            <span></span><span></span>
           </button>
           <nav class="header-nav" data-menu>
-            <a href="./index.html">Главная</a>
+            <a href="./index.html" class="is-current">Главная</a>
             <a href="./trademark.html">Товарные знаки</a>
             <a href="./copyright.html">Авторское право</a>
             <a href="./other.html">Прочие услуги</a>
-            <a class="header-cta" href="./index.html#consultation">Консультация</a>
+            <a class="header-cta" href="#consultation">Консультация</a>
           </nav>
         </div>
       </header>
 
       <main id="top">
-        <section class="hero" data-reveal>
+
+        <!-- ======================== HERO — fullscreen photo ======================== -->
+        <section class="hero-home">
+            <div class="parallax-bg" data-parallax style="background-image: url('https://optim.tildacdn.pro/tild6534-3735-4766-b365-663538343330/-/format/webp/noroot.png.webp')"></div>
+          <div class="hero-overlay"></div>
+
+          <div class="hero-content">
+            <div class="hero-inner">
+              <p class="hero-tagline">Патентный поверенный Республики Казахстан</p>
+              <h1 class="hero-name" data-split>Айнура<br>Рысбекова</h1>
+              <p class="hero-subtitle">Защита интеллектуальной собственности вашего бизнеса.<br>16 лет практики. Более 300 успешных регистраций.</p>
+              <div class="hero-cta-group">
+                <a href="#consultation" class="btn btn-primary">Получить консультацию</a>
+                <a href="./trademark.html" class="btn btn-ghost-light">Услуги и цены</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proof-band">
+            <div class="container">
+              <div class="proof-band-inner">
+                <div class="proof-cell" data-reveal>
+                  <span class="proof-number" data-count-to="16">0</span>
+                  <span class="proof-label">лет экспертной практики</span>
+                </div>
+                <div class="proof-cell" data-reveal style="--reveal-delay:60">
+                  <span class="proof-number" data-count-to="300" data-count-suffix="+">0</span>
+                  <span class="proof-label">регистраций объектов ИС</span>
+                </div>
+                <div class="proof-cell" data-reveal style="--reveal-delay:120">
+                  <span class="proof-number" data-count-to="5">0</span>
+                  <span class="proof-label">глобальных юрисдикций</span>
+                </div>
+                <div class="proof-cell" data-reveal style="--reveal-delay:180">
+                  <span class="proof-number" data-count-to="80" data-count-prefix="до " data-count-suffix="%">0</span>
+                  <span class="proof-label">досудебных урегулирований</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ======================== ABOUT ======================== -->
+        <section class="section about-section">
           <div class="container">
-            <div class="hero-card">
-              <div class="hero-split">
-                <div class="hero-copy" data-reveal data-delay="0">
-                  <svg class="hero-bg-svg" viewBox="0 0 400 400" fill="none" stroke="rgba(185, 152, 90, 0.05)" stroke-width="1.5">
-                    <circle cx="200" cy="200" r="100" class="pulse-circle" />
-                    <circle cx="200" cy="200" r="150" class="pulse-circle delay-1" />
-                    <circle cx="200" cy="200" r="200" class="pulse-circle delay-2" />
-                  </svg>
-                  <p class="hero-name">Айнура Рысбекова</p>
-                  <h1>
-                    Защита интеллектуальной собственности
-                    для брендов, авторов и бизнеса
-                  </h1>
-                  <p class="hero-text">
-                    Регистрация товарных знаков, авторское право, сопровождение споров
-                    и защита интеллектуальных активов в сделках, масштабировании и развитии бизнеса.
+            <div class="about-grid">
+              <div class="about-bg-letter">R</div>
+              <div class="about-side-label" data-parallax-side>EXPERTISE & LAW</div>
+              
+              <div class="about-text">
+                <div class="about-text-content" data-reveal>
+                  <span class="eyebrow">Обо мне</span>
+                  <h2>Защита бизнеса<br><em>с первого шага</em></h2>
+                  <p>
+                    Я — аттестованный патентный поверенный РК и IP-юрист с 16-летним стажем. Помогаю предпринимателям, стартапам и крупным компаниям защищать бренды, патенты и авторские права.
                   </p>
-
-                  <div class="hero-actions">
-                    <a class="btn btn-primary" href="./index.html#consultation">Получить консультацию</a>
-                    <a class="btn btn-secondary btn-secondary-soft" href="./index.html#about">О практике</a>
+                  <p>
+                    Работаю с клиентами в Казахстане и за рубежом — от разработки стратегии до судебной защиты. Представляю интересы в НИИС, ЕАПО, EUIPO, ВОИС и CNIPA.
+                  </p>
+                  
+                  <ul class="about-list">
+                    <li>Регистрация товарных знаков в 5 юрисдикциях</li>
+                    <li>Патенты, промышленные образцы</li>
+                    <li>Авторское право и лицензирование</li>
+                    <li>IP-аудит и судебная защита</li>
+                    <li>Эксперт программ при поддержке WIPO</li>
+                  </ul>
+                  
+                  <div class="tag-row">
+                    <span class="tag">Товарные знаки</span>
+                    <span class="tag">Патенты</span>
+                    <span class="tag">Авторское право</span>
+                    <span class="tag">IP-аудит</span>
                   </div>
+                  
+                  <div class="about-signature">Ainura Rysbekova</div>
 
-                  <div class="hero-proof hero-proof-inline">
-                    <div>
-                      <strong>16 лет</strong>
-                      <span>практики в сфере интеллектуальной собственности</span>
-                    </div>
-                    <div>
-                      <strong>300+</strong>
-                      <span>зарегистрированных товарных знаков</span>
-                    </div>
-                    <div>
-                      <strong>5 знаков</strong>
-                      <span>признаны общеизвестными в Республике Казахстан</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="hero-aside" data-reveal data-delay="140">
-                  <div class="portrait-stage">
-                    <div class="portrait-frame">
-                      <img
-                        class="portrait-image"
-                        src="https://static.tildacdn.pro/tild3762-6435-4736-b065-353264356531/e7f4821b-295a-4a36-a.jpg"
-                        alt="Айнура Рысбекова"
-                      />
-                    </div>
-                    <div class="hero-seal">
-                      <svg viewBox="0 0 160 160" class="seal-svg">
-                        <defs>
-                          <path id="sealPath" d="M 80, 80 m -52, 0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" />
-                        </defs>
-                        <circle cx="80" cy="80" r="32" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
-                        <path d="M 80 40 V 48 M 80 112 V 120 M 40 80 H 48 M 112 80 H 120" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"/>
-                        <text fill="var(--gold)" font-size="12" font-weight="700" letter-spacing="0.1em">
-                          <textPath href="#sealPath" startOffset="0%">
-                            ПАТЕНТНЫЙ ПОВЕРЕННЫЙ • РЕСПУБЛИКА КАЗАХСТАН •
-                          </textPath>
-                        </text>
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div class="hero-note">
-                    <span class="hero-note-label">Фокус практики</span>
-                    <p>Стратегическая защита брендов, контента и прав там, где на кону репутация, рост и стоимость бизнеса.</p>
+                  <div class="cta-group">
+                    <a href="./trademark.html" class="btn btn-secondary">Подробнее об услугах</a>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="metrics metrics-premium" id="experience" data-reveal>
-          <div class="container metrics-premium-grid">
-            <article class="metric-card metric-card-premium">
-              <div class="metric-icon-wrap">
-                <svg class="metric-icon-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10" class="draw-path" />
-                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" class="draw-path delay-1" />
-                </svg>
-              </div>
-              <span class="metric-label">Опыт</span>
-              <strong>16 лет</strong>
-              <p>Практики в сфере интеллектуальной собственности и сопровождения брендов.</p>
-            </article>
-            <article class="metric-card metric-card-premium">
-              <div class="metric-icon-wrap">
-                <svg class="metric-icon-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" class="draw-path" />
-                  <path d="M9 12l2 2 4-4" class="draw-path delay-1" />
-                </svg>
-              </div>
-              <span class="metric-label">Результат</span>
-              <strong>300+</strong>
-              <p>Зарегистрированных товарных знаков для бизнеса, экспертов и компаний.</p>
-            </article>
-            <article class="metric-card metric-card-premium">
-              <div class="metric-icon-wrap">
-                <svg class="metric-icon-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M6 3h12l4 6-10 12L2 9z" class="draw-path" />
-                  <path d="M2 9h20" class="draw-path delay-1" />
-                  <path d="M12 22V9" class="draw-path delay-1" />
-                  <path d="M12 9L6 3" class="draw-path delay-2" />
-                  <path d="M12 9l6-6" class="draw-path delay-2" />
-                </svg>
-              </div>
-              <span class="metric-label">Уровень</span>
-              <strong>5 знаков</strong>
-              <p>Признаны общеизвестными на территории Республики Казахстан.</p>
-            </article>
-            <article class="metric-card metric-card-premium metric-card-note">
-              <div>
-                <div class="metric-icon-wrap">
-                  <svg class="metric-icon-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10" class="draw-path" />
-                    <circle cx="12" cy="12" r="6" class="draw-path delay-1" />
-                    <circle cx="12" cy="12" r="2" class="draw-path delay-2" />
-                  </svg>
-                </div>
-                <span class="metric-note-title" style="display:block;">Фокус практики</span>
-              </div>
-              <p>Регистрация, судебная защита, досудебная стратегия, сделки, франшизы и упаковка интеллектуальных активов для роста бизнеса.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section-intro" data-reveal>
-          <div class="container">
-            <div class="intro-grid">
-              <article class="intro-lead">
-                <span class="intro-label">Подход</span>
-                <h2>Юридическая стратегия, которая помогает не только защищать права, но и усиливать стоимость бизнеса</h2>
-                <svg class="intro-line-svg" viewBox="0 0 200 20" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round">
-                  <path d="M0,10 Q50,20 100,10 T200,10" class="draw-line" />
-                </svg>
-              </article>
-              <div class="intro-details">
-                <p>Интеллектуальная собственность здесь рассматривается не как формальность, а как актив: его нужно зарегистрировать, закрепить, защитить и встроить в устойчивую структуру роста.</p>
-                <div class="intro-points">
-                  <span>Патентный поверенный РК</span>
-                  <span>Судебная практика</span>
-                  <span>Экспертность в WIPO-проектах</span>
-                  <span>Работа с брендами и франшизами</span>
+              <div class="about-photo-wrap" data-reveal="clip" style="--reveal-delay:150">
+                <img src="https://optim.tildacdn.pro/tild3762-6435-4736-b065-353264356531/-/format/webp/e7f4821b-295a-4a36-a.jpg.webp" alt="Айнура Рысбекова — патентный поверенный" />
+                <div class="about-experience-badge"><b>16</b> <span>лет практики</span></div>
+                <div class="about-photo-tag">
+                  <span>Патентный поверенный РК · IP-юрист</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="about" data-reveal>
+
+        <!-- ======================== PULL QUOTE ======================== -->
+        <section class="pull-quote-section section-surface section">
           <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Обо мне</div>
-              <div>
-                <h2>Юридически выверенная <span class="accent-word">защита</span> интеллектуальных активов</h2>
-                <p>
-                  Я выстраиваю защиту интеллектуальной собственности так, чтобы бизнес снижал риски,
-                  предотвращал споры и уверенно отстаивал свои права.
-                </p>
-              </div>
-            </div>
-
-            <div class="profile-grid">
-              <div class="profile-photo">
-                <img
-                  src="https://static.tildacdn.pro/tild3762-6435-4736-b065-353264356531/e7f4821b-295a-4a36-a.jpg"
-                  alt="Айнура Рысбекова за работой"
-                />
-              </div>
-
-              <aside class="focus-card">
-                <svg class="about-deco-svg" viewBox="0 0 24 24" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3v18" class="draw-path" />
-                  <path d="M3 9l9-6 9 6" class="draw-path delay-1" />
-                  <path d="M3 9v6a9 9 0 0 0 18 0V9" class="draw-path delay-2" />
-                </svg>
-                <div class="focus-label">Подход</div>
-                <p>
-                  Подберу юридически корректную стратегию защиты интеллектуальной собственности под ваш проект.
-                </p>
-                <ul>
-                  <li>Товарные знаки и бренды</li>
-                  <li>Авторские права и цифровой контент</li>
-                  <li>Досудебные и судебные споры</li>
-                  <li>Интеллектуальные активы в сделках и инвестициях</li>
-                </ul>
-                <div class="hero-actions" style="margin-top: 20px;">
-                  <a class="btn btn-primary" href="./index.html#consultation">Получить консультацию</a>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-alt" data-reveal>
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Для кого</div>
-              <div>
-                <h2>Кому нужно защитить свою <span class="accent-word spark-wrap">интеллектуальную собственность<svg class="spark-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M5 19l4-4" class="draw-path" /></svg></span>?</h2>
-              </div>
-            </div>
-
-            <div class="badge-list">
-              <span>Стартапы, ИП, блогеры, новые проекты</span>
-              <span>Действующий бизнес, онлайн-проекты</span>
-              <span>Бренды с рисками отказа и компании в конфликтных ситуациях</span>
-              <span>Крупный бизнес, франшизы, инвестиционные проекты</span>
-              <span>Авторы, эксперты, дизайнеры, фотографы</span>
-              <span>Частные школы, детские и STEM-центры</span>
-              <span>Онлайн-школы, курсы, инфобизнес</span>
-              <span>Салоны красоты и школы мастеров</span>
-              <span>Языковые школы и центры подготовки</span>
-              <span>IT-проекты, стартапы, SaaS</span>
-              <span>Коучи, психологи, тренеры</span>
-              <span>Бизнес и франшизы</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section-dark" id="cases" data-reveal>
-          <div class="container">
-            <div class="section-head section-head-dark">
-              <div class="eyebrow">Доверители</div>
-              <div>
-                <h2>Мои доверители</h2>
-                <p>Бренды и компании, для которых интеллектуальная собственность является частью стоимости, репутации и позиции на рынке.</p>
-              </div>
-            </div>
-
-            <div class="logo-wall logo-wall-dark">
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild3663-3165-4264-b331-313232643435/01_.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6561-6430-4764-a331-316236316337/2.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6463-3935-4663-b930-616166376264/88_.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6333-6230-4230-b537-613137366439/88.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6234-3739-4630-a331-316565303638/80.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild3636-6536-4136-a562-313737353764/80x80mm_Aime_logo_1.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild3537-3536-4436-a264-353964363161/_.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6664-3732-4334-a439-616435616138/___3_1.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild6364-6434-4435-a433-303537376130/__80__80_.png" alt="Логотип доверителя" /></div>
-              <div class="logo-card logo-card-dark"><img src="https://static.tildacdn.pro/tild3933-6561-4461-b535-303638323863/photo.png" alt="Логотип доверителя" /></div>
-            </div>
-
-            <div class="trust-summary">
-              <span class="trust-kicker">Формат работы</span>
-              <p>
-                Бренды и компании, для которых интеллектуальная собственность влияет на
-                стоимость, репутацию и возможность масштабироваться.
+            <div class="pull-quote-inner" data-reveal>
+              <span class="pull-quote-mark">&ldquo;</span>
+              <p class="pull-quote-text">
+                Интеллектуальная собственность — не формальность. Это актив, который можно монетизировать, продать, защитить в суде и передать по наследству.
               </p>
-              <div class="trust-summary-points">
-                <span>Товарные знаки</span>
-                <span>Авторское право</span>
-                <span>Споры и сделки</span>
+              <span class="pull-quote-source">— Айнура Рысбекова</span>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ======================== SERVICES — tabs ======================== -->
+        <section class="section">
+          <div class="container">
+            <div class="services-head">
+              <span class="eyebrow">Услуги</span>
+              <h2 data-reveal>Что я делаю<br><em>для вас</em></h2>
+            </div>
+
+            <div class="service-tabs" data-reveal>
+              <button class="service-tab is-active" data-tab="0">Товарные знаки</button>
+              <button class="service-tab" data-tab="1">Патенты</button>
+              <button class="service-tab" data-tab="2">Авторское право</button>
+              <button class="service-tab" data-tab="3">IP-аудит</button>
+            </div>
+
+            <div class="service-panels">
+              <div class="service-panel is-active" data-panel="0">
+                <div class="service-panel-text">
+                  <span class="service-panel-num">01</span>
+                  <h3>Регистрация товарных знаков</h3>
+                  <p>От поиска по базам до получения свидетельства. Работаю с НИИС Казахстана, ЕАПО, EUIPO, ВОИС и CNIPA. Полное сопровождение — от предварительной проверки до выдачи свидетельства.</p>
+                  <ul class="service-panel-list">
+                    <li>Предварительный поиск по базам</li>
+                    <li>Подготовка и подача заявки</li>
+                    <li>Ведение делопроизводства и ответы на запросы</li>
+                    <li>Регистрация в 5 юрисдикциях</li>
+                  </ul>
+                  <a href="./trademark.html" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-panel-photo">
+                  <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80&auto=format" alt="Регистрация товарных знаков" />
+                </div>
+              </div>
+
+              <div class="service-panel" data-panel="1">
+                <div class="service-panel-text">
+                  <span class="service-panel-num">02</span>
+                  <h3>Патенты и промышленные образцы</h3>
+                  <p>Изобретения, полезные модели, промышленный дизайн. Подготовка описания, формулы, чертежей. Подача заявки и сопровождение экспертизы до получения патента.</p>
+                  <ul class="service-panel-list">
+                    <li>Патентный поиск и анализ патентоспособности</li>
+                    <li>Подготовка заявочной документации</li>
+                    <li>Сопровождение экспертизы</li>
+                    <li>Поддержание патента в силе</li>
+                  </ul>
+                  <a href="./other.html" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-panel-photo">
+                  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80&auto=format" alt="Патенты и промышленные образцы" />
+                </div>
+              </div>
+
+              <div class="service-panel" data-panel="2">
+                <div class="service-panel-text">
+                  <span class="service-panel-num">03</span>
+                  <h3>Авторское право и лицензии</h3>
+                  <p>Депонирование произведений, подготовка лицензионных и авторских договоров. Защита от нарушений — от досудебных претензий до представительства в суде.</p>
+                  <ul class="service-panel-list">
+                    <li>Депонирование и регистрация авторских прав</li>
+                    <li>Лицензионные договоры</li>
+                    <li>Претензии нарушителям</li>
+                    <li>Судебная защита авторских прав</li>
+                  </ul>
+                  <a href="./copyright.html" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-panel-photo">
+                  <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&auto=format" alt="Авторское право и лицензии" />
+                </div>
+              </div>
+
+              <div class="service-panel" data-panel="3">
+                <div class="service-panel-text">
+                  <span class="service-panel-num">04</span>
+                  <h3>IP-аудит и судебная защита</h3>
+                  <p>Полная проверка портфеля интеллектуальной собственности. Анализ рисков, стратегия защиты. Досудебное урегулирование и представительство в судах всех инстанций.</p>
+                  <ul class="service-panel-list">
+                    <li>Аудит и оценка IP-активов</li>
+                    <li>Стратегия защиты портфеля</li>
+                    <li>Досудебные претензии и переговоры</li>
+                    <li>Представительство в суде</li>
+                  </ul>
+                  <a href="./other.html" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-panel-photo">
+                  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80&auto=format" alt="IP-аудит и судебная защита" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ======================== PHOTO BREAK ======================== -->
+        <section class="photo-break">
+          <div class="parallax-bg" data-parallax style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format')"></div>
+          <div class="photo-break-overlay"></div>
+          <div class="photo-break-content" data-reveal>
+            <span class="photo-break-number">300+</span>
+            <span class="photo-break-label">зарегистрированных объектов<br>интеллектуальной собственности</span>
+          </div>
+        </section>
+
+
+        <!-- ======================== AUDIENCE — Editorial List ======================== -->
+        <section class="section audience-section">
+          <div class="container">
+            <div class="section-head-center">
+              <span class="eyebrow">Кому помогаю</span>
+              <h2 data-reveal>Мои клиенты</h2>
+            </div>
+            
+            <div class="audience-list">
+              <!-- Item 01 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 0ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">01</span>
+                  <h3 class="audience-title">Стартапы и новые проекты</h3>
+                  <p class="audience-desc">Защита бренда и разработок до выхода на рынок, чтобы конкуренты не украли идею на самом старте.</p>
+                </div>
+              </div>
+
+              <!-- Item 02 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 60ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">02</span>
+                  <h3 class="audience-title">Онлайн-школы и инфобизнес</h3>
+                  <p class="audience-desc">Правовая охрана авторских курсов, методик и контента от складчин и незаконного копирования.</p>
+                </div>
+              </div>
+
+              <!-- Item 03 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 120ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">03</span>
+                  <h3 class="audience-title">Производственные компании</h3>
+                  <p class="audience-desc">Патентование технологий и промышленных образцов для защиты уникальности ваших продуктов.</p>
+                </div>
+              </div>
+
+              <!-- Item 04 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 180ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">04</span>
+                  <h3 class="audience-title">IT-проекты и SaaS</h3>
+                  <p class="audience-desc">Регистрация прав на ПО и алгоритмы. Работа с международными рынками и сложными юрисдикциями.</p>
+                </div>
+              </div>
+
+              <!-- Item 05 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 240ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">05</span>
+                  <h3 class="audience-title">Фэшн-бренды и дизайнеры</h3>
+                  <p class="audience-desc">Охрана уникального дизайна одежды, аксессуаров и визуального стиля в индустрии моды.</p>
+                </div>
+              </div>
+
+              <!-- Item 06 -->
+              <div class="audience-item" data-reveal style="--reveal-delay: 300ms">
+                <div class="audience-item-link">
+                  <span class="audience-num">06</span>
+                  <h3 class="audience-title">Салоны красоты и мастера</h3>
+                  <p class="audience-desc">Защита названий, логотипов и авторских техник в бьюти-сфере и индустрии здоровья.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ======================== CLIENTS — dark ======================== -->
+        <section class="clients-section">
+          <div class="container">
+            <div class="clients-head">
+              <div>
+                <span class="eyebrow eyebrow-light">Опыт и экспертиза</span>
+                <h2 data-reveal>Профессиональный<br><em>опыт</em></h2>
+              </div>
+              <div>
+                <p data-reveal>Среди клиентов — казахстанские холдинги, международные корпорации, стартапы и государственные структуры. Помогаю лидерам рынка защищать их главные активы.</p>
               </div>
             </div>
 
-            <div class="trust-highlights-grid">
-              <article class="trust-highlight-card">
-                <span class="service-index">01</span>
-                <h3>Казахстанский производитель сухих строительных смесей и лакокрасочной продукции</h3>
-                <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </article>
-              <article class="trust-highlight-card">
-                <span class="service-index">02</span>
-                <h3>Аннулирование регистрации сходного товарного знака конкурента с более поздним приоритетом</h3>
-                <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </article>
-              <article class="trust-highlight-card">
-                <span class="service-index">03</span>
-                <h3>Барбершоп: незарегистрированный бренд, которым пользовались с 2013 года</h3>
-                <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </article>
-              <article class="trust-highlight-card">
-                <span class="service-index">04</span>
-                <h3>Reels, использованный конкурентами в рекламе услуг</h3>
-                <svg class="arrow-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </article>
+            <div class="logo-strip" data-reveal>
+              <div class="logo-tile"><span>SIS&amp;BRO</span></div>
+              <div class="logo-tile"><span>KAMBO</span></div>
+              <div class="logo-tile"><span>LUGX</span></div>
+              <div class="logo-tile"><span>SHOQAN</span></div>
+              <div class="logo-tile"><span>FUEGO</span></div>
+              <div class="logo-tile"><span>LESO RUB</span></div>
+              <div class="logo-tile"><span>JYLDAM</span></div>
             </div>
+            <p class="logo-caption">Айнуре доверяют лидеры рынка и амбициозные проекты</p>
 
-            <div class="faq-list faq-list-cases">
-              <article class="faq-item is-open">
-                <button class="faq-question" type="button">
-                  <span>Казахстанский производитель сухих строительных смесей и лакокрасочной продукции</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: Защита 5 товарных знаков от незаконного использования на упаковке продукции. Контрафакт реализовывался в строительных магазинах и на крупном казахстанском маркетплейсе. Результат: взыскано 5 000 000 тенге компенсации; незаконное использование прекращено; вся контрафактная продукция изъята из оборота и уничтожена за счёт нарушителя.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Аннулирование регистрации сходного товарного знака конкурента</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: аннулирование регистрации сходного товарного знака конкурента с более поздним приоритетом. Юридическая сложность: разные классы МКТУ, отказ Апелляционного совета, необходимость доказывания однородности товаров, сбор экспертных заключений по фонетическому, графическому и семантическому сходству. Результат: иск удовлетворён в полном объёме; регистрация конкурента аннулирована в однородных классах МКТУ; взысканы судебные расходы 400 000 ₸; возвращена госпошлина.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Барбершоп: незарегистрированный бренд, которым пользовались с 2013 года</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Клиент использовал бренд с 2013 года без регистрации. В 2016 году иностранная компания зарегистрировала знак на себя, а в 2024 году потребовала 1,3 млн тенге и запрет на использование. Подан иск об аннулировании регистрации по основанию неиспользования товарного знака в течение 3 лет. Результат: регистрация конкурента отменена; требования о выплате 1,3 млн тенге сняты; клиент зарегистрировал знак на себя; бизнес продолжил работу под своим брендом.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Reels, использованный конкурентами в рекламе услуг</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: защита авторских прав на аудиовизуальное произведение, незаконно использованное конкурентами в TikTok-рекламе с перенаправлением клиентов на сайт нарушителей. Ответчики ссылались на отсутствие знака охраны авторского права, «техническое воспроизведение» и отрицали использование. Результат: суд запретил использование произведения; взыскана компенсация 589 800 ₸; взысканы судебные расходы 112 976 ₸; факт нарушения авторских прав установлен судом.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Оспаривание регистрации товарного знака, сходного с общеизвестным</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: оспаривание регистрации товарного знака, сходного до степени смешения с общеизвестным товарным знаком №58. Подано возражение в Апелляционный совет, затем административный иск на решение Апелляционного совета Минюста. Представлены правовые аргументы по статьям 7, 23 и 24 Закона о товарных знаках, дело доведено до апелляции и кассации. Результат: решение Апелляционного совета признано незаконным; регистрация товарного знака признана недействительной; судебная коллегия оставила решение в силе; Верховный Суд подтвердил правовую позицию.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Салон красоты и студия наращивания ресниц</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: защита бренда и уникальной авторской техники в сфере beauty-услуг. Результат: зарегистрирован товарный знак ON the TOP STUDIO; оформлено авторское свидетельство на технику наращивания ресниц.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Российский блогер, фитнес-эксперт, 770 000+ подписчиков</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: юридическая защита авторского онлайн-курса «Мимикрия под голод (FMD-протокол)». Важно было защитить уникальную методику и закрепить исключительные права на образовательный продукт с международной аудиторией. Результат: оформлено охранное свидетельство; зафиксировано авторство методики; обеспечена правовая охрана в большинстве стран.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Крупный курортный и туристический комплекс</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: построение комплексной системы защиты интеллектуальной собственности компании. Результат: построение IP-системы под ключ; регистрация товарных знаков; положение о коммерческой тайне; защита служебных объектов интеллектуальной собственности; регистрация мобильного приложения.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
+            <hr class="cases-divider" />
+
+            <div class="case-list">
+              <div class="case-item">
+                <button class="case-btn" type="button">
                   <span>Международный финансовый холдинг</span>
-                  <span class="faq-icon">+</span>
+                  <span class="case-icon">+</span>
                 </button>
-                <div class="faq-answer">
-                  <p>Запрос: правовая охрана бренда при запуске нескольких бизнес-направлений одновременно. Результат: обеспечена защита банковских услуг, брокерской деятельности, страхования, цифровых финансовых сервисов и мобильных решений.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Официальный дистрибутор продукции в Республике Казахстан</span>
-                  <span class="faq-icon">+</span>
+                <div class="case-body"><div class="case-inner">
+                  <p>Правовая охрана бренда при запуске нескольких бизнес-направлений одновременно. Построение комплексной системы защиты интеллектуальной собственности компании.</p>
+                </div></div>
+              </div>
+              <div class="case-item">
+                <button class="case-btn" type="button">
+                  <span>Казахстанский производитель сухих строительных смесей</span>
+                  <span class="case-icon">+</span>
                 </button>
-                <div class="faq-answer">
-                  <p>Запрос: прекратить незаконное использование бренда на Kaspi и открепить недобросовестных продавцов от карточки товара. Результат: заключен и зарегистрирован лицензионный договор; 200 000 ₸ взыскано в досудебном порядке; конкуренты открепились от карточки.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Сделка с международным инвестором</span>
-                  <span class="faq-icon">+</span>
+                <div class="case-body"><div class="case-inner">
+                  <p>Признание ключевых брендов компании общеизвестными на территории РК. Аннулирование регистрации сходного товарного знака конкурента с более поздним приоритетом.</p>
+                </div></div>
+              </div>
+              <div class="case-item">
+                <button class="case-btn" type="button">
+                  <span>Официальный дистрибутор продукции в РК</span>
+                  <span class="case-icon">+</span>
                 </button>
-                <div class="faq-answer">
-                  <p>Запрос: юридическое сопровождение перехода портфеля товарных знаков и защита интеллектуальных активов компании в рамках сделки с международным инвестором. Результат: портфель товарных знаков защищён и структурирован; IP-активы сохранены при продаже 75% доли; сделка закрыта без IP-рисков; обеспечена юридическая чистота брендов.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Признание ключевых брендов общеизвестными</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Запрос: признание ключевых брендов компании общеизвестными на территории Республики Казахстан. Результат: товарные знаки признаны общеизвестными; предоставлена расширенная правовая охрана; защита распространяется на все товары и услуги; существенно усилена позиция компании в спорах с конкурентами; повышена инвестиционная ценность брендов.</p>
-                </div>
-              </article>
+                <div class="case-body"><div class="case-inner">
+                  <p>Прекращение незаконного использования бренда на Kaspi и открепление недобросовестных продавцов от карточки товара. Защита 5 товарных знаков от незаконного использования на упаковке.</p>
+                </div></div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="services" data-reveal>
+
+        <!-- ======================== REVIEWS ======================== -->
+        <section class="section">
           <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Услуги</div>
+            <div class="reviews-topbar">
               <div>
-                <h2>Мои <span class="accent-word">услуги</span></h2>
+                <span class="eyebrow">Отзывы</span>
+                <h2 data-reveal>Говорят<br><em>клиенты</em></h2>
+              </div>
+              <div class="reviews-controls">
+                <button class="reviews-ctrl" type="button" id="revPrev" aria-label="Назад">&#8592;</button>
+                <button class="reviews-ctrl" type="button" id="revNext" aria-label="Вперёд">&#8594;</button>
               </div>
             </div>
 
-            <div class="services-feature-grid">
-              <a class="service-panel service-panel-dark" href="./trademark.html">
-                <svg class="service-deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2" class="draw-path" />
-                  <polyline points="2 17 12 22 22 17" class="draw-path delay-1" />
-                  <polyline points="2 12 12 17 22 12" class="draw-path delay-2" />
-                </svg>
-                <span class="service-index">01</span>
-                <h3>Товарный знак</h3>
-                <p>Закрепление исключительных прав на бренд, запрет третьим лицам использовать сходные обозначения, защита от копирования, возможность использования во франшизах и рекламе, повышение стоимости бизнеса, выход на маркетплейсы и судебная защита.</p>
-                <span class="text-link">Перейти на страницу</span>
-              </a>
+            <div class="reviews-track" data-reviews-track>
 
-              <a class="service-panel" href="./copyright.html">
-                <svg class="service-deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" class="draw-path" />
-                  <polyline points="14 2 14 8 20 8" class="draw-path delay-1" />
-                  <circle cx="12" cy="15" r="3" class="draw-path delay-2" />
-                  <path d="M13.5 13.5A2.5 2.5 0 0 0 10 15a2.5 2.5 0 0 0 3.5 1.5" class="draw-path delay-3" />
-                </svg>
-                <span class="service-index">02</span>
-                <h3>Авторское право</h3>
-                <p>Регистрация авторских прав как инструмент защиты от копирования, быстрого реагирования на нарушения, монетизации интеллектуального продукта и масштабирования через партнёров.</p>
-                <span class="text-link">Перейти на страницу</span>
-              </a>
-            </div>
-
-            <div class="services-side-note">
-              <svg class="doc-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-                <line x1="16" y1="13" x2="8" y2="13" />
-                <line x1="16" y1="17" x2="8" y2="17" />
-                <line x1="10" y1="9" x2="8" y2="9" />
-              </svg>
-              <span class="services-side-note-label">Прочие услуги</span>
-              <p>
-                Индивидуальные консультации, проведение поиска товарных знаков,
-                внесение изменений в Госреестр ТЗ, продление срока действия, признание знака общеизвестным,
-                экспертиза договоров и другие задачи по защите интеллектуальной собственности.
-              </p>
-              <div class="hero-actions" style="margin-top: 18px;">
-                <a class="btn btn-primary" href="./other.html">Открыть прочие услуги</a>
+              <div class="review-card" data-reveal>
+                <span class="review-quote-mark">&ldquo;</span>
+                <p>Айнура очень грамотный специалист. Всё чётко, по полочкам, по делу. Рекомендую всем, кто хочет защитить свой бренд.</p>
+                <span class="review-author">SIS&amp;BRO</span>
+                <span class="review-role">Защита интеллектуальной собственности</span>
               </div>
+
+              <div class="review-card" data-reveal style="--reveal-delay:80">
+                <span class="review-quote-mark">&ldquo;</span>
+                <p>Был бой 2 недели, но в итоге все 3 аккаунта с нашим названием сменили названия. Спасибо за регистрацию ТЗ и письмо!</p>
+                <span class="review-author">KAMBO</span>
+                <span class="review-role">Регистрация товарного знака</span>
+              </div>
+
+              <div class="review-card" data-reveal style="--reveal-delay:160">
+                <span class="review-quote-mark">&ldquo;</span>
+                <p>Спасибо большое за проделанную работу! Думаю, что нужно все свои курсы защитить — обязательно обращусь снова.</p>
+                <span class="review-author">Мимикрия под голод</span>
+                <span class="review-role">Защита авторского права</span>
+              </div>
+
+              <div class="review-card" data-reveal style="--reveal-delay:80">
+                <span class="review-quote-mark">&ldquo;</span>
+                <p>Спасибо за поддержку! Для нас это волнительно, но мы всегда за правду. Вы большая молодец!</p>
+                <span class="review-author">LUGX</span>
+                <span class="review-role">Досудебное взыскание компенсации</span>
+              </div>
+
+              <div class="review-card" data-reveal style="--reveal-delay:160">
+                <span class="review-quote-mark">&ldquo;</span>
+                <p>Прекрасно выполняете свою работу. Спасибо! Усильте защиту бренда — регистрация даёт уверенность в охране.</p>
+                <span class="review-author">SHOQANSUITS</span>
+                <span class="review-role">Регистрация товарного знака</span>
+              </div>
+
             </div>
           </div>
         </section>
 
-        <section class="section testimonials" id="reviews" data-reveal>
+
+        <!-- ======================== FAQ ======================== -->
+        <section class="section section-surface">
           <div class="container">
-            <div class="testimonials-topbar">
-              <div class="section-head testimonials-head">
-                <div class="eyebrow">Отзывы</div>
-                <div>
-                  <h2>
-                    <svg class="quote-svg" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" class="draw-path" />
-                      <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" class="draw-path delay-1" />
-                    </svg>
-                    Наши клиенты нас рекомендуют
-                  </h2>
-                  <p>Короткие отзывы о том, как проходит работа: спокойно, по делу и с понятным результатом.</p>
-                </div>
-              </div>
-
-              <div class="testimonials-controls" aria-label="Навигация по отзывам">
-                <button class="testimonials-control" type="button" data-testimonials-prev aria-label="Предыдущие отзывы">
-                  <span aria-hidden="true">←</span>
-                </button>
-                <button class="testimonials-control" type="button" data-testimonials-next aria-label="Следующие отзывы">
-                  <span aria-hidden="true">→</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="testimonials-carousel" data-testimonials-track>
-              <article class="testimonial-slide">
-                <strong>SIS&amp;BRO</strong>
-                <p>Айнура очень грамотный специалист. Она действительно помогает, объясняет, в каких случаях нужен товарный знак и как обезопасить себя. Все по делу, четко, по полочкам.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>KAMBO</strong>
-                <p>Спасибо за форму письма: бой был две недели, но в итоге все аккаунты с нашим названием сменили названия. Главное результат.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>Мимикрия под голод</strong>
-                <p>Спасибо за проделанную работу. Теперь хочется защитить и остальные курсы.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>LUGX</strong>
-                <p>Спасибо за поддержку. Для нас это волнительно, но мы всегда за правду, чтобы все было по-честному.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>SHOQANSUITS</strong>
-                <p>Регистрация товарного знака усиливает защиту бренда и дает уверенность, что имя и репутация бизнеса находятся под надежной охраной.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>Аты Шулы Донер</strong>
-                <p>Вы прекрасно выполняете свою работу. Спасибо за результат и внимательность к деталям.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>Лесоруб</strong>
-                <p>Спасибо большое за все, что вы делаете. Очень ценим вашу вовлеченность и поддержку.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>М.ДВЕРИ</strong>
-                <p>Отлично. Спасибо вам большое за ваши труды и спокойное сопровождение процесса.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>CAPUSTA</strong>
-                <p>Спасибо большое за ваши старания. Чувствуется профессиональный подход и ответственность.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>FUEGO</strong>
-                <p>Спасибо большое за все. Очень радует, когда сложный процесс идет спокойно и с результатом.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>Health Priority</strong>
-                <p>Отличная новость, спасибо за помощь. Вы потрудились на славу.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>ishq</strong>
-                <p>Спасибо большое за профессионализм и уверенное ведение задачи.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>JYLDAM</strong>
-                <p>Супер. Спасибо за регистрацию десктопного приложения и четкую коммуникацию.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>KARANAR</strong>
-                <p>Хотели бы выразить огромную благодарность за помощь в регистрации товарного знака Айнуре Сериковне.</p>
-              </article>
-              <article class="testimonial-slide">
-                <strong>ModernHouse</strong>
-                <p>Все отлично, благодарю. Спасибо большое за вашу работу и аккуратное сопровождение.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="faq" data-reveal>
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">FAQ</div>
-              <div>
-                <h2>Частые <span class="accent-word">вопросы</span></h2>
-                <p>Рациональный блок доверия: основные вопросы, которые чаще всего возникают до старта работы.</p>
-              </div>
-            </div>
-
             <div class="faq-layout">
-              <aside class="faq-intro-card">
-                <span class="faq-intro-label">Навигация по вопросам</span>
-                <h3>Коротко о том, что чаще всего спрашивают перед началом работы</h3>
-                <p>Собрала основные вопросы по товарным знакам, авторскому праву, предварительным отказам и защите интеллектуальных активов в бизнесе.</p>
-                <div class="faq-intro-points">
-                  <span>Товарные знаки</span>
-                  <span>Авторское право</span>
-                  <span>Споры и отказы</span>
-                  <span>Сделки и инвестиции</span>
-                </div>
-              </aside>
 
-              <div class="faq-list faq-list-main">
-              <article class="faq-item is-open">
-                <button class="faq-question" type="button">
-                  <span>Нужно ли регистрировать товарный знак, если я уже давно использую бренд?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Да. Использование без регистрации не даёт исключительного права. Без свидетельства вы не сможете эффективно запрещать конкурентам использование обозначения, защищаться от претензий и масштабировать бизнес через франшизу или лицензирование.</p>
+              <div class="faq-aside" data-reveal>
+                <span class="faq-aside-label">FAQ</span>
+                <h3>Часто задают</h3>
+                <p>Собрала ответы на вопросы, которые слышу чаще всего.</p>
+                <div class="faq-tags">
+                  <span class="faq-tag">Товарные знаки</span>
+                  <span class="faq-tag">Сроки</span>
+                  <span class="faq-tag">Стоимость</span>
+                  <span class="faq-tag">Патенты</span>
                 </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Что делать, если пришёл предварительный отказ?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Предварительный отказ — это рабочий этап. Анализируются причины, формируется правовая позиция и подаётся мотивированный ответ или возражение. Во многих случаях регистрация возможна при правильно выстроенной тактике.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Что можно защитить авторским правом?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Онлайн-курсы, методики, тексты, дизайн, фотографии, программы для ЭВМ, базы данных, сценарии, презентации, аудио- и видеоконтент. Охраняется форма выражения, структура и конкретное воплощение идеи.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Что даёт признание товарного знака общеизвестным?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Общеизвестный знак получает расширенную охрану фактически в отношении всех товаров и услуг, независимо от классов МКТУ. Это высший уровень защиты бренда и серьёзное усиление позиции в спорах.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Как защитить интеллектуальную собственность при привлечении инвестора или продаже доли бизнеса?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Перед сделкой необходимо провести аудит портфеля товарных знаков и других объектов ИС, проверить чистоту прав, срок их действия, наличие лицензионных договоров и рисков оспаривания. Неподготовленная IP-структура может снизить стоимость бизнеса или сорвать сделку. Грамотно выстроенная система, наоборот, повышает инвестиционную привлекательность и усиливает позицию собственника в переговорах.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Нужно ли регистрировать авторское право, если оно возникает автоматически?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Авторское право возникает с момента создания произведения, но регистрация фиксирует дату и авторство. Это существенно упрощает защиту в случае копирования и усиливает позицию в суде.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Сколько длится регистрация товарного знака?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>В среднем 7 месяцев при отсутствии споров и отказов. В сложных случаях срок зависит от позиции экспертизы и наличия конфликтующих обозначений.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Зачем включать товарный знак в Таможенный реестр?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Это позволяет блокировать ввоз контрафактной продукции на границе. Таможенные органы приостанавливают выпуск подозрительных товаров и уведомляют правообладателя.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Можно ли защитить бренд при выходе на международный рынок?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Да. Возможна международная регистрация через Мадридскую систему или национальные процедуры в выбранных странах. Стратегия определяется с учётом географии бизнеса и бюджета.</p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button">
-                  <span>Что делать, если конкурент зарегистрировал сходный товарный знак?</span>
-                  <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Возможны несколько стратегий: подача возражения в Апелляционный совет, иск о признании регистрации недействительной, аннулирование по неиспользованию, защита через статус общеизвестного знака. Тактика зависит от стадии регистрации и доказательной базы. Во многих случаях права можно восстановить даже спустя несколько лет после регистрации конкурента.</p>
-                </div>
-              </article>
               </div>
+
+              <div class="faq-list" data-reveal style="--reveal-delay:100">
+                <div class="faq-item">
+                  <button class="faq-btn" type="button">
+                    <span>Сколько стоит зарегистрировать товарный знак?</span>
+                    <span class="faq-plus">+</span>
+                  </button>
+                  <div class="faq-answer"><div class="faq-answer-inner">
+                    <p>Стоимость зависит от количества классов МКТУ и юрисдикций. Пошлина + гонорар рассчитываются индивидуально. Оставьте заявку — пришлю смету бесплатно.</p>
+                  </div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button">
+                    <span>Как долго длится регистрация?</span>
+                    <span class="faq-plus">+</span>
+                  </button>
+                  <div class="faq-answer"><div class="faq-answer-inner">
+                    <p>В Казахстане — 9–18 месяцев. Международная через ВОИС — 12–18 месяцев. Заявку подаём быстро, остальное зависит от регулятора.</p>
+                  </div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button">
+                    <span>Можно ли зарегистрировать чужой логотип?</span>
+                    <span class="faq-plus">+</span>
+                  </button>
+                  <div class="faq-answer"><div class="faq-answer-inner">
+                    <p>Нет — это противоречит закону. Но если конкурент получил свидетельство на сходный знак, мы можем подать возражение и оспорить его.</p>
+                  </div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button">
+                    <span>Нужен ли патент, если есть товарный знак?</span>
+                    <span class="faq-plus">+</span>
+                  </button>
+                  <div class="faq-answer"><div class="faq-answer-inner">
+                    <p>Это разные объекты. Товарный знак — бренд, патент — техническое решение. Если есть уникальная технология — нужны оба.</p>
+                  </div></div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-btn" type="button">
+                    <span>Что делать, если мой бренд уже нарушают?</span>
+                    <span class="faq-plus">+</span>
+                  </button>
+                  <div class="faq-answer"><div class="faq-answer-inner">
+                    <p>Фиксируем нарушение, направляем претензию, при необходимости — жалоба или иск. Свяжитесь сразу после обнаружения.</p>
+                  </div></div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
 
-        <section class="section contact-section" id="consultation" data-reveal>
+
+        <!-- ======================== CTA — fullwidth photo ======================== -->
+        <section class="cta-photo" id="consultation" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80&auto=format')">
+          <div class="cta-photo-overlay"></div>
+          <div class="container cta-photo-content">
+            <span class="eyebrow eyebrow-light" data-reveal>Записаться</span>
+            <h2 data-reveal>Первая<br><em>консультация</em><br>бесплатно</h2>
+            <p data-reveal style="--reveal-delay:80">Расскажите о ситуации — за 30 минут разберём, что нужно защитить и как это сделать.</p>
+            <div class="cta-group" data-reveal style="--reveal-delay:160">
+              <a href="https://wa.me/77054816699" class="btn btn-light" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:rysbekova-ainura@mail.ru" class="btn btn-ghost-light">rysbekova-ainura@mail.ru</a>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ======================== CONTACTS ======================== -->
+        <section class="section contacts-section" id="contacts">
           <div class="container">
-            <div class="contact-card">
-              <div class="eyebrow">Консультация</div>
-              <h2>Не нашли свой вопрос? <span class="accent-word accent-word-light">Опишите ситуацию</span></h2>
-              <p>Разберём риски и предложим стратегию защиты.</p>
-              <div class="contact-actions">
-                <a class="btn btn-primary" href="https://wa.me/77054816699" target="_blank" rel="noreferrer">Написать в WhatsApp</a>
+            <div class="contacts-minimal">
+              
+              <div class="contacts-head-center" data-reveal>
+                <span class="eyebrow">Контакты</span>
+                <h2>Будем на связи</h2>
               </div>
+
+              <div class="contacts-content-minimal">
+                
+                <div class="contact-group-minimal" data-reveal style="--reveal-delay:80">
+                  <span class="contact-sub">Свяжитесь напрямую</span>
+                  <a href="tel:+77054816699" class="contact-hero-link">+7 705 481-66-99</a>
+                  <div class="contact-links-row">
+                    <a href="https://wa.me/77054816699" target="_blank" rel="noopener" class="btn-contact-minimal">WhatsApp</a>
+                    <a href="https://t.me/ainura_ip" target="_blank" rel="noopener" class="btn-contact-minimal">Telegram</a>
+                  </div>
+                </div>
+
+                <div class="contact-divider-minimal" data-reveal style="--reveal-delay:120"></div>
+
+                <div class="contact-group-minimal" data-reveal style="--reveal-delay:160">
+                  <span class="contact-sub">Напишите нам</span>
+                  <a href="mailto:rysbekova-ainura@mail.ru" class="contact-hero-link">rysbekova-ainura@mail.ru</a>
+                </div>
+
+                <div class="contact-divider-minimal" data-reveal style="--reveal-delay:200"></div>
+
+                <div class="contacts-footer-minimal" data-reveal style="--reveal-delay:240">
+                  <div class="contact-footer-item">
+                    <span class="contact-sub">Офис</span>
+                    <p>Астана, пр. Аль-Фараби 11/1, БЦ «Нур-Тау»</p>
+                  </div>
+                  <div class="contact-footer-item">
+                    <span class="contact-sub">График</span>
+                    <p>Пн–Пт: 9:00 — 18:00</p>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
         </section>
 
-        <section class="section" id="contacts" data-reveal>
-          <div class="container contact-grid">
-            <article class="content-card contact-info-card">
-              <h3>Контакты</h3>
-              <div class="contact-lines">
-                <a href="mailto:rysbekova-ainura@mail.ru">E-mail: rysbekova-ainura@mail.ru</a>
-                <a href="tel:+77054816699">Тел: +7 705 481-66-99</a>
-                <span>Адрес проживания: г. Астана, 010000, пр. Аль-Фараби, д. 11/1, кв. 205</span>
-              </div>
-            </article>
-
-            <article class="contact-form-card">
-              <h3>Реквизиты</h3>
-              <p>ИП Рысбекова Айнура Сериковна<br />ИИН 850617450628</p>
-              <p>KZ49722S000001698012<br />АО "Kaspi Bank"<br />БИК CASPKZKA</p>
-            </article>
-          </div>
-        </section>
       </main>
 
+      <!-- FOOTER -->
       <footer class="site-footer">
-        <div class="container footer-row">
-          <div>
-            <a class="brand footer-brand" href="./index.html">Айнура Рысбекова</a>
-            <p class="footer-copy">© 2026 Айнура Рысбекова</p>
+        <div class="container">
+          <div class="footer-row">
+            <div>
+              <span class="footer-brand">Айнура Рысбекова</span>
+              <p class="footer-copy">&copy; 2026 Патентный поверенный РК. Все права защищены.</p>
+            </div>
+            <nav class="footer-nav">
+              <a href="./index.html">Главная</a>
+              <a href="./trademark.html">Товарные знаки</a>
+              <a href="./copyright.html">Авторское право</a>
+              <a href="./other.html">Прочие услуги</a>
+            </nav>
           </div>
-          <nav class="footer-nav">
-            <a href="./index.html#experience">Опыт</a>
-            <a href="./index.html#about">Обо мне</a>
-            <a href="./index.html#services">Услуги</a>
-            <a href="./index.html#reviews">Отзывы</a>
-            <a href="./index.html#contacts">Контакты</a>
-            <a href="./index.html#top">Наверх</a>
-          </nav>
         </div>
       </footer>
-    </div>
 
+      <button class="back-to-top" data-back-to-top aria-label="Наверх">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M9 15V3M9 3L3 9M9 3L15 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
