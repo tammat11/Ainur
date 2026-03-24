@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Temporary/debug artifacts generated during local iteration
+.*
+
+# keep this ignore file
+!.gitignore
+
+# local reference folders
+примеры карточек/
+Фотки Айнуры/
+
+# docs not needed for deploy
+*.pdf
+
+# local photo source folders
+Фотки*/
+примеры*/
