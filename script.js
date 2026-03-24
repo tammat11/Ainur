@@ -40,45 +40,7 @@ const syncHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);
 };
 
-/* ── Parallax ────────────────────────────────────────────────────── */
-const parallaxEls = document.querySelectorAll("[data-parallax]");
 const backToTopBtn = document.querySelector("[data-back-to-top]");
-const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-
-const syncParallax = () => {
-  if (isTouch) return;
-  const wh = window.innerHeight;
-  parallaxEls.forEach((el) => {
-    const parent = el.parentElement;
-    const rect = parent.getBoundingClientRect();
-    if (rect.bottom < 0 || rect.top > wh) return;
-    const center = rect.top + rect.height / 2;
-    const offset = (center - wh / 2) * 0.25;
-    el.style.transform = `translate3d(0, ${offset}px, 0)`;
-  });
-
-  /* About background letter parallax */
-  const aboutBgLetter = document.querySelector(".about-bg-letter");
-  if (aboutBgLetter) {
-    const rect = aboutBgLetter.parentElement.getBoundingClientRect();
-    if (rect.top < wh && rect.bottom > 0) {
-      const offset = rect.top * 0.1;
-      aboutBgLetter.style.transform = `translateY(${offset}px)`;
-    }
-  }
-
-  /* About side label parallax */
-  const sideLabel = document.querySelector("[data-parallax-side]");
-  if (sideLabel) {
-    const rect = sideLabel.parentElement.getBoundingClientRect();
-    if (rect.top < wh && rect.bottom > 0) {
-      const offset = rect.top * 0.05;
-      sideLabel.style.transform = `translateY(calc(-50% + ${offset}px)) rotate(-180deg)`;
-    }
-  }
-
-  /* Contacts side label parallax logic removed as element is gone */
-};
 
 const syncBackToTop = () => {
   backToTopBtn?.classList.toggle("is-visible", window.scrollY > 600);
@@ -90,7 +52,6 @@ const onScroll = () => {
   raf = requestAnimationFrame(() => {
     syncHeader();
     syncProgress();
-    syncParallax();
     syncBackToTop();
     raf = null;
   });
@@ -190,7 +151,6 @@ if (loader && !prefersReducedMotion.matches) {
 /* ── Init ─────────────────────────────────────────────────────────── */
 syncHeader();
 syncProgress();
-syncParallax();
 markCurrentLinks();
 window.addEventListener("scroll", onScroll, { passive: true });
 window.addEventListener("resize", syncProgress);
@@ -356,3 +316,48 @@ function initObservers() {
     }
   }
 }
+
+/* ── Модальные окна (пакеты услуг, гайд) ─────────────────────────── */
+(() => {
+  const siteModal = document.getElementById("siteModal");
+  const siteModalBody = document.getElementById("siteModalBody");
+  if (!siteModal || !siteModalBody) return;
+
+  const openModal = (tplId) => {
+    const tpl = document.getElementById(tplId);
+    if (!tpl) return;
+    siteModalBody.replaceChildren();
+    siteModalBody.appendChild(tpl.content.cloneNode(true));
+    siteModal.hidden = false;
+    siteModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("site-modal-open");
+    siteModal.querySelector(".site-modal__close")?.focus();
+  };
+
+  const closeModal = () => {
+    siteModal.hidden = true;
+    siteModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("site-modal-open");
+    siteModalBody.replaceChildren();
+  };
+
+  document.querySelectorAll("[data-modal-open]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-modal-open");
+      if (id) openModal(id);
+    });
+  });
+
+  siteModal.querySelectorAll("[data-modal-close]").forEach((el) => {
+    el.addEventListener("click", closeModal);
+  });
+
+  siteModal.addEventListener("click", (e) => {
+    const t = e.target;
+    if (t instanceof Element && t.classList.contains("site-modal__backdrop")) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !siteModal.hidden) closeModal();
+  });
+})();

@@ -7,8 +7,14 @@
     <title>Айнура Рысбекова — Патентный поверенный РК</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@300..800&family=Caveat:wght@400..700&display=swap&subset=cyrillic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Айнура Рысбекова — Патентный поверенный РК" />
+    <meta property="og:description" content="Защита интеллектуальной собственности, товарных знаков и авторских прав в Казахстане." />
+    <meta property="og:image" content="https://rysbekova.com/og-image.jpg" />
+    <meta property="og:type" content="website" />
   </head>
   <body class="is-loading">
 
@@ -44,14 +50,15 @@
 
         <!-- ======================== HERO — fullscreen photo ======================== -->
         <section class="hero-home">
-            <div class="parallax-bg" data-parallax style="background-image: url('https://optim.tildacdn.pro/tild6534-3735-4766-b365-663538343330/-/format/webp/noroot.png.webp')"></div>
+            <div class="hero-bg-layer" style="background-image: url('https://optim.tildacdn.pro/tild6534-3735-4766-b365-663538343330/-/format/webp/noroot.png.webp')"></div>
           <div class="hero-overlay"></div>
+          <div class="hero-vignette" aria-hidden="true"></div>
 
           <div class="hero-content">
             <div class="hero-inner">
               <p class="hero-tagline">Патентный поверенный Республики Казахстан</p>
+              <p class="hero-tagline hero-tagline--sub">Бизнес-юрист по защите интеллектуальной собственности</p>
               <h1 class="hero-name" data-split>Айнура<br>Рысбекова</h1>
-              <p class="hero-subtitle">Защита интеллектуальной собственности вашего бизнеса.<br>16 лет практики. Более 300 успешных регистраций.</p>
               <div class="hero-cta-group">
                 <a href="#consultation" class="btn btn-primary">Получить консультацию</a>
                 <a href="./trademark.html" class="btn btn-ghost-light">Услуги и цены</a>
@@ -64,7 +71,7 @@
             <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path class="arrow-path" d="M12 5v14M7 14l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <span class="scroll-text">Scroll to explore</span>
+            <span class="scroll-text">Листайте вниз</span>
           </div>
 
           <div class="proof-band">
@@ -76,11 +83,11 @@
                 </div>
                 <div class="proof-cell" data-reveal style="--reveal-delay:60">
                   <span class="proof-number" data-count-to="300" data-count-suffix="+">0</span>
-                  <span class="proof-label">регистраций объектов ИС</span>
+                  <span class="proof-label">зарегистрированных товарных знаков</span>
                 </div>
                 <div class="proof-cell" data-reveal style="--reveal-delay:120">
-                  <span class="proof-number" data-count-to="5">0</span>
-                  <span class="proof-label">глобальных юрисдикций</span>
+                  <span class="proof-number" data-count-to="130" data-count-suffix="+">0</span>
+                  <span class="proof-label">стран — международная охрана (ВОИС)</span>
                 </div>
                 <div class="proof-cell" data-reveal style="--reveal-delay:180">
                   <span class="proof-number" data-count-to="80" data-count-prefix="до " data-count-suffix="%">0</span>
@@ -93,11 +100,10 @@
 
 
         <!-- ======================== ABOUT ======================== -->
-        <section class="section about-section">
+        <section class="section about-section" id="about">
           <div class="container">
             <div class="about-grid">
-              <div class="about-bg-letter">R</div>
-              <div class="about-side-label" data-parallax-side>EXPERTISE & LAW</div>
+
               
               <div class="about-text">
                 <div class="about-text-content" data-reveal>
@@ -105,14 +111,13 @@
                   <h2>Защита бизнеса<br><em>с первого шага</em></h2>
                   <svg class="h-line" viewBox="0 0 100 2" preserveAspectRatio="none"><path d="M0 1 L100 1" stroke="var(--accent)" stroke-width="2" /></svg>
                   <p>
-                    Я — аттестованный патентный поверенный РК и IP-юрист с 16-летним стажем. Помогаю предпринимателям, стартапам и крупным компаниям защищать бренды, патенты и авторские права.
+                    Я — аттестованный патентный поверенный РК и IP-юрист с 16-летним стажем. Помогаю предпринимателям, стартапам и крупным компаниям защищать бренды и авторские права.
                   </p>
                   
                   <ul class="about-list">
-                    <li>Регистрация товарных знаков в 5 юрисдикциях</li>
-                    <li>Патенты, промышленные образцы</li>
+                    <li>Регистрация товарных знаков в Казахстане и по процедуре ВОИС (Мадрид)</li>
                     <li>Авторское право и лицензирование</li>
-                    <li>IP-аудит и судебная защита</li>
+                    <li>Аудит ИС и судебная защита</li>
                   </ul>
                   
                   <div class="about-signature">Ainura Rysbekova</div>
@@ -125,24 +130,10 @@
 
               <div class="about-photo-wrap" data-reveal="clip" style="--reveal-delay:150">
                 <img src="https://optim.tildacdn.pro/tild3762-6435-4736-b065-353264356531/-/format/webp/e7f4821b-295a-4a36-a.jpg.webp" alt="Айнура Рысбекова — патентный поверенный" />
-                <div class="about-experience-badge"><b>16</b> <span>лет практики</span></div>
+
                 
                 <!-- SVG Stamp -->
-                <div class="about-svg-stamp">
-                  <svg viewBox="0 0 100 100">
-                    <defs>
-                      <path id="stampPath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
-                    </defs>
-                    <text fill="currentColor" font-family="'Manrope', sans-serif" font-size="10.5" font-weight="600" letter-spacing="0.12em">
-                      <textPath href="#stampPath" startOffset="0%">
-                        ПАТЕНТНЫЙ ПОВЕРЕННЫЙ • IP ЮРИСТ •
-                      </textPath>
-                    </text>
-                  </svg>
-                  <div class="stamp-center-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -178,16 +169,12 @@
                 <span>Товарные знаки</span>
               </button>
               <button class="service-tab" data-tab="1">
-                <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 006 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-                <span>Патенты</span>
-              </button>
-              <button class="service-tab" data-tab="2">
                 <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l5 2"/><path d="M2 2l2 5"/></svg>
                 <span>Авторское право</span>
               </button>
-              <button class="service-tab" data-tab="3">
+              <button class="service-tab" data-tab="2">
                 <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
-                <span>IP-аудит</span>
+                <span>Аудит ИС</span>
               </button>
             </div>
 
@@ -196,12 +183,12 @@
                 <div class="service-panel-text">
                   <span class="service-panel-num">01</span>
                   <h3>Регистрация товарных знаков</h3>
-                  <p>От поиска по базам до получения свидетельства. Работаю с НИИС Казахстана, ЕАПО, EUIPO, ВОИС и CNIPA. Полное сопровождение — от предварительной проверки до выдачи свидетельства.</p>
+                  <p>От поиска по базам до получения свидетельства. Работаю с НИИС Казахстана и системой ВОИС (Мадридское соглашение). Полное сопровождение — от предварительной проверки до выдачи свидетельства.</p>
                   <ul class="service-panel-list">
                     <li>Предварительный поиск по базам</li>
                     <li>Подготовка и подача заявки</li>
                     <li>Ведение делопроизводства и ответы на запросы</li>
-                    <li>Регистрация в 5 юрисдикциях</li>
+                    <li>Национальная регистрация и международная заявка через ВОИС</li>
                   </ul>
                   <a href="./trademark.html" class="btn btn-secondary">Подробнее</a>
                 </div>
@@ -213,29 +200,11 @@
               <div class="service-panel" data-panel="1">
                 <div class="service-panel-text">
                   <span class="service-panel-num">02</span>
-                  <h3>Патенты и промышленные образцы</h3>
-                  <p>Изобретения, полезные модели, промышленный дизайн. Подготовка описания, формулы, чертежей. Подача заявки и сопровождение экспертизы до получения патента.</p>
-                  <ul class="service-panel-list">
-                    <li>Патентный поиск и анализ патентоспособности</li>
-                    <li>Подготовка заявочной документации</li>
-                    <li>Сопровождение экспертизы</li>
-                    <li>Поддержание патента в силе</li>
-                  </ul>
-                  <a href="./other.html" class="btn btn-secondary">Подробнее</a>
-                </div>
-                <div class="service-panel-photo">
-                  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80&auto=format" alt="Патенты и промышленные образцы" />
-                </div>
-              </div>
-
-              <div class="service-panel" data-panel="2">
-                <div class="service-panel-text">
-                  <span class="service-panel-num">03</span>
                   <h3>Авторское право и лицензии</h3>
-                  <p>Депонирование произведений, подготовка лицензионных и авторских договоров. Защита от нарушений — от досудебных претензий до представительства в суде.</p>
+                  <p>Подготовка лицензионных и авторских договоров, сопровождение сделок с правами. Защита от нарушений — от досудебных претензий до представительства в суде.</p>
                   <ul class="service-panel-list">
-                    <li>Депонирование и регистрация авторских прав</li>
-                    <li>Лицензионные договоры</li>
+                    <li>Лицензионные и уступочные договоры</li>
+                    <li>Доказательная база и фиксация авторства</li>
                     <li>Претензии нарушителям</li>
                     <li>Судебная защита авторских прав</li>
                   </ul>
@@ -246,10 +215,10 @@
                 </div>
               </div>
 
-              <div class="service-panel" data-panel="3">
+              <div class="service-panel" data-panel="2">
                 <div class="service-panel-text">
-                  <span class="service-panel-num">04</span>
-                  <h3>IP-аудит и судебная защита</h3>
+                  <span class="service-panel-num">03</span>
+                  <h3>Аудит ИС и судебная защита</h3>
                   <p>Полная проверка портфеля интеллектуальной собственности. Анализ рисков, стратегия защиты. Досудебное урегулирование и представительство в судах всех инстанций.</p>
                   <ul class="service-panel-list">
                     <li>Аудит и оценка IP-активов</li>
@@ -260,7 +229,7 @@
                   <a href="./other.html" class="btn btn-secondary">Подробнее</a>
                 </div>
                 <div class="service-panel-photo">
-                  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80&auto=format" alt="IP-аудит и судебная защита" />
+                  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80&auto=format" alt="Аудит ИС и судебная защита" />
                 </div>
               </div>
             </div>
@@ -270,7 +239,7 @@
 
         <!-- ======================== PHOTO BREAK ======================== -->
         <section class="photo-break">
-          <div class="parallax-bg" data-parallax style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format')"></div>
+          <div class="hero-bg-layer" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format')"></div>
           <div class="photo-break-overlay"></div>
           <div class="photo-break-content" data-reveal>
             <span class="photo-break-number">300+</span>
@@ -290,51 +259,63 @@
             
             <div class="logo-grid-premium">
               <div class="logo-card" data-reveal style="--reveal-delay: 0">
-                <span>SIS&amp;BRO</span>
+                <img class="logo-card-img" src="./assets/logos/sisbro.png" alt="SIS&amp;BRO" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.src='./assets/logos/placeholder.png'" />
+                <span class="logo-card-text">SIS&amp;BRO</span>
                 <div class="logo-info">Защита бренда</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 50">
-                <span>KAMBO</span>
+                <img class="logo-card-img" src="./assets/logos/kambo.png" alt="KAMBO" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">KAMBO</span>
                 <div class="logo-info">Товарные знаки</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 100">
-                <span>LUGX</span>
+                <img class="logo-card-img" src="./assets/logos/lugx.png" alt="LUGX" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">LUGX</span>
                 <div class="logo-info">Судебные споры</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 150">
-                <span>SHOQAN</span>
-                <div class="logo-info">IP-аудит</div>
+                <img class="logo-card-img" src="./assets/logos/shoqan.png" alt="SHOQAN" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">SHOQAN</span>
+                <div class="logo-info">Аудит ИС</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 200">
-                <span>FUEGO</span>
+                <img class="logo-card-img" src="./assets/logos/fuego.png" alt="FUEGO" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">FUEGO</span>
                 <div class="logo-info">Авторское право</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 250">
-                <span>LESO RUB</span>
+                <img class="logo-card-img" src="./assets/logos/leso-rub.png" alt="LESO RUB" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">LESO RUB</span>
                 <div class="logo-info">Регистрация ТЗ</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 300">
-                <span>JYLDAM</span>
+                <img class="logo-card-img" src="./assets/logos/jyldam.png" alt="JYLDAM" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">JYLDAM</span>
                 <div class="logo-info">Защита бизнеса</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 350">
-                <span>ALINA Group</span>
+                <img class="logo-card-img" src="./assets/logos/alina-group.jpg" alt="ALINA Group" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">ALINA Group</span>
                 <div class="logo-info">Международная защита</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 400">
-                <span>BI Group</span>
-                <div class="logo-info">Патентный аудит</div>
+                <img class="logo-card-img" src="./assets/logos/bi-group.png" alt="BI Group" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">BI Group</span>
+                <div class="logo-info">Аудит ИС</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 450">
-                <span>Astana Hub</span>
+                <img class="logo-card-img" src="./assets/logos/astana-hub.png" alt="Astana Hub" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">Astana Hub</span>
                 <div class="logo-info">Защита IT-решений</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 500">
-                <span>Technodom</span>
+                <img class="logo-card-img" src="./assets/logos/technodom.png" alt="Technodom" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">Technodom</span>
                 <div class="logo-info">Охрана контента</div>
               </div>
               <div class="logo-card" data-reveal style="--reveal-delay: 550">
-                <span>Kaspi.kz</span>
+                <img class="logo-card-img" src="./assets/logos/kaspi.png" alt="Kaspi.kz" loading="lazy" width="160" height="48" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                <span class="logo-card-text">Kaspi.kz</span>
                 <div class="logo-info">Досудебная работа</div>
               </div>
             </div>
@@ -399,7 +380,7 @@
 
 
         <!-- ======================== FAQ ======================== -->
-        <section class="section section-surface">
+        <section class="section section-surface" id="faq">
           <div class="container">
             <div class="faq-layout">
 
@@ -411,7 +392,6 @@
                   <span class="faq-tag">Товарные знаки</span>
                   <span class="faq-tag">Сроки</span>
                   <span class="faq-tag">Стоимость</span>
-                  <span class="faq-tag">Патенты</span>
                 </div>
               </div>
 
@@ -422,7 +402,7 @@
                     <span class="faq-plus">+</span>
                   </button>
                   <div class="faq-answer"><div class="faq-answer-inner">
-                    <p>Стоимость зависит от количества классов МКТУ и юрисдикций. Пошлина + гонорар рассчитываются индивидуально. Оставьте заявку — пришлю смету бесплатно.</p>
+                    <p>Стоимость зависит от количества классов МКТУ и охвата (национальная регистрация в РК и/или международная заявка через ВОИС). Пошлина и гонорар рассчитываются индивидуально. Оставьте заявку — пришлю смету бесплатно.</p>
                   </div></div>
                 </div>
                 <div class="faq-item">
@@ -432,24 +412,6 @@
                   </button>
                   <div class="faq-answer"><div class="faq-answer-inner">
                     <p>В Казахстане — 9–18 месяцев. Международная через ВОИС — 12–18 месяцев. Заявку подаём быстро, остальное зависит от регулятора.</p>
-                  </div></div>
-                </div>
-                <div class="faq-item">
-                  <button class="faq-btn" type="button">
-                    <span>Можно ли зарегистрировать чужой логотип?</span>
-                    <span class="faq-plus">+</span>
-                  </button>
-                  <div class="faq-answer"><div class="faq-answer-inner">
-                    <p>Нет — это противоречит закону. Но если конкурент получил свидетельство на сходный знак, мы можем подать возражение и оспорить его.</p>
-                  </div></div>
-                </div>
-                <div class="faq-item">
-                  <button class="faq-btn" type="button">
-                    <span>Нужен ли патент, если есть товарный знак?</span>
-                    <span class="faq-plus">+</span>
-                  </button>
-                  <div class="faq-answer"><div class="faq-answer-inner">
-                    <p>Это разные объекты. Товарный знак — бренд, патент — техническое решение. Если есть уникальная технология — нужны оба.</p>
                   </div></div>
                 </div>
                 <div class="faq-item">
@@ -474,9 +436,10 @@
           <div class="container cta-photo-content">
             <span class="eyebrow eyebrow-light" data-reveal>Записаться</span>
             <h2 data-reveal>Первая<br><em>консультация</em><br>бесплатно</h2>
-            <p data-reveal style="--reveal-delay:80">Обсудим ваш случай и составим стратегию защиты.</p>
+            <p data-reveal style="--reveal-delay:80">Получите экспертный гайд по регистрации товарного знака. Обсудим ваш случай и составим стратегию защиты.</p>
             <div class="cta-group" data-reveal style="--reveal-delay:160">
               <a href="https://wa.me/77054816699" class="btn btn-light" target="_blank" rel="noopener">WhatsApp</a>
+              <button type="button" class="btn btn-ghost-light" data-modal-open="tpl-guide-tm">Получить гайд</button>
               <a href="mailto:rysbekova-ainura@mail.ru" class="btn btn-ghost-light">rysbekova-ainura@mail.ru</a>
             </div>
           </div>
@@ -524,6 +487,22 @@
                   </div>
                 </div>
 
+                <div class="contact-divider-minimal" data-reveal style="--reveal-delay:280"></div>
+
+                <div class="contact-requisites contact-group-minimal" data-reveal style="--reveal-delay:320">
+                  <span class="contact-sub">Реквизиты</span>
+                  <p class="contact-requisites-note">Для договора и выставления счёта. <strong>Заполните фактические данные</strong> (ИП/ТОО, ИИН/БИН, юр. адрес, банк, р/с, БИК, КБе).</p>
+                  <dl class="contact-requisites-list">
+                    <div><dt>Наименование</dt><dd>ИП Рысбекова Айнура Сериковна</dd></div>
+                    <div><dt>ИИН / БИН</dt><dd>850617450628</dd></div>
+                    <div><dt>Юридический адрес</dt><dd>г. Астана, 010000, пр. Аль-Фараби, д. 11/1, кв. 205</dd></div>
+                    <div><dt>Банк</dt><dd>АО «Kaspi Bank»</dd></div>
+                    <div><dt>р/с</dt><dd>KZ49722S000001698012</dd></div>
+                    <div><dt>БИК</dt><dd>CASPKZKA</dd></div>
+                    <div><dt>КБе</dt><dd>19</dd></div>
+                  </dl>
+                </div>
+
               </div>
 
             </div>
@@ -557,6 +536,21 @@
       </button>
 
     </div>
+
+    <div class="site-modal" id="siteModal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+      <div class="site-modal__backdrop" data-modal-close tabindex="-1"></div>
+      <div class="site-modal__panel">
+        <button type="button" class="site-modal__close" data-modal-close aria-label="Закрыть">&times;</button>
+        <div class="site-modal__body" id="siteModalBody"></div>
+      </div>
+    </div>
+
+    <template id="tpl-guide-tm">
+      <h2 class="modal-title">Гайд по регистрации товарного знака</h2>
+      <p>Напишите в WhatsApp — вышлю экспертный гайд и при необходимости коротко разберу ваш случай до консультации.</p>
+      <p class="modal-cta"><a href="https://wa.me/77054816699?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%21%20%D0%9F%D1%80%D0%BE%D1%88%D1%83%20%D0%B3%D0%B0%D0%B9%D0%B4%20%D0%BF%D0%BE%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8%20%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0." class="btn btn-secondary" target="_blank" rel="noopener">Перейти в WhatsApp</a></p>
+    </template>
+
     <script src="./script.js"></script>
   </body>
 </html>
