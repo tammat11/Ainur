@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260406-mobile46">
 </head>
 <body>
   <div class="page-shell">
@@ -23,12 +23,32 @@
             <li><a href="other.html">Прочие услуги</a></li>
           </ul>
           <a class="nav-cta" href="https://wa.me/77054816699" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="nav-burger" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+          </button>
         </nav>
+        <div class="mobile-nav-panel" id="mobile-nav-panel" hidden>
+          <div class="mobile-nav-backdrop" data-mobile-nav-close></div>
+          <div class="mobile-nav-sheet" role="dialog" aria-modal="true" aria-label="Навигация по сайту">
+            <div class="mobile-nav-head">
+              <span>Навигация</span>
+              <button class="mobile-nav-close" type="button" aria-label="Закрыть меню" data-mobile-nav-close>Закрыть</button>
+            </div>
+            <div class="mobile-nav-links">
+              <a href="#about">Обо мне</a>
+              <a href="trademark.html">Товарные знаки</a>
+              <a href="copyright.html">Авторское право</a>
+              <a href="other.html">Прочие услуги</a>
+              <a class="mobile-nav-whatsapp" href="https://wa.me/77054816699" target="_blank" rel="noopener">Написать в WhatsApp</a>
+            </div>
+          </div>
+        </div>
 
         <div class="hero-copy">
           <h1>Защита<br>Интеллекта</h1>
           <p class="hero-badge">Патентный поверенный Республики Казахстан</p>
-          <p class="hero-subcopy">Строим сильную правовую основу для брендов, авторских продуктов и бизнеса, который не хочет оставлять интеллектуальную собственность без защиты.</p>
+          <p class="hero-subcopy">Регистрирую знаки и защищаю бренд без лишней бюрократической херни.</p>
           <div class="hero-stats" aria-label="Опыт">
             <div class="hero-stat">
               <strong>300+</strong>
@@ -55,8 +75,7 @@
           </div>
           <div class="about-copy about-centered">
             <h2>Если вы можете это создать, мы можем это защитить.</h2>
-            <p>Я адаптирую правовую стратегию под каждый проект: от товарных знаков и авторских прав до сложных споров, переговоров и защиты интеллектуальных активов при масштабировании бизнеса.</p>
-            <a class="pill-button dark" href="https://wa.me/77054816699" target="_blank" rel="noopener">Связаться</a>
+            <p>Собираю защиту бренда, контента и прав под рост бизнеса.</p>
           </div>
           <div class="about-side about-side-right">
             <img src="assets/images/ainura-about-right.jpg" alt="Айнура Рысбекова — юридическое сопровождение бренда">
@@ -68,6 +87,11 @@
         <div class="need-layout">
           <article class="need-menu">
             <h3 class="need-menu-title">Кому это нужно</h3>
+            <div class="need-menu-copy">
+              <h2>Кому нужна защита бренда и контента</h2>
+              <p>Тем, кто растёт и не хочет терять права, деньги и позицию в переговорах.</p>
+              <a class="pill-button dark" href="#contact">Обсудить задачу</a>
+            </div>
             <ul>
               <li>Стартапы и новые проекты</li>
               <li>Действующий бизнес</li>
@@ -82,16 +106,15 @@
 
           <article class="need-feature card">
             <p class="eyebrow">Ключевое направление</p>
-            <h2>Кому нужна защита бренда, контента и интеллектуальных активов</h2>
-            <p>Собрала основные сегменты, где защита интеллектуальной собственности влияет не только на спокойствие, но и на рост, цену бизнеса и переговорную силу.</p>
+            <h2>Кому нужна защита бренда и контента</h2>
+            <p>Тем, кто растёт и не хочет терять права, деньги и позицию в переговорах.</p>
             <a class="pill-button dark" href="#contact">Обсудить задачу</a>
           </article>
 
           <aside class="need-cta">
             <p class="eyebrow light">Сопровождение под задачу</p>
-            <h3>Защита, которая держит рост, переговоры и споры.</h3>
-            <p>Выстраиваю правовую систему вокруг бренда, контента и digital-активов так, чтобы бизнес мог масштабироваться без слабых мест в правах.</p>
-            <a class="pill-button light" href="#contact">Связаться со мной</a>
+            <h3>Защита, которая держит рост.</h3>
+            <p>Выстраиваю систему прав так, чтобы бизнес масштабировался спокойно.</p>
           </aside>
         </div>
       </section>
@@ -99,9 +122,9 @@
       <section class="services-detail-section" id="services">
         <div class="services-showcase-head">
           <h2>Мои услуги</h2>
-          <p>Основные направления, с которыми я помогаю бизнесу, экспертам и digital-проектам защищать свои интеллектуальные активы.</p>
+          <p>Три ключевые зоны защиты.</p>
         </div>
-        <div class="services-showcase">
+        <div class="services-showcase services-showcase-static">
           <article class="service-showcase-card">
             <div class="service-showcase-tab"></div>
             <div class="service-showcase-body">
@@ -112,20 +135,11 @@
                 <li>Продление срока действия и изменения в реестре</li>
                 <li>Признание знака общеизвестным</li>
               </ul>
-              <a class="service-showcase-link" href="trademark.html">Подробнее</a>
+              <a class="service-showcase-link" href="trademark.html">Перейти</a>
             </div>
           </article>
-          <article class="service-showcase-card featured">
-            <div class="service-showcase-visual">
-              <div class="service-chart-card back"></div>
-              <div class="service-chart-card front">
-                <div class="service-chart-top">
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="service-chart-graph"></div>
-              </div>
-            </div>
+          <article class="service-showcase-card">
+            <div class="service-showcase-tab"></div>
             <div class="service-showcase-body">
               <h3>Авторское право</h3>
               <ul class="service-showcase-list">
@@ -134,7 +148,7 @@
                 <li>Претензионная работа при копировании</li>
                 <li>Защита материалов в споре и переговорах</li>
               </ul>
-              <a class="service-showcase-link" href="copyright.html">Подробнее</a>
+              <a class="service-showcase-link" href="copyright.html">Перейти</a>
             </div>
           </article>
           <article class="service-showcase-card">
@@ -147,7 +161,7 @@
                 <li>Переход прав внутри команды и с подрядчиками</li>
                 <li>Консультации по защите digital-активов</li>
               </ul>
-              <a class="service-showcase-link" href="other.html">Подробнее</a>
+              <a class="service-showcase-link" href="other.html">Перейти</a>
             </div>
           </article>
         </div>
@@ -156,77 +170,225 @@
       <section class="trust-strip-section" id="cases">
         <div class="trust-layout">
           <div class="trust-intro">
-            <p class="eyebrow">Доверители / кейсы</p>
-            <h2>Бизнес, бренды и проекты, где защита уже встроена в рост, переговоры и масштабирование.</h2>
-            <p>Собрала в одном блоке тех, с кем работала: не просто название клиента, а тип задачи и результат, ради которого строилась защита.</p>
-            <a class="pill-button dark" href="https://wa.me/77054816699" target="_blank" rel="noopener">Обсудить проект</a>
+            <p class="eyebrow">Доверители</p>
+            <h2>Мои доверители</h2>
+            <p>Бренды и проекты, с которыми я работала по товарным знакам, защите бренда и интеллектуальной собственности.</p>
           </div>
-          <div class="trust-scroll">
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>SIS&amp;BRO</strong>
-              <span class="trust-card-type">Комплексная защита IP</span>
-              <p>Запрос: выстроить систему защиты бренда, контента и договорной части.</p>
-              <em>Результат: понятная структура прав и спокойное сопровождение роста.</em>
+          <div class="trust-scroll" data-auto-scroll="x" data-auto-scroll-speed="9" data-auto-scroll-mode="bounce">
+            <article class="trust-card brand-freedom has-logo">
+              <div class="trust-logo"><span>Freedom</span></div>
+              <strong>Freedom</strong>
+              <span class="trust-card-type">Международный финансовый холдинг</span>
+              <p>Правовая охрана бренда при запуске нескольких бизнес-направлений одновременно.</p>
+              <em>Обеспечена защита банковских, брокерских, страховых и цифровых сервисов.</em>
             </article>
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>KAMBO</strong>
-              <span class="trust-card-type">Товарные знаки</span>
-              <p>Запрос: зарегистрировать бренд и пройти экспертизу без хаоса по этапам.</p>
-              <em>Результат: управляемая подача заявки и сильная охрана знака.</em>
+            <article class="trust-card brand-oi-qaragai has-logo">
+              <div class="trust-logo"><span>Oi Qaragai</span></div>
+              <strong>Oi Qaragai</strong>
+              <span class="trust-card-type">Крупный курортный и туристический комплекс</span>
+              <p>Построение комплексной системы защиты интеллектуальной собственности компании.</p>
+              <em>Выстроена IP-система под ключ: товарные знаки, коммерческая тайна и мобильное приложение.</em>
             </article>
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>LUGX</strong>
-              <span class="trust-card-type">IP-споры</span>
-              <p>Запрос: быстро собрать позицию и не распыляться на слабые аргументы.</p>
-              <em>Результат: сильная правовая линия и контроль над конфликтом.</em>
-            </article>
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>SHOQANSUITS</strong>
+            <article class="trust-card brand-elinex has-logo">
+              <div class="trust-logo"><span>ElinEX</span></div>
+              <strong>ElinEX</strong>
               <span class="trust-card-type">Охрана бренда</span>
-              <p>Запрос: закрепить бренд так, чтобы он выдерживал масштабирование и коллаборации.</p>
-              <em>Результат: база для устойчивой работы бренда на рынке.</em>
+              <p>Закрепить товарный знак и выстроить правовую базу для уверенного продвижения и развития бренда.</p>
+              <em>Усилена правовая позиция бренда и закрыты базовые риски по обозначению.</em>
             </article>
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>Fintech</strong>
-              <span class="trust-card-type">Мультибрендовые запуски</span>
-              <p>Запрос: развести права между несколькими направлениями и продуктами.</p>
-              <em>Результат: чистая IP-структура для переговоров и инвестиций.</em>
+            <article class="trust-card brand-shoqan has-logo">
+              <div class="trust-logo"><span>Shoqan</span></div>
+              <strong>Shoqan</strong>
+              <span class="trust-card-type">Регистрация товарного знака</span>
+              <p>Усильте защиту своего бренда с помощью регистрации товарного знака.</p>
+              <em>Имя и репутация бренда под надёжной охраной, с сохранением уникальности бизнеса.</em>
             </article>
-            <article class="trust-card">
-              <div class="trust-logo"></div>
-              <strong>Online Courses</strong>
-              <span class="trust-card-type">Авторские продукты</span>
-              <p>Запрос: защитить курс, методику и материалы от копирования.</p>
-              <em>Результат: оформленные права и более спокойное масштабирование продаж.</em>
+            <article class="trust-card brand-ushiro has-logo">
+              <div class="trust-logo"><span>Ushiro</span></div>
+              <strong>Ushiro</strong>
+              <span class="trust-card-type">Охрана бренда</span>
+              <p>Закрепить знак для масштабирования и спокойной работы с брендом на рынке.</p>
+              <em>Защищённое обозначение и правовая база для дальнейшего роста.</em>
+            </article>
+            <article class="trust-card brand-alina-paint has-logo">
+              <div class="trust-logo"><span>Alina Paint</span></div>
+              <strong>Alina Paint</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Получить регистрационную охрану для бренда и снизить риски конфликтов по названию.</p>
+              <em>Зарегистрированный знак и уверенная правовая позиция на рынке.</em>
+            </article>
+            <article class="trust-card brand-desso has-logo">
+              <div class="trust-logo"><span>Desso</span></div>
+              <strong>Desso</strong>
+              <span class="trust-card-type">Бренд и сопровождение</span>
+              <p>Выстроить охрану обозначения и подготовить бренд к безопасному масштабированию.</p>
+              <em>Понятная стратегия защиты и движение без правовых уязвимостей.</em>
+            </article>
+            <article class="trust-card brand-annushka has-logo">
+              <div class="trust-logo"><span>Annushka</span></div>
+              <strong>Annushka</strong>
+              <span class="trust-card-type">Комплексная защита IP</span>
+              <p>Выстроить систему защиты бренда, контента и договорной части.</p>
+              <em>Понятная структура прав и спокойное сопровождение роста проекта.</em>
+            </article>
+            <article class="trust-card brand-id-posh has-logo">
+              <div class="trust-logo"><span>ID POSH</span></div>
+              <strong>ID POSH</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Зарегистрировать бренд и выстроить охрану так, чтобы она выдерживала масштабирование и коллаборации.</p>
+              <em>Управляемая подача заявки и сильная охрана знака.</em>
+            </article>
+            <article class="trust-card brand-barlau has-logo">
+              <div class="trust-logo"><span>Barlau Qazaqstan</span></div>
+              <strong>Barlau Qazaqstan</strong>
+              <span class="trust-card-type">Охрана бренда</span>
+              <p>Закрепить товарный знак для устойчивой работы бренда и дальнейшего продвижения.</p>
+              <em>Регистрация и сильная правовая база для развития бренда.</em>
+            </article>
+            <article class="trust-card brand-aisulu has-logo">
+              <div class="trust-logo"><span>AiSulu Collection</span></div>
+              <strong>AiSulu Collection</strong>
+              <span class="trust-card-type">Регистрация ТЗ</span>
+              <p>Оформить защиту названия и подготовить бренд к системному развитию.</p>
+              <em>Получено свидетельство и выстроена понятная стратегия охраны.</em>
+            </article>
+            <article class="trust-card brand-nomads-nature has-logo">
+              <div class="trust-logo"><span>Nomad's Nature</span></div>
+              <strong>Nomad's Nature</strong>
+              <span class="trust-card-type">Охрана бренда</span>
+              <p>Закрепить знак для масштабирования и спокойной работы с брендом на рынке.</p>
+              <em>Защищённое обозначение и база для дальнейшего роста.</em>
+            </article>
+            <article class="trust-card brand-ame has-logo">
+              <div class="trust-logo"><span>AMe</span></div>
+              <strong>AMe</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Получить регистрационную охрану для бренда и снизить риски конфликтов по названию.</p>
+              <em>Зарегистрированный знак и уверенная правовая позиция.</em>
+            </article>
+            <article class="trust-card brand-almaty-soul has-logo">
+              <div class="trust-logo"><span>ALMATY SOUL</span></div>
+              <strong>ALMATY SOUL</strong>
+              <span class="trust-card-type">Защита бренда</span>
+              <p>Собрать правовую охрану вокруг бренда и убрать риски при расширении линейки и публичных запусках.</p>
+              <em>Понятная стратегия защиты и более спокойное масштабирование.</em>
+            </article>
+            <article class="trust-card brand-aport-alatau has-logo">
+              <div class="trust-logo"><span>Aport Alatau</span></div>
+              <strong>Aport Alatau</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Зафиксировать обозначение и выстроить охрану для заметного бренда с активной коммуникацией на рынке.</p>
+              <em>Сильнее позиция бренда и ниже риск конфликтов по названию.</em>
+            </article>
+            <article class="trust-card brand-bohoinasia has-logo">
+              <div class="trust-logo"><span>BOHO IN ASIA</span></div>
+              <strong>BOHO IN ASIA</strong>
+              <span class="trust-card-type">Регистрация ТЗ</span>
+              <p>Оформить правовую защиту бренда и подготовить его к устойчивому росту без слабых мест в правах.</p>
+              <em>Выстроенная охрана знака и ясный план дальнейших действий.</em>
+            </article>
+            <article class="trust-card brand-doctor-green has-logo">
+              <div class="trust-logo"><span>Doctor Green</span></div>
+              <strong>Doctor Green</strong>
+              <span class="trust-card-type">Охрана бренда</span>
+              <p>Укрепить правовую позицию бренда и снизить риски при работе с упаковкой, коммуникацией и продажами.</p>
+              <em>Спокойная работа с брендом и более сильная переговорная позиция.</em>
+            </article>
+            <article class="trust-card brand-harbor has-logo">
+              <div class="trust-logo"><span>Harbor</span></div>
+              <strong>Harbor</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Зарегистрировать знак и заранее закрыть конфликтные зоны по названию и визуальной идентике.</p>
+              <em>Понятная охрана бренда и уверенность в следующих шагах.</em>
+            </article>
+            <article class="trust-card brand-ishq has-logo">
+              <div class="trust-logo"><span>ishq</span></div>
+              <strong>ishq</strong>
+              <span class="trust-card-type">Защита бренда</span>
+              <p>Выстроить правовую базу вокруг бренда, чтобы продукт можно было развивать без лишней турбулентности.</p>
+              <em>Собранная система защиты и меньше рисков на росте.</em>
+            </article>
+            <article class="trust-card brand-sisbro has-logo">
+              <div class="trust-logo"><span>SIS &amp; BRO</span></div>
+              <strong>SIS &amp; BRO</strong>
+              <span class="trust-card-type">Комплексная защита IP</span>
+              <p>Структурировать охрану бренда и сопутствующих прав так, чтобы команда могла двигаться без правовых провалов.</p>
+              <em>Понятная архитектура защиты и спокойное сопровождение.</em>
+            </article>
+            <article class="trust-card brand-shoqansuits has-logo">
+              <div class="trust-logo"><span>SHOQANSUITS</span></div>
+              <strong>SHOQANSUITS</strong>
+              <span class="trust-card-type">Регистрация товарного знака</span>
+              <p>Усильте защиту своего бренда с помощью регистрации товарного знака.</p>
+              <em>Имя и репутация бренда под надёжной охраной, с сохранением уникальности бизнеса.</em>
+            </article>
+            <article class="trust-card brand-bes-qazan has-logo">
+              <div class="trust-logo"><span>Bes Qazan</span></div>
+              <strong>Bes Qazan</strong>
+              <span class="trust-card-type">Товарные знаки</span>
+              <p>Закрепить обозначение и снизить риски конфликтов при расширении бренда и коммуникации с рынком.</p>
+              <em>Более сильная охрана бренда и уверенное движение вперёд.</em>
+            </article>
+            <article class="trust-card brand-lugx has-logo">
+              <div class="trust-logo"><span>L'UGX</span></div>
+              <strong>L'UGX</strong>
+              <span class="trust-card-type">Официальный дистрибутор продукции в Республике Казахстан</span>
+              <p>Прекратить незаконное использование бренда на Kaspi и открепить недобросовестных продавцов от карточки товара.</p>
+              <em>Подготовлена правовая позиция для защиты бренда и очистки карточки от нарушителей.</em>
             </article>
           </div>
         </div>
       </section>
 
       <section class="clients-ticker-section" aria-label="Клиенты">
-        <div class="clients-ticker">
+        <div class="clients-ticker" data-auto-scroll="x" data-auto-scroll-speed="18" data-auto-scroll-mode="cycle">
           <div class="clients-ticker-track">
-            <span>SIS&amp;BRO</span>
-            <span>KAMBO</span>
-            <span>LUGX</span>
-            <span>SHOQANSUITS</span>
-            <span>FINTECH</span>
-            <span>ONLINE COURSES</span>
-            <span>BEAUTY PROJECT</span>
-            <span>RESORT GROUP</span>
-            <span>SIS&amp;BRO</span>
-            <span>KAMBO</span>
-            <span>LUGX</span>
-            <span>SHOQANSUITS</span>
-            <span>FINTECH</span>
-            <span>ONLINE COURSES</span>
-            <span>BEAUTY PROJECT</span>
-            <span>RESORT GROUP</span>
+            <span class="client-chip brand-freedom has-logo">FREEDOM</span>
+            <span class="client-chip brand-oi-qaragai has-logo">OI QARAGAI</span>
+            <span class="client-chip brand-elinex has-logo">ELINEX</span>
+            <span class="client-chip brand-shoqan has-logo">SHOQAN</span>
+            <span class="client-chip brand-ushiro has-logo">USHIRO</span>
+            <span class="client-chip brand-alina-paint has-logo">ALINA PAINT</span>
+            <span class="client-chip brand-desso has-logo">DESSO</span>
+            <span class="client-chip brand-annushka has-logo">ANNUSHKA</span>
+            <span class="client-chip brand-id-posh has-logo">ID POSH</span>
+            <span class="client-chip brand-barlau has-logo">BARLAU QAZAQSTAN</span>
+            <span class="client-chip brand-aisulu has-logo">AISULU COLLECTION</span>
+            <span class="client-chip brand-nomads-nature has-logo">NOMAD'S NATURE</span>
+            <span class="client-chip brand-ame has-logo">AME</span>
+            <span class="client-chip brand-almaty-soul has-logo">ALMATY SOUL</span>
+            <span class="client-chip brand-aport-alatau has-logo">APORT ALATAU</span>
+            <span class="client-chip brand-bohoinasia has-logo">BOHO IN ASIA</span>
+            <span class="client-chip brand-doctor-green has-logo">DOCTOR GREEN</span>
+            <span class="client-chip brand-harbor has-logo">HARBOR</span>
+            <span class="client-chip brand-ishq has-logo">ISHQ</span>
+            <span class="client-chip brand-sisbro has-logo">SIS &amp; BRO</span>
+            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
+            <span class="client-chip brand-bes-qazan has-logo">BES QAZAN</span>
+            <span class="client-chip brand-lugx has-logo">L'UGX</span>
+            <span class="client-chip brand-freedom has-logo">FREEDOM</span>
+            <span class="client-chip brand-oi-qaragai has-logo">OI QARAGAI</span>
+            <span class="client-chip brand-elinex has-logo">ELINEX</span>
+            <span class="client-chip brand-shoqan has-logo">SHOQAN</span>
+            <span class="client-chip brand-ushiro has-logo">USHIRO</span>
+            <span class="client-chip brand-alina-paint has-logo">ALINA PAINT</span>
+            <span class="client-chip brand-desso has-logo">DESSO</span>
+            <span class="client-chip brand-annushka has-logo">ANNUSHKA</span>
+            <span class="client-chip brand-id-posh has-logo">ID POSH</span>
+            <span class="client-chip brand-barlau has-logo">BARLAU QAZAQSTAN</span>
+            <span class="client-chip brand-aisulu has-logo">AISULU COLLECTION</span>
+            <span class="client-chip brand-nomads-nature has-logo">NOMAD'S NATURE</span>
+            <span class="client-chip brand-ame has-logo">AME</span>
+            <span class="client-chip brand-almaty-soul has-logo">ALMATY SOUL</span>
+            <span class="client-chip brand-aport-alatau has-logo">APORT ALATAU</span>
+            <span class="client-chip brand-bohoinasia has-logo">BOHO IN ASIA</span>
+            <span class="client-chip brand-doctor-green has-logo">DOCTOR GREEN</span>
+            <span class="client-chip brand-harbor has-logo">HARBOR</span>
+            <span class="client-chip brand-ishq has-logo">ISHQ</span>
+            <span class="client-chip brand-sisbro has-logo">SIS &amp; BRO</span>
+            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
+            <span class="client-chip brand-bes-qazan has-logo">BES QAZAN</span>
+            <span class="client-chip brand-lugx has-logo">L'UGX</span>
           </div>
         </div>
       </section>
@@ -234,16 +396,14 @@
       <section class="pricing-section" id="pricing">
         <div class="pricing-header">
           <h2>Форматы работы</h2>
-          <p>Выбираем формат сопровождения под задачу, стадию проекта и уровень риска.</p>
+          <p>Три формата под задачу.</p>
         </div>
-        <div class="pricing-grid">
+        <div class="pricing-grid pricing-grid-static">
           <article class="pricing-card">
-            <span class="pricing-badge">Starter</span>
             <div class="pricing-top">
               <h3>Товарный знак</h3>
             </div>
             <p class="pricing-copy">Идеально для бизнеса, который хочет зарегистрировать бренд и получить базовую правовую защиту.</p>
-            <a class="pill-button dark block" href="https://wa.me/77054816699" target="_blank" rel="noopener">Начать работу</a>
             <ul>
               <li>Предварительный поиск</li>
               <li>Подача заявки</li>
@@ -252,12 +412,10 @@
             </ul>
           </article>
           <article class="pricing-card">
-            <span class="pricing-badge">Professional</span>
             <div class="pricing-top">
               <h3>Авторское право</h3>
             </div>
             <p class="pricing-copy">Для курсов, методик, контента, креаторов и онлайн-продуктов, где важно зафиксировать права и пресечь копирование.</p>
-            <a class="pill-button dark block" href="https://wa.me/77054816699" target="_blank" rel="noopener">Начать работу</a>
             <ul>
               <li>Фиксация авторства</li>
               <li>Пакет охраны материалов</li>
@@ -266,12 +424,10 @@
             </ul>
           </article>
           <article class="pricing-card">
-            <span class="pricing-badge">Enterprise</span>
             <div class="pricing-top">
               <h3>IP-споры</h3>
             </div>
             <p class="pricing-copy">Для сложных споров, комплексных конфликтов, лицензий, судебной защиты и глубокой стратегии.</p>
-            <a class="pill-button dark block" href="https://wa.me/77054816699" target="_blank" rel="noopener">Обсудить кейс</a>
             <ul>
               <li>Досудебные переговоры</li>
               <li>Судебная защита</li>
@@ -280,67 +436,157 @@
             </ul>
           </article>
         </div>
+        <a class="pill-button dark block pricing-cta-wide" href="https://wa.me/77054816699" target="_blank" rel="noopener">Обсудить формат работы</a>
       </section>
 
       <section class="reviews-section" id="reviews">
         <div class="reviews-card">
           <div class="reviews-intro site-tone">
-            <h2>Наши клиенты<br>нам доверяют</h2>
+            <h2>Клиенты<br>рекомендуют</h2>
           </div>
-          <div class="reviews-marquee">
+          <div class="reviews-marquee" data-auto-scroll="x" data-auto-scroll-speed="8" data-auto-scroll-mode="bounce">
             <div class="reviews-track">
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/mimikriya.png" alt="Мимикрия под голод">
+                </div>
                 <div>
-                  <h3>Защита авторского курса</h3>
-                  <span>Мимикрия под голод</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>5.0</em></div>
-                  <p>Спасибо Вам большое за проделанную работу. Я к вам ещё обязательно обращусь, потому что понимаю, что все свои курсы нужно защищать правильно.</p>
+                  <h3>Мимикрия под голод</h3>
+                  <span>Защита авторского права</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Здравствуйте, Айнур! Спасибо Вам большое за проделанную работу. Я к вам ещё обязательно обращусь, потому что думаю, что нужно все свои курсы защитить.</p>
                 </div>
               </article>
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/lugx.jpg" alt="L'UGX">
+                </div>
                 <div>
-                  <h3>Комплексная защита IP</h3>
-                  <span>SIS&amp;BRO</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>5.0</em></div>
-                  <p>Очень грамотный специалист. Всё по делу, чётко и по полочкам. Работать спокойно, потому что каждый шаг понятен.</p>
+                  <h3>L'UGX</h3>
+                  <span>Досудебное взыскание компенсации</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Спасибо за поддержку, Айнура! Для нас это волнительно, но мы всегда за правду, чтобы всё было по-честному. Вы большая молодец.</p>
                 </div>
               </article>
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/shoqansuits.png" alt="SHOQANSUITS">
+                </div>
                 <div>
-                  <h3>Защита авторских материалов</h3>
-                  <span>Онлайн-школа</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>5.0</em></div>
-                  <p>Помогла оформить права на курс и выстроить понятную логику защиты контента. После этого стало гораздо спокойнее продавать и масштабироваться.</p>
+                  <h3>SHOQANSUITS</h3>
+                  <span>Регистрация товарного знака</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Усильте защиту своего бренда с помощью регистрации товарного знака. Это даст вам уверенность в том, что имя и репутация находятся под надёжной охраной, сохраняя уникальность вашего бизнеса.</p>
                 </div>
               </article>
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/aty-shuly-doner.png" alt="Аты Шулы Донер">
+                </div>
                 <div>
-                  <h3>Товарный знак под ключ</h3>
-                  <span>KAMBO</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>4.9</em></div>
-                  <p>Работа была организована очень чётко. Мы понимали каждый этап, сроки и почему именно так лучше двигаться по заявке.</p>
+                  <h3>Аты Шулы Донер</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Доброе утро! Вы прекрасно выполняете свою работу. Рахмет.</p>
                 </div>
               </article>
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/lesorub.png" alt="Лесоруб">
+                </div>
                 <div>
-                  <h3>Защита в споре</h3>
-                  <span>LUGX</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>5.0</em></div>
-                  <p>Удалось быстро собрать сильную позицию и не распыляться. Было ощущение, что процесс под контролем от начала до конца.</p>
+                  <h3>Лесоруб</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Айнура, спасибо тебе большое за всё, что ты делаешь. Всего тебе самого хорошего.</p>
                 </div>
               </article>
               <article class="review-panel">
-                <div class="review-logo-dot"></div>
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/m-dveri.png" alt="М.ДВЕРИ">
+                </div>
                 <div>
-                  <h3>Защита бренда и техники</h3>
-                  <span>Beauty project</span>
-                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i><em>5.0</em></div>
-                  <p>Очень ценно, что удалось оформить не только сам бренд, но и выстроить более широкую защиту вокруг продукта и методики.</p>
+                  <h3>М.ДВЕРИ</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Добрый день! Отлично. Спасибо вам большое за ваши труды.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/capusta.png" alt="CAPUSTA">
+                </div>
+                <div>
+                  <h3>CAPUSTA</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Здравствуйте, Айнура! Спасибо большое за ваши старания.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/fuego.png" alt="FUEGO">
+                </div>
+                <div>
+                  <h3>FUEGO</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Доброе утро. Уииии. Спасибо большое за всё.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/health-priority.png" alt="Health Priority">
+                </div>
+                <div>
+                  <h3>Health Priority</h3>
+                  <span>Решение о регистрации и уведомление об оплате госпошлины</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Добрый день, Айнура! Отличная новость. Спасибо вам большое за помощь, вы потрудились на славу.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/ishq.png" alt="ishq">
+                </div>
+                <div>
+                  <h3>ishq</h3>
+                  <span>Оригинальный отзыв с сайта</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Добрый день! Спасибо большое за профессионализм.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot review-logo-dot-fallback">
+                  <span>J</span>
+                </div>
+                <div>
+                  <h3>JYLDAM</h3>
+                  <span>Свидетельство на десктопное приложение</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Добрый день! Супер! Спасибо.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/karanar.png" alt="KARANAR">
+                </div>
+                <div>
+                  <h3>KARANAR</h3>
+                  <span>Регистрация товарного знака</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Хотели бы выразить огромную благодарность за помощь в регистрации товарного знака Айнуре Сериковне.</p>
+                </div>
+              </article>
+              <article class="review-panel">
+                <div class="review-logo-dot">
+                  <img src="assets/images/reviews/modern-house.png" alt="ModernHouse">
+                </div>
+                <div>
+                  <h3>ModernHouse</h3>
+                  <span>Свидетельство на товарный знак</span>
+                  <div class="review-rating"><i></i><i></i><i></i><i></i><i></i></div>
+                  <p>Добрый день! Всё отлично, благодарю. Спасибо большое, Айнура, за вашу работу.</p>
                 </div>
               </article>
             </div>
@@ -384,7 +630,7 @@
             </details>
             <details class="faq-item">
               <summary>Что делать, если мой бренд или контент уже копируют?</summary>
-              <p>Сначала фиксируются доказательства нарушения, затем выбирается стратегия: претензия, переговоры, блокировка, взыскание компенсации или судебная защита. Важно не действовать хаотично и не терять доказательства.</p>
+              <p>Сначала фиксируются доказательства нарушения, затем выбирается стратегия: претензия, переговоры, блокировка, пресечение нарушения или судебная защита. Важно не действовать хаотично и не терять доказательства.</p>
             </details>
             <details class="faq-item">
               <summary>Можно ли зарегистрировать знак, если похожее название уже есть на рынке?</summary>
@@ -402,7 +648,7 @@
         <div class="contact-copy">
           <p class="eyebrow">Контакты</p>
           <h2>Обсудим ваш кейс и подберём сильную стратегию защиты.</h2>
-          <p class="contact-lead">Ответ в WhatsApp обычно в течение 15 минут в рабочее время. Можно начать с короткого описания задачи.</p>
+          <p class="contact-lead">Напишите пару строк о задаче. В WhatsApp обычно отвечаю быстро.</p>
         </div>
         <div class="contact-details">
           <a href="mailto:rysbekova-ainura@mail.ru">rysbekova-ainura@mail.ru</a>
@@ -441,6 +687,14 @@
             <li>rysbekova-ainura@mail.ru</li>
           </ul>
         </div>
+        <div>
+          <h3>Документы</h3>
+          <ul>
+            <li><a href="assets/docs/privacy-policy-personal-data.docx" download>Политика конфиденциальности</a></li>
+            <li><a href="assets/docs/public-offer-ip-services.docx" download>Договор оферты</a></li>
+            <li><a href="assets/docs/consent-personal-data.docx" download>Согласие на сбор и обработку ПД</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Ainura Rysbekova</span>
@@ -448,5 +702,6 @@
       </div>
     </footer>
   </div>
+  <script src="auto-scroll.js?v=20260406-mobile46"></script>
 </body>
 </html>

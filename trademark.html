@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260406-mobile46">
 </head>
 <body class="trademark-redesign">
   <div class="page-shell">
@@ -23,10 +23,30 @@
             <li><a href="other.html">Прочие услуги</a></li>
           </ul>
           <a class="nav-cta" href="https://wa.me/77054816699" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="nav-burger" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+          </button>
         </nav>
+        <div class="mobile-nav-panel" id="mobile-nav-panel" hidden>
+          <div class="mobile-nav-backdrop" data-mobile-nav-close></div>
+          <div class="mobile-nav-sheet" role="dialog" aria-modal="true" aria-label="Навигация по сайту">
+            <div class="mobile-nav-head">
+              <span>Навигация</span>
+              <button class="mobile-nav-close" type="button" aria-label="Закрыть меню" data-mobile-nav-close>Закрыть</button>
+            </div>
+            <div class="mobile-nav-links">
+              <a href="index.html#about">Обо мне</a>
+              <a href="trademark.html">Товарные знаки</a>
+              <a href="copyright.html">Авторское право</a>
+              <a href="other.html">Прочие услуги</a>
+              <a class="mobile-nav-whatsapp" href="https://wa.me/77054816699" target="_blank" rel="noopener">Написать в WhatsApp</a>
+            </div>
+          </div>
+        </div>
 
         <div class="hero-copy">
-
+          <p class="hero-badge">Регистрация и защита бренда</p>
           <h1 class="hero-title">Товарные<br>знаки</h1>
           <ul class="hero-checklist">
             <li>Регистрация товарного знака</li>
@@ -132,37 +152,39 @@
       <section class="section-spacing animate-in" id="pricing">
         <div class="pricing-header">
           <h2>Форматы работы</h2>
-          <p>Выберите подходящий пакет под масштаб бренда и уровень необходимых гарантий.</p>
+          <p>Пакеты и базовые цены собраны по материалам с rysbekova.com/trademark и адаптированы под текущую страницу.</p>
         </div>
         
-        <div class="pricing-grid-4">
+        <div class="pricing-grid-4 swipe-track swipe-track-pricing-compact" data-auto-scroll="x" data-auto-scroll-speed="10" data-auto-scroll-mode="bounce">
           <article class="pricing-card-redesign animate-in">
-            <span class="pricing-badge">Start</span>
-            <h3>Поиск и оценка</h3>
-            <p class="pricing-copy">Для новых проектов и ИП. Проверка по базам и отчёт с рисками.</p>
+            <span class="pricing-badge">START</span>
             <div class="price">30 000 тг.</div>
-            <a class="pill-button dark block" href="#contact">Выбрать</a>
+            <h3>Стартапы, ИП, блогеры</h3>
+            <p class="pricing-copy">Юридическая консультация, платный поиск по базе РК, анализ тождественных знаков и отчёт с рисками до подачи заявки.</p>
+            <a class="pill-button dark block" href="#contact">Выбрать пакет</a>
           </article>
           <article class="pricing-card-redesign featured animate-in delay-1">
-            <span class="pricing-badge">Standard</span>
-            <h3>Действующий бизнес</h3>
-            <p class="pricing-copy">Полное сопровождение регистрации "под ключ" до свидетельства.</p>
+            <span class="pricing-badge">STANDARD</span>
             <div class="price">180 000 тг.</div>
-            <a class="pill-button dark block" href="#contact">Выбрать</a>
+            <h3>Действующий бизнес</h3>
+            <p class="pricing-copy">Поиск, подбор и оптимизация классов МКТУ, экспертиза по существу и доведение регистрации до свидетельства при отсутствии споров.</p>
+            <a class="pill-button dark block" href="#contact">Выбрать пакет</a>
           </article>
           <article class="pricing-card-redesign animate-in delay-2">
-            <span class="pricing-badge">Advanced</span>
-            <h3>Сопровождение</h3>
-            <p class="pricing-copy">Для сложных кейсов с риском отказа или оспаривания чужих прав.</p>
-            <div class="price">от 250 000 тг.</div>
-            <a class="pill-button dark block" href="#contact">Выбрать</a>
+            <span class="pricing-badge">PRO</span>
+            <div class="price">По запросу</div>
+            <h3>Сложные и конфликтные кейсы</h3>
+            <p class="pricing-copy">Для брендов с риском отказа: возражения на предварительный отказ, сопровождение экспертиз, Апелляционный совет и правовая позиция по защите обозначения.</p>
+            <p class="pricing-source-note">В источнике сумма для этого пакета пока указана некорректно.</p>
+            <a class="pill-button dark block" href="#contact">Обсудить пакет</a>
           </article>
           <article class="pricing-card-redesign animate-in delay-3">
-            <span class="pricing-badge">International</span>
-            <h3>Международная</h3>
-            <p class="pricing-copy">Охрана бренда в 130+ странах через Мадридскую систему (WIPO).</p>
-            <div class="price">от 120 000 тг.</div>
-            <a class="pill-button dark block" href="#contact">Обсудить</a>
+            <span class="pricing-badge">ULTIMATE</span>
+            <div class="price">По запросу</div>
+            <h3>Франшизы и крупный бизнес</h3>
+            <p class="pricing-copy">Полное сопровождение регистрации, лицензирование, претензионная работа, подготовка к судебной защите и IP-стратегия для роста бренда.</p>
+            <p class="pricing-source-note">В источнике сумма для этого пакета пока указана некорректно.</p>
+            <a class="pill-button dark block" href="#contact">Обсудить пакет</a>
           </article>
         </div>
 
@@ -173,13 +195,13 @@
                 <th>Опции сервиса</th>
                 <th>Start</th>
                 <th>Standard</th>
-                <th>Advanced</th>
-                <th>Int. WIPO</th>
+                <th>Pro</th>
+                <th>Ultimate</th>
               </tr>
             </thead>
             <tbody>
               <tr class="group-header">
-                <td colspan="5">Базовые опции</td>
+                <td colspan="5">Базовая диагностика</td>
               </tr>
               <tr>
                 <td class="feature-name">Юридическая консультация</td>
@@ -193,17 +215,17 @@
                 <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
-                <td><span class="dash-icon">—</span></td>
-              </tr>
-              <tr>
-                <td class="feature-name">Подробный отчёт с рисками</td>
-                <td><span class="check-icon">✓</span></td>
-                <td><span class="check-icon">✓</span></td>
-                <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
               </tr>
               <tr>
-                <td class="feature-name">Подбор классов МКТУ</td>
+                <td class="feature-name">Отчёт с рисками и рекомендациями</td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Подбор и формирование МКТУ</td>
                 <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
@@ -220,7 +242,14 @@
                 <td><span class="check-icon">✓</span></td>
               </tr>
               <tr>
-                <td class="feature-name">Сопровождение экспертиз</td>
+                <td class="feature-name">Сопровождение формальной экспертизы</td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Экспертиза по существу</td>
                 <td><span class="dash-icon">—</span></td>
                 <td><span class="check-icon">✓</span></td>
                 <td><span class="check-icon">✓</span></td>
@@ -234,7 +263,7 @@
                 <td><span class="check-icon">✓</span></td>
               </tr>
               <tr class="group-header">
-                <td colspan="5">Сложные кейсы и сопровождение</td>
+                <td colspan="5">Усиленная защита и споры</td>
               </tr>
               <tr>
                 <td class="feature-name">Ответы на уведомления экспертизы</td>
@@ -248,14 +277,42 @@
                 <td><span class="dash-icon">—</span></td>
                 <td><span class="dash-icon">—</span></td>
                 <td><span class="check-icon">✓</span></td>
-                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
               </tr>
               <tr>
                 <td class="feature-name">Апелляционный совет</td>
                 <td><span class="dash-icon">—</span></td>
                 <td><span class="dash-icon">—</span></td>
                 <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Консультации по использованию знака</td>
                 <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">IP-стратегия, лицензия и франшиза</td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Претензионная работа</td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Судебное представительство</td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="dash-icon">—</span></td>
+                <td><span class="check-icon">✓</span></td>
               </tr>
             </tbody>
           </table>
@@ -268,69 +325,110 @@
         <div class="cases-head-dark">
           <p class="eyebrow">Опыт и результаты</p>
           <h2>Доверители и свидетельства</h2>
-          <p>Примеры успешно зарегистрированных товарных знаков для ведущих компаний и брендов.</p>
+          <p>Примеры успешно зарегистрированных товарных знаков для ведущих компаний и брендов. Листайте вправо и нажимайте на документ, чтобы открыть его полностью.</p>
         </div>
 
-        <div class="certs-grid">
-          <article class="cert-premium-card">
-            <div class="cert-logo-box"><span>NORMA</span></div>
-            <div class="cert-doc-preview">
-              <div class="cert-doc-line h"></div>
-              <div class="cert-doc-line medium"></div>
-              <div class="cert-doc-line long"></div>
-              <div class="preview-seal"></div>
-            </div>
-            <div class="cert-info-footer">
-              <p>Товарный знак</p>
-              <h4>NORMA Group</h4>
-              <p class="cert-id">№34201</p>
-            </div>
-          </article>
+        <div class="certs-grid" id="certificate-track" data-auto-scroll="x" data-auto-scroll-speed="14" data-auto-scroll-mode="bounce"></div>
+        <script>
+          (() => {
+            const certificates = [
+              { name: "Freedom", image: "https://static.tildacdn.pro/tild3463-3065-4639-b761-666161343639/0001.jpg" },
+              { name: "Oi Qaragai", image: "https://static.tildacdn.pro/tild6330-3931-4138-b762-303366323532/0002.jpg" },
+              { name: "ElinEX", image: "https://static.tildacdn.pro/tild3162-3331-4939-b630-653763643261/0001.jpg" },
+              { name: "Shoqan", image: "https://static.tildacdn.pro/tild6234-6261-4264-a239-633962366530/0002.jpg" },
+              { name: "Ushiro", image: "https://static.tildacdn.pro/tild3830-3264-4438-a230-396137393933/0001.jpg" },
+              { name: "Alina Paint", image: "https://static.tildacdn.pro/tild6639-3130-4865-b530-306532353437/0002.jpg" },
+              { name: "Desso", image: "https://static.tildacdn.pro/tild3131-3634-4663-b865-366339386166/0001.jpg" },
+              { name: "Annushka", image: "https://static.tildacdn.pro/tild3037-3665-4363-b639-366166383064/0002.jpg" },
+              { name: "ID POSH", image: "https://static.tildacdn.pro/tild6233-3663-4738-b538-666136323732/0001.jpg" },
+              { name: "Barlau Qazaqstan", image: "https://static.tildacdn.pro/tild6132-3133-4132-b535-393663346663/0002.jpg" },
+              { name: "AiSulu Collection", image: "https://static.tildacdn.pro/tild3861-6630-4139-b961-623437376131/0001.jpg" },
+              { name: "Nomad's Nature", image: "https://static.tildacdn.pro/tild3635-6439-4236-a634-343361353630/0002.jpg" },
+              { name: "AMe", image: "https://static.tildacdn.pro/tild3834-6463-4735-a139-396136303162/0001.jpg" },
+              { name: "ALMATY SOUL", image: "https://static.tildacdn.pro/tild6132-3133-4132-b535-393663346663/0002.jpg" },
+              { name: "Aport Alatau", image: "https://static.tildacdn.pro/tild3031-3062-4237-b030-386266666531/0001.jpg" },
+              { name: "Boho in Asia", image: "https://static.tildacdn.pro/tild6332-3662-4339-b231-636463666239/0002.jpg" },
+              { name: "Doctor Green", image: "https://static.tildacdn.pro/tild6638-3639-4334-a136-373733666431/0001.jpg" },
+              { name: "Harbor", image: "https://static.tildacdn.pro/tild3433-3465-4938-b336-383033626437/0002.jpg" },
+              { name: "ISHQ", image: "https://static.tildacdn.pro/tild6566-3037-4461-b762-643162373461/0001.jpg" },
+              { name: "SisBro", image: "https://static.tildacdn.pro/tild3135-3234-4538-b933-633364363039/0002.jpg" },
+              { name: "Shoqan Suits", image: "https://static.tildacdn.pro/tild3732-6561-4637-a335-356538336139/0001.jpg" },
+              { name: "Bes Qazan", image: "https://static.tildacdn.pro/tild3362-6337-4262-b864-613965633435/0002.jpg" },
+              { name: "LUGX", image: "https://static.tildacdn.pro/tild3766-3062-4762-a633-623165373735/0001.jpg" },
+              { name: "Freedom", image: "https://static.tildacdn.pro/tild3037-3665-4363-b639-366166383064/0002.jpg" },
+              { name: "Oi Qaragai", image: "https://static.tildacdn.pro/tild3231-3838-4736-b134-356237376566/0001.jpg" },
+              { name: "ElinEX", image: "https://static.tildacdn.pro/tild3430-3436-4964-b939-366631666263/0002.jpg" },
+              { name: "Shoqan", image: "https://static.tildacdn.pro/tild3961-3733-4766-a666-666566323265/0001.jpg" },
+              { name: "Ushiro", image: "https://static.tildacdn.pro/tild3433-3465-4938-b336-383033626437/0002.jpg" },
+              { name: "Alina Paint", image: "https://static.tildacdn.pro/tild3661-3463-4261-b638-326539666562/0001.jpg" },
+              { name: "Desso", image: "https://static.tildacdn.pro/tild6332-3662-4339-b231-636463666239/0002.jpg" },
+              { name: "Annushka", image: "https://static.tildacdn.pro/tild6262-3334-4037-b831-383435383732/0001.jpg" },
+              { name: "ID POSH", image: "https://static.tildacdn.pro/tild6534-3236-4262-b630-363663313332/0002.jpg" }
+            ];
 
-          <article class="cert-premium-card">
-            <div class="cert-logo-box"><span>FREEDOM</span></div>
-            <div class="cert-doc-preview">
-              <div class="cert-doc-line h"></div>
-              <div class="cert-doc-line long"></div>
-              <div class="cert-doc-line medium"></div>
-              <div class="preview-seal"></div>
-            </div>
-            <div class="cert-info-footer">
-              <p>Товарный знак</p>
-              <h4>FREEDOM Hold</h4>
-              <p class="cert-id">№34509</p>
-            </div>
-          </article>
+            const container = document.getElementById("certificate-track");
+            const dialog = document.getElementById("cert-dialog");
+            const dialogTitle = dialog?.querySelector("[data-cert-dialog-title]");
+            const dialogImage = dialog?.querySelector("[data-cert-dialog-image]");
+            if (!container) return;
 
-          <article class="cert-premium-card">
-            <div class="cert-logo-box"><span>SIS & BRO</span></div>
-            <div class="cert-doc-preview">
-              <div class="cert-doc-line h"></div>
-              <div class="cert-doc-line short"></div>
-              <div class="cert-doc-line long"></div>
-              <div class="preview-seal"></div>
+            container.innerHTML = certificates.map((certificate) => {
+              const title = certificate.name;
+              return `
+                <button
+                  class="cert-premium-card"
+                  type="button"
+                  data-cert-image="${certificate.image}"
+                  data-cert-title="${title}"
+                  aria-label="Открыть ${title}"
+                >
+                  <img class="cert-card-image" src="${certificate.image}" alt="${title}" loading="lazy">
+                  <span class="cert-card-chip">${title}</span>
+                  <span class="cert-card-overlay">
+                    <span class="cert-card-kicker">Оригинал с rysbekova.com</span>
+                    <span class="cert-card-title">${title}</span>
+                    <span class="cert-card-hint">Нажмите, чтобы открыть документ</span>
+                  </span>
+                </button>
+              `;
+            }).join("");
+
+            container.addEventListener("click", (event) => {
+              const card = event.target.closest(".cert-premium-card");
+              if (!card || !dialog || !dialogTitle || !dialogImage) return;
+
+              dialogTitle.textContent = card.dataset.certTitle || "Свидетельство";
+              dialogImage.src = card.dataset.certImage || "";
+              dialogImage.alt = card.dataset.certTitle || "Свидетельство";
+              dialog.showModal();
+            });
+
+            dialog?.querySelector("[data-close-cert-dialog]")?.addEventListener("click", () => {
+              dialog.close();
+            });
+
+            dialog?.addEventListener("click", (event) => {
+              if (event.target === dialog) {
+                dialog.close();
+              }
+            });
+          })();
+        </script>
+        <dialog class="cert-dialog" id="cert-dialog">
+          <div class="cert-dialog-shell">
+            <div class="cert-dialog-head">
+              <div>
+                <p class="cert-dialog-kicker">Оригинал с rysbekova.com</p>
+                <h3 class="cert-dialog-title" data-cert-dialog-title>Свидетельство</h3>
+              </div>
+              <button class="cert-dialog-close" type="button" aria-label="Закрыть документ" data-close-cert-dialog>&times;</button>
             </div>
-            <div class="cert-info-footer">
-              <p>Товарный знак</p>
-              <h4>SIS & BRO</h4>
-              <p class="cert-id">№34612</p>
+            <div class="cert-dialog-frame">
+              <img data-cert-dialog-image src="" alt="Свидетельство">
             </div>
-          </article>
-          
-          <article class="cert-premium-card">
-            <div class="cert-logo-box"><span>KAMBO</span></div>
-            <div class="cert-doc-preview">
-              <div class="cert-doc-line h"></div>
-              <div class="cert-doc-line long"></div>
-              <div class="preview-seal"></div>
-            </div>
-            <div class="cert-info-footer">
-              <p>Товарный знак</p>
-              <h4>KAMBO Project</h4>
-              <p class="cert-id">№34771</p>
-            </div>
-          </article>
-        </div>
+            <p class="cert-dialog-note">Полный документ открыт в увеличенном виде. Нажмите вне окна или на крестик, чтобы закрыть.</p>
+          </div>
+        </dialog>
       </section>
 
 
@@ -353,7 +451,7 @@
             </details>
             <details class="faq-item">
               <summary>Что делать при предварительном отказе?</summary>
-              <p>Это рабочий этап. Мы анализируем причины, формируем правовая позиция и подаем ответ. В большинстве случаев регистрацию удается довести до результата.</p>
+              <p>Это рабочий этап. Мы анализируем причины, формируем правовую позицию и подаем ответ. Во многих случаях регистрацию удается довести до результата.</p>
             </details>
             <details class="faq-item">
               <summary>Зачем включать ТЗ в Таможенный реестр?</summary>
@@ -405,6 +503,14 @@
             <li>rysbekova-ainura@mail.ru</li>
           </ul>
         </div>
+        <div>
+          <h3>Документы</h3>
+          <ul>
+            <li><a href="assets/docs/privacy-policy-personal-data.docx" download>Политика конфиденциальности</a></li>
+            <li><a href="assets/docs/public-offer-ip-services.docx" download>Договор оферты</a></li>
+            <li><a href="assets/docs/consent-personal-data.docx" download>Согласие на сбор и обработку ПД</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Ainura Rysbekova</span>
@@ -412,5 +518,6 @@
       </div>
     </footer>
   </div>
+  <script src="auto-scroll.js?v=20260406-mobile46"></script>
 </body>
 </html>

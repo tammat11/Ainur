@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260406-mobile47">
 </head>
 <body class="trademark-redesign">
   <div class="page-shell">
@@ -23,12 +23,33 @@
             <li><a href="other.html">Прочие услуги</a></li>
           </ul>
           <a class="nav-cta" href="https://wa.me/77054816699" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="nav-burger" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+          </button>
         </nav>
+        <div class="mobile-nav-panel" id="mobile-nav-panel" hidden>
+          <div class="mobile-nav-backdrop" data-mobile-nav-close></div>
+          <div class="mobile-nav-sheet" role="dialog" aria-modal="true" aria-label="Навигация по сайту">
+            <div class="mobile-nav-head">
+              <span>Навигация</span>
+              <button class="mobile-nav-close" type="button" aria-label="Закрыть меню" data-mobile-nav-close>Закрыть</button>
+            </div>
+            <div class="mobile-nav-links">
+              <a href="index.html#about">Обо мне</a>
+              <a href="trademark.html">Товарные знаки</a>
+              <a href="copyright.html">Авторское право</a>
+              <a href="other.html">Прочие услуги</a>
+              <a class="mobile-nav-whatsapp" href="https://wa.me/77054816699" target="_blank" rel="noopener">Написать в WhatsApp</a>
+            </div>
+          </div>
+        </div>
 
         <div class="hero-copy">
+          <p class="hero-badge">Контент, курсы и digital-продукты</p>
           <h1 class="hero-title">Авторское<br>право</h1>
           <p class="hero-subcopy">
-            Комплексная юридическая защита интеллектуальной собственности. Оформление прав, блокировка пиратов и взыскание компенсаций.
+            Комплексная юридическая защита интеллектуальной собственности. Оформление прав, фиксация авторства и защита контента от копирования.
           </p>
           <div class="hero-glass-pills">
             <span class="glass-pill">Онлайн-школы</span>
@@ -81,7 +102,7 @@
             <article class="apple-content-card" id="tab2">
               <div class="apple-content-text">
                 <h3>Авторы и Эксперты</h3>
-                <p>Закрепление авторства на методики до начала активного масштабирования. Получение свидетельств депонирования и регистрация в Казпатенте.</p>
+                <p>Закрепление авторства на методики до начала активного масштабирования. Получение свидетельств депонирования и фиксация прав через Казпатент.</p>
               </div>
               <div class="apple-content-image">
                 <div class="premium-svg-wrapper">
@@ -205,7 +226,7 @@
           <article class="bento-card span-6 dark-card-manual">
             <p class="eyebrow-light">Результат</p>
             <h2 class="white-title">Юридически оформленный и защищённый продукт.</h2>
-            <p class="bento-text-small opacity-8">Вы получаете свидетельство и полный пакет документов, которые позволяют взыскивать компенсации до 30 млн тг, продавать лицензии и спокойно масштабировать онлайн-бизнес.</p>
+            <p class="bento-text-small opacity-8">Вы получаете свидетельство и полный пакет документов, которые позволяют подтверждать авторство, оформлять лицензии и спокойно масштабировать онлайн-бизнес.</p>
           </article>
         </div>
       </section>
@@ -216,22 +237,21 @@
           <p class="eyebrow">Стоимость</p>
           <h2>Тарифы на защиту контента</h2>
         </div>
-        
-        <div class="apple-scroll-controls">
-          <button class="apple-scroll-btn" onclick="document.getElementById('pricingScroll').scrollBy({left: -420, behavior: 'smooth'})">❮</button>
-          <button class="apple-scroll-btn" onclick="document.getElementById('pricingScroll').scrollBy({left: 420, behavior: 'smooth'})">❯</button>
+        <div class="pricing-swipe-hint" aria-hidden="true">
+          <span>Листайте вправо или тяните карточки</span>
+          <strong>→</strong>
         </div>
-
-        <div class="apple-scroll-track" id="pricingScroll">
+        
+        <div class="apple-scroll-track" id="pricingScroll" data-auto-scroll="x" data-auto-scroll-speed="12" data-auto-scroll-mode="bounce">
           
           <div class="apple-pricing-column wide">
             <div class="apple-visual-card card-bg-1">
-              <h4>Course / School</h4>
+              <h4>Онлайн-школы и курсы</h4>
               <ul class="apple-feat-list">
-                <li>Регистрация всех модулей курса</li>
-                <li>Договоры с экспертами/командой</li>
+                <li>Фиксация авторства на курс и материалы</li>
+                <li>Договоры с экспертами и командой</li>
                 <li>Оферта для учеников</li>
-                <li>Интеграция системы защиты</li>
+                <li>Базовая система защиты контента</li>
               </ul>
             </div>
             <p class="apple-pricing-info"><strong>По запросу.</strong> Для комплексной защиты онлайн-школ и образовательных платформ под ключ.</p>
@@ -239,12 +259,12 @@
 
           <div class="apple-pricing-column">
             <div class="apple-visual-card card-bg-2">
-              <h4>Author Start</h4>
+              <h4>Авторы и эксперты</h4>
               <ul class="apple-feat-list">
                 <li>Консультация по объекту</li>
                 <li>Анализ охраноспособности</li>
-                <li>Регистрация в Казпатенте</li>
-                <li>Свидетельство на руки</li>
+                <li>Подача материалов в Казпатент</li>
+                <li>Получение свидетельства</li>
               </ul>
             </div>
             <p class="apple-pricing-info"><strong>По запросу.</strong> Базовый пакет для старта авторов, экспертов и дизайнеров.</p>
@@ -252,12 +272,12 @@
 
           <div class="apple-pricing-column">
             <div class="apple-visual-card card-bg-3">
-              <h4>IT / Digital</h4>
+              <h4>IT и цифровые продукты</h4>
               <ul class="apple-feat-list">
-                <li>Регистрация исходного кода</li>
+                <li>Фиксация прав на код и продукт</li>
                 <li>IP-аудит проекта</li>
                 <li>Договоры отчуждения прав</li>
-                <li>NDA и внутренние политики</li>
+                <li>NDA и документы с командой</li>
               </ul>
             </div>
             <p class="apple-pricing-info"><strong>По запросу.</strong> Оформление прав для IT-проектов, SaaS и цифровых сервисов.</p>
@@ -265,7 +285,7 @@
 
           <div class="apple-pricing-column">
             <div class="apple-visual-card card-bg-4">
-              <h4>Protection</h4>
+              <h4>Защита и пресечение нарушений</h4>
               <ul class="apple-feat-list">
                 <li>Мониторинг нарушений</li>
                 <li>Претензионная работа</li>
@@ -273,13 +293,9 @@
                 <li>Блокировка пиратских сливов</li>
               </ul>
             </div>
-            <p class="apple-pricing-info"><strong>По запросу.</strong> Сопровождение споров, взыскание компенсаций и удаление пиратских сливов.</p>
+            <p class="apple-pricing-info"><strong>По запросу.</strong> Сопровождение споров, пресечение нарушений и удаление пиратских сливов.</p>
           </div>
 
-        </div>
-
-        <div class="compare-btn-container">
-          <button class="nav-cta compare-cta-btn" onclick="openCompareModal()">Сравнить все пакеты</button>
         </div>
 
       </section>
@@ -315,23 +331,15 @@
             <div class="timeline-dot">3</div>
             <div class="timeline-content">
               <h3>Подача заявки</h3>
-              <p>Официальная регистрация в Минюсте/Казпатенте. Получение заявки с присвоенным номером в течение дня.</p>
+              <p>Подача материалов в Казпатент и получение заявки с присвоенным номером.</p>
             </div>
           </div>
 
           <div class="apple-timeline-item right">
             <div class="timeline-dot">4</div>
             <div class="timeline-content">
-              <h3>Экспертиза</h3>
-              <p>Прохождение формальной и по существу экспертизы. Получение предварительного решения о признании авторства.</p>
-            </div>
-          </div>
-
-          <div class="apple-timeline-item left">
-            <div class="timeline-dot">5</div>
-            <div class="timeline-content">
               <h3>Свидетельство</h3>
-              <p>Выдача государственного свидетельства об авторстве. Поздравляем, ваш интеллектуальный продукт защищен!</p>
+              <p>Получение свидетельства и полного комплекта документов для подтверждения авторства и защиты контента.</p>
             </div>
           </div>
         </div>
@@ -413,134 +421,20 @@
             <li><a href="https://wa.me/77054816699" target="_blank" rel="noopener">WhatsApp</a></li>
           </ul>
         </div>
+        <div>
+          <h3>Документы</h3>
+          <ul>
+            <li><a href="assets/docs/privacy-policy-personal-data.docx" download>Политика конфиденциальности</a></li>
+            <li><a href="assets/docs/public-offer-ip-services.docx" download>Договор оферты</a></li>
+            <li><a href="assets/docs/consent-personal-data.docx" download>Согласие на сбор и обработку ПД</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Ainura Rysbekova</span>
         <span>Copyright & Digital Product Protection</span>
       </div>
     </footer>
-  <div id="compareModal" class="compare-modal">
-    <div class="compare-modal-content">
-      <span class="close-modal" onclick="closeCompareModal()">&times;</span>
-      <h3 class="compare-modal-title">Выбор пакета услуг</h3>
-      <div class="compare-table-wrapper">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Услуга</th>
-              <th>START<br><span style="font-size:0.75rem; color:rgba(255,255,255,0.5); text-transform:none;">Авторы и эксперты</span></th>
-              <th>DIGITAL<br><span style="font-size:0.75rem; color:rgba(255,255,255,0.5); text-transform:none;">Инфобизнес и школы</span></th>
-              <th>BEAUTY<br><span style="font-size:0.75rem; color:rgba(255,255,255,0.5); text-transform:none;">Салоны и студии</span></th>
-              <th>LANGUAGE<br><span style="font-size:0.75rem; color:rgba(255,255,255,0.5); text-transform:none;">Языковые центры</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Консультация эксперта</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Анализ охраноспособности</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Регистрация в Минюсте/Казпатенте</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Юридическое описание объекта</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Определение состава ИС (ПО, методики)</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Оформление NDA (Конфиденциальность)</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Договоры с командой/подрядчиками</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Оферта для клиентов/учеников</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="dash-icon">—</td>
-              <td class="dash-icon">—</td>
-            </tr>
-            <tr>
-              <td>Система защиты от копирования</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="dash-icon">—</td>
-              <td class="dash-icon">—</td>
-            </tr>
-            <tr>
-              <td>Мониторинг нарушений</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Претензионная работа</td>
-              <td class="dash-icon">—</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-              <td class="check-icon">✔</td>
-            </tr>
-            <tr>
-              <td>Итоговый результат</td>
-              <td style="font-size:0.85rem; color:rgba(255,255,255,0.7);">Свидетельство об авторстве</td>
-              <td style="font-size:0.85rem; color:rgba(255,255,255,0.7);">Юридическая архитектура курса</td>
-              <td style="font-size:0.85rem; color:rgba(255,255,255,0.7);">Защищенная beauty-методика</td>
-              <td style="font-size:0.85rem; color:rgba(255,255,255,0.7);">Защищенная программа обучения</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function openCompareModal() {
-      document.getElementById('compareModal').classList.add('show');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeCompareModal() {
-      document.getElementById('compareModal').classList.remove('show');
-      document.body.style.overflow = '';
-    }
-    window.onclick = function(event) {
-      const modal = document.getElementById('compareModal');
-      if (event.target == modal) {
-        closeCompareModal();
-      }
-    }
-  </script>
   </div>
   <script>
     // Tab switching logic
@@ -571,5 +465,6 @@
       observer.observe(item);
     });
   </script>
+  <script src="auto-scroll.js?v=20260406-mobile47"></script>
 </body>
 </html>
