@@ -1698,9 +1698,24 @@ textarea {
 .reviews-track {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 15px;
   animation: none;
-  padding-right: 10px;
+  padding-bottom: 15px;
+  will-change: transform;
+}
+
+/* Modern Smooth Marquee Animation */
+@keyframes reviews-marquee-vertical {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, calc(-50% - 7.5px), 0); }
+}
+
+.reviews-marquee[data-auto-scroll-smooth="true"] .reviews-track {
+  animation: reviews-marquee-vertical var(--marquee-duration, 40s) linear infinite;
+}
+
+.reviews-marquee[data-auto-scroll-smooth="true"]:hover .reviews-track {
+  animation-play-state: paused;
 }
 
 .reviews-intro.site-tone h2 {

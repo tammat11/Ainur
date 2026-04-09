@@ -157,7 +157,10 @@
     if (!prefersReducedMotion.matches) start();
   };
 
-  scrollers.forEach(createAutoScroller);
+  scrollers.forEach(scroller => {
+    if (scroller.dataset.autoScrollSmooth === "true") return;
+    createAutoScroller(scroller);
+  });
 })();
 
 (() => {
