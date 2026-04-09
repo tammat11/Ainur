@@ -1647,7 +1647,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  order: 2;
 }
 
 .reviews-marquee {
@@ -1656,7 +1655,6 @@ textarea {
   overflow-y: auto;
   position: relative;
   padding-top: 0;
-  order: 1;
   scrollbar-width: thin;
   scrollbar-color: rgba(197, 168, 128, 0.7) transparent;
 }
