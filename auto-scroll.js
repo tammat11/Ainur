@@ -154,7 +154,17 @@
     element.addEventListener("focusout", () => resume(700));
     window.addEventListener("resize", () => resume(250), { passive: true });
 
-    if (!prefersReducedMotion.matches) start();
+    const viewportObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (!prefersReducedMotion.matches) start();
+        } else {
+          stop();
+        }
+      });
+    }, { threshold: 0.01 });
+
+    viewportObserver.observe(element);
   };
 
   scrollers.forEach(scroller => {
