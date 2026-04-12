@@ -1316,7 +1316,7 @@ textarea {
   align-items: start;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .services-showcase-head.centered {
@@ -1343,18 +1343,18 @@ textarea {
 .services-showcase {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 16px;
   align-items: stretch;
-  min-height: 500px;
+  min-height: auto;
 }
 
 .service-showcase-card {
   position: relative;
-  min-height: 280px;
+  min-height: auto;
   height: auto;
   border-radius: 30px;
   overflow: hidden;
-  padding: 18px 20px 20px;
+  padding: 16px 18px 18px;
   display: flex;
   align-items: stretch;
   background: linear-gradient(180deg, #c7b4a5 0%, #6c5c52 100%);
@@ -1398,10 +1398,10 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 8px;
   width: 100%;
   min-height: 100%;
-  padding-top: 64px;
+  padding-top: 48px;
 }
 
 .service-showcase-body h3 {
@@ -2690,8 +2690,8 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  margin-top: 24px;
+  min-height: 42px;
+  margin-top: 16px;
   padding: 0 20px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.34);
