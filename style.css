@@ -1876,7 +1876,9 @@ textarea {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 24px;
+  top: 104px;
+  z-index: 10;
+  align-self: start;
 }
 
 .faq-intro h2 {
@@ -1912,8 +1914,8 @@ textarea {
 }
 
 .faq-scroll-wrapper {
-  max-height: 380px; /* Высота под 3.2 вопроса */
-  overflow-y: auto;
+  max-height: none; 
+  overflow: visible;
   padding: 0 10px 40px 0;
   position: relative;
   /* Градиентная маска для подсказки скролла */
