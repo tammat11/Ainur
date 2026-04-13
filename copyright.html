@@ -469,14 +469,36 @@
           const prevBtn = document.getElementById('cert-prev');
           
           if (slider && nextBtn && prevBtn) {
-            const scrollAmount = 344; // card width + gap
+            slider.querySelectorAll('img').forEach((img) => {
+              const card = img.closest('.cert-card');
+              if (!card) return;
+
+              const hideBrokenCard = () => {
+                card.remove();
+              };
+
+              if (img.complete && img.naturalWidth === 0) {
+                hideBrokenCard();
+                return;
+              }
+
+              img.addEventListener('error', hideBrokenCard, { once: true });
+            });
+
+            const getScrollAmount = () => {
+              const firstCard = slider.querySelector('.cert-card');
+              if (!firstCard) return 344;
+
+              const gap = parseFloat(getComputedStyle(slider).gap || '24');
+              return firstCard.getBoundingClientRect().width + gap;
+            };
             
             nextBtn.addEventListener('click', () => {
-              slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+              slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
             });
             
             prevBtn.addEventListener('click', () => {
-              slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+              slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
             });
           }
         });
