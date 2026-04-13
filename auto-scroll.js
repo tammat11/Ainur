@@ -3,6 +3,19 @@
   const scrollers = Array.from(document.querySelectorAll("[data-auto-scroll]"));
 
   if (!scrollers.length) return;
+  if (document.body.classList.contains("trademark-redesign")) return;
+
+  const visibleState = new WeakMap();
+  const viewportObserver = "IntersectionObserver" in window
+    ? new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          visibleState.set(entry.target, entry.isIntersecting);
+          entry.target.dispatchEvent(new CustomEvent("auto-scroll-visibility"));
+        });
+      }, {
+        threshold: 0.08
+      })
+    : null;
 
   const createAutoScroller = (element) => {
     const axis = element.dataset.autoScroll === "y" ? "y" : "x";
@@ -24,6 +37,9 @@
     let dragMoved = false;
     let currentScroll = element[scrollProp];
 
+    const isViewportVisible = () => viewportObserver ? visibleState.get(element) !== false : true;
+    const canRun = () => !document.hidden && isViewportVisible();
+
     const getMax = () => Math.max(0, element[scrollSizeProp] - element[clientSizeProp]);
     const getLoopPoint = () => Math.max(1, element[scrollSizeProp] / 2);
 
@@ -34,7 +50,7 @@
     };
 
     const tick = (now) => {
-      if (paused) {
+      if (paused || !canRun()) {
         stop();
         return;
       }
@@ -72,7 +88,7 @@
     };
 
     const start = () => {
-      if (prefersReducedMotion.matches || paused || rafId) return;
+      if (prefersReducedMotion.matches || paused || rafId || !canRun()) return;
       if (getMax() <= 1) return;
       rafId = requestAnimationFrame(tick);
     };
@@ -153,6 +169,23 @@
     element.addEventListener("focusin", pause);
     element.addEventListener("focusout", () => resume(700));
     window.addEventListener("resize", () => resume(250), { passive: true });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        pause();
+      } else {
+        resume(150);
+      }
+    });
+    element.addEventListener("auto-scroll-visibility", () => {
+      if (isViewportVisible()) {
+        resume(120);
+      } else {
+        pause();
+      }
+    });
+
+    visibleState.set(element, true);
+    viewportObserver?.observe(element);
 
     if (!prefersReducedMotion.matches) start();
   };

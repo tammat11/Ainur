@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css?v=redo2026-v2">
 </head>
 
-<body class="trademark-redesign">
+<body class="trademark-redesign copyright-page">
   <div class="page-shell">
     <header class="hero redesign-hero hero-copyright" id="top">
       <div class="container">
@@ -161,7 +161,9 @@
                     <!-- Glowing Code Brackets </ > -->
                     <path d="M80 80 L30 120 L80 160" />
                     <path d="M160 80 L210 120 L160 160" />
-                    <path d="M140 60 L100 180" class="svg-pulse-glow" />
+                    <g class="svg-pulse-glow">
+                      <path d="M140 60 L100 180" />
+                    </g>
                   </svg>
                 </div>
               </div>
@@ -281,15 +283,11 @@
           <p class="eyebrow">Стоимость</p>
           <h2>Тарифы на защиту контента</h2>
         </div>
-        <div class="pricing-swipe-hint" aria-hidden="true">
-          <span>Листайте вправо или тяните карточки</span>
-          <strong>→</strong>
-        </div>
 
-        <div class="apple-scroll-track" id="pricingScroll" data-auto-scroll="x" data-auto-scroll-speed="12"
-          data-auto-scroll-mode="bounce">
 
-          <div class="apple-pricing-column wide">
+        <div class="apple-scroll-track" id="pricingScroll">
+
+          <div class="apple-pricing-column">
             <div class="apple-visual-card card-bg-1">
               <h4>Онлайн-школы и курсы</h4>
               <ul class="apple-feat-list">
@@ -396,8 +394,97 @@
       </section>
 
 
+      <!-- Section: Свидетельство -->
+      <section class="certs-section animate-in">
+        <div class="certs-header">
+          <h2>Свидетельства</h2>
+          <div class="certs-nav">
+            <button class="certs-nav-btn" id="cert-prev" aria-label="Назад">
+              <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="certs-nav-btn" id="cert-next" aria-label="Вперед">
+              <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="certs-slider-wrapper" id="cert-slider">
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert1.jpg" alt="Свидетельство 1">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert2.jpg" alt="Свидетельство 2">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert3.jpg" alt="Свидетельство 3">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert4.jpg" alt="Свидетельство 4">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert5.jpg" alt="Свидетельство 5">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert6.jpg" alt="Свидетельство 6">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert7.jpg" alt="Свидетельство 7">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert8.jpg" alt="Свидетельство 8">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert9.jpg" alt="Свидетельство 9">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert10.jpg" alt="Свидетельство 10">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert11.jpg" alt="Свидетельство 11">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert12.jpg" alt="Свидетельство 12">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert13.jpg" alt="Свидетельство 13">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert14.jpg" alt="Свидетельство 14">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert15.jpg" alt="Свидетельство 15">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert16.jpg" alt="Свидетельство 16">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="assets/images/certs/cert17.jpg" alt="Свидетельство 17">
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const slider = document.getElementById('cert-slider');
+          const nextBtn = document.getElementById('cert-next');
+          const prevBtn = document.getElementById('cert-prev');
+          
+          if (slider && nextBtn && prevBtn) {
+            const scrollAmount = 344; // card width + gap
+            
+            nextBtn.addEventListener('click', () => {
+              slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+            
+            prevBtn.addEventListener('click', () => {
+              slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+          }
+        });
+      </script>
+
+
       <!-- Section: FAQ -->
-      <section class="section-spacing animate-in">
+      <section class="faq-section section-spacing animate-in" id="faq">
         <div class="services-showcase-head centered">
           <p class="eyebrow">FAQ</p>
           <h2>Частые вопросы</h2>
@@ -433,18 +520,7 @@
         </div>
       </section>
 
-      <section class="dark-cta animate-in" id="contact">
-        <div class="contact-copy">
-          <p class="eyebrow-light">Защита контента</p>
-          <h2 class="white-title">Обсудим защиту вашего интеллектуального продукта.</h2>
-          <p class="contact-lead-white">Ответ в WhatsApp в течение 15 минут в рабочее время.</p>
-        </div>
-        <div class="contact-details">
-          <a href="mailto:rysbekova-ainura@mail.ru" class="white-link">rysbekova-ainura@mail.ru</a>
-          <a href="tel:+77054816699" class="white-link">+7 705 481-66-99</a>
-          <a href="https://wa.me/77054816699" target="_blank" rel="noopener" class="pill-button light">WhatsApp</a>
-        </div>
-      </section>
+
     </main>
 
     <footer class="site-footer">
