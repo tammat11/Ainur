@@ -5500,131 +5500,37 @@ textarea {
   --glass-border: rgba(255, 255, 255, 0.1);
 }
 
-.trademark-redesign .main-panel {
-  margin-top: -138px;
-  padding-top: 174px;
-}
-
-.redesign-hero {
-  background:
-    linear-gradient(165deg, rgba(17, 18, 16, 1) 0%, rgba(17, 18, 16, 0.7) 40%, rgba(17, 18, 16, 0.95) 100%),
-    url("assets/images/ainura-hero-mirror.jpg") center/cover no-repeat;
-  padding: 80px 0 124px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.redesign-hero::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  right: -10%;
-  width: 40%;
-  height: 60%;
-  background: radial-gradient(circle, rgba(234, 216, 200, 0.08) 0%, transparent 70%);
-  filter: blur(80px);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-copy h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  font-weight: 800;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.hero-subcopy {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  max-width: 540px;
-  color: #fff;
-  opacity: 0.8;
-  margin-bottom: 32px;
-}
-
-.hero-checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 640px;
-}
-
-.hero-checklist li {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.85);
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  line-height: 1.4;
-}
-
-.hero-checklist li::before {
-  content: "—";
-  color: rgba(255, 255, 255, 0.4);
-  flex-shrink: 0;
-}
-
-/* --- REDESIGN ANIMATIONS --- */
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-in {
-  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
-
-/* --- Refined Redesign Utilities --- */
-
 .trademark-redesign {
   --accent-gold: #c5a880;
   --accent-gold-soft: #ead8c8;
-  --dark-surface: #26151b;
+  --dark-surface: #231217;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --hero-overlap: 20px !important; 
+}
+
+.trademark-redesign .main-panel {
+  border-radius: 48px 48px 0 0 !important;
+  margin-top: -20px !important;
+  padding-top: 50px !important;
 }
 
 .redesign-hero {
-  background:
-    linear-gradient(var(--redesign-angle, 155deg), rgba(17, 18, 16, 0.6) 0%, rgba(17, 18, 16, 0.25) 40%, rgba(17, 18, 16, 0.5) 100%),
-    var(--hero-img, url("assets/images/ainura-hero-mirror.jpg")) center/cover no-repeat;
-  padding: 26px 0 160px;
-  min-height: 100vh;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-bottom-left-radius: 44px;
-  border-bottom-right-radius: 44px;
+  min-height: 88vh !important;
+  background: 
+    linear-gradient(165deg, rgba(17, 18, 16, 0.7) 0%, rgba(17, 18, 16, 0.2) 40%, rgba(17, 18, 16, 0.5) 100%),
+    var(--hero-img) center/cover no-repeat !important;
+  padding: 40px 0 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-bottom-left-radius: 34px !important;
+  border-bottom-right-radius: 34px !important;
+}
+
+.redesign-hero .hero-copy {
+  padding-top: 25px !important; 
 }
 
 .redesign-hero::after {
@@ -6362,8 +6268,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: grayscale(1);
-  opacity: 0.6;
+  filter: none;
+  opacity: 1;
   transition: all 0.4s ease;
 }
 
