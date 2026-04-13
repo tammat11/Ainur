@@ -103,33 +103,29 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 .reveal-on-scroll {
   --reveal-delay: 0s;
   opacity: 0;
-  filter: blur(10px);
-  transform: translate3d(0, 28px, 0) scale(0.985);
+  transform: translate3d(0, 24px, 0);
   transition:
-    opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    filter 0.72s ease;
+    opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   transition-delay: var(--reveal-delay);
-  will-change: opacity, transform, filter;
+  will-change: opacity, transform;
 }
 
 .reveal-on-scroll[data-reveal-variant="left"] {
-  transform: translate3d(-24px, 18px, 0) scale(0.985);
+  transform: translate3d(-32px, 0, 0);
 }
 
 .reveal-on-scroll[data-reveal-variant="right"] {
-  transform: translate3d(24px, 18px, 0) scale(0.985);
+  transform: translate3d(32px, 0, 0);
 }
 
 .reveal-on-scroll[data-reveal-variant="soft"] {
-  transform: translate3d(0, 20px, 0) scale(0.992);
-  filter: blur(8px);
+  transform: translate3d(0, 16px, 0);
 }
 
 .reveal-on-scroll.is-revealed {
   opacity: 1;
-  filter: blur(0);
-  transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7619,14 +7615,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 @keyframes appleShowcaseEnter {
   0% {
     opacity: 0;
-    transform: translateY(30px) scale(0.97);
-    filter: blur(5px);
+    transform: translateY(24px) scale(0.98);
   }
 
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
-    filter: blur(0);
   }
 }
 
