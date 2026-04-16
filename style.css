@@ -1197,17 +1197,17 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-oi-qaragai .trust-logo {
   background-image: url("assets/images/client-logos/oi-qaragai.svg");
-  --trust-logo-size: auto 110%;
+  --trust-logo-size: auto 75%;
 }
 
 .trust-card.brand-alinex .trust-logo {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --trust-logo-size: auto 92%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-shoqan .trust-logo {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --trust-logo-size: auto 94%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-ushiro .trust-logo {
@@ -1421,17 +1421,17 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-oi-qaragai {
   background-image: url("assets/images/client-logos/oi-qaragai.svg");
-  --client-chip-size: auto 128%;
+  --client-chip-size: auto 75%;
 }
 
 .client-chip.brand-alinex {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --client-chip-size: auto 102%;
+  --client-chip-size: 80% auto;
 }
 
 .client-chip.brand-shoqan {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --client-chip-size: auto 108%;
+  --client-chip-size: 80% auto;
 }
 
 .client-chip.brand-ushiro {
