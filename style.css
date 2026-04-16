@@ -1208,7 +1208,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-shoqan .trust-logo {
   background-image: url("assets/images/client-logos/shoqan.png");
-  padding: 20px;
+  padding: 15px;
 }
 
 .trust-card.brand-ushiro .trust-logo {
@@ -1282,7 +1282,8 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-shoqansuits .trust-logo {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  --trust-logo-size: 115%;
+  --trust-logo-size: 110%;
+  padding: 15px;
 }
 
 .trust-card.brand-bes-qazan .trust-logo {
@@ -1420,7 +1421,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-shoqan {
   background-image: url("assets/images/client-logos/shoqan.png");
-  padding: 14px;
+  padding: 10px;
 }
 
 .client-chip.brand-ushiro {
@@ -1501,7 +1502,8 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-shoqansuits {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  --client-chip-size: 115%;
+  --client-chip-size: 110%;
+  padding: 5px;
 }
 
 .client-chip.brand-bes-qazan {
