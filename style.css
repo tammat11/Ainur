@@ -1296,6 +1296,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-bes-qazan .trust-logo {
   background-image: url("assets/images/client-logos/bes-qazan.png");
+  padding: 35px;
 }
 
 .trust-card.brand-lugx .trust-logo {
@@ -1524,6 +1525,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-bes-qazan {
   background-image: url("assets/images/client-logos/bes-qazan.png");
+  padding: 18px;
 }
 
 .client-chip.brand-lugx {
