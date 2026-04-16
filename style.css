@@ -1253,21 +1253,26 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-almaty-soul .trust-logo {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  padding: 35px;
+  --trust-logo-size: auto 55%;
+  padding: 25px;
 }
 
 .trust-card.brand-aport-alatau .trust-logo {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  padding: 35px;
+  --trust-logo-size: auto 55%;
+  padding: 25px;
 }
 
 .trust-card.brand-bohoinasia .trust-logo {
   background-image: url("assets/images/client-logos/bohoinasia.png");
-  padding: 38px;
+  --trust-logo-size: auto 55%;
+  padding: 25px;
 }
 
 .trust-card.brand-doctor-green .trust-logo {
   background-image: url("assets/images/client-logos/doctor-green.png");
+  --trust-logo-size: auto 55%;
+  padding: 25px;
 }
 
 .trust-card.brand-harbor .trust-logo {
@@ -1476,21 +1481,26 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-almaty-soul {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  padding: 22px;
+  --client-chip-size: auto 52%;
+  padding: 15px;
 }
 
 .client-chip.brand-aport-alatau {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  padding: 22px;
+  --client-chip-size: auto 52%;
+  padding: 15px;
 }
 
 .client-chip.brand-bohoinasia {
   background-image: url("assets/images/client-logos/bohoinasia.png");
-  padding: 20px;
+  --client-chip-size: auto 52%;
+  padding: 15px;
 }
 
 .client-chip.brand-doctor-green {
   background-image: url("assets/images/client-logos/doctor-green.png");
+  --client-chip-size: auto 55%;
+  padding: 15px;
 }
 
 .client-chip.brand-harbor {
