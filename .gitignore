@@ -17,3 +17,8 @@
 # local photo source folders
 Фотки*/
 примеры*/
+.vercel
+.env*.local
+output/
+logs/
+node_modules/

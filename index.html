@@ -175,6 +175,40 @@
         </div>
       </section>
 
+      <section class="certs-section animate-in">
+        <div class="certs-header">
+          <h2>Свидетельства</h2>
+          <div class="certs-nav">
+            <button class="certs-nav-btn" id="cert-prev" aria-label="Назад">
+              <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="certs-nav-btn" id="cert-next" aria-label="Вперед">
+              <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="certs-slider-wrapper" id="cert-slider">
+          <div class="cert-card">
+            <img loading="eager" src="/assets/images/certs/cert2.jpg" alt="Свидетельство 1">
+          </div>
+          <div class="cert-card">
+            <img loading="eager" src="/assets/images/certs/cert7.jpg" alt="Свидетельство 2">
+          </div>
+          <div class="cert-card">
+            <img loading="eager" src="/assets/images/certs/cert9.jpg" alt="Свидетельство 3">
+          </div>
+          <div class="cert-card">
+            <img loading="eager" src="/assets/images/certs/cert11.jpg" alt="Свидетельство 4">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="/assets/images/certs/cert15.jpg" alt="Свидетельство 5">
+          </div>
+          <div class="cert-card">
+            <img loading="lazy" src="/assets/images/certs/cert16.jpg" alt="Свидетельство 6">
+          </div>
+        </div>
+      </section>
+
       <section class="trust-strip-section" id="cases">
         <div class="trust-layout">
           <div class="trust-intro">
@@ -183,7 +217,7 @@
             <p>Бренды и проекты, с которыми я работала по товарным знакам, защите бренда и интеллектуальной
               собственности.</p>
           </div>
-          <div class="trust-scroll" data-auto-scroll="x" data-auto-scroll-speed="9" data-auto-scroll-mode="bounce">
+          <div class="trust-scroll">
             <article class="trust-card brand-freedom has-logo">
               <div class="trust-logo"><span>Freedom</span></div>
               <strong>Freedom</strong>
@@ -208,6 +242,13 @@
             <article class="trust-card brand-shoqan has-logo">
               <div class="trust-logo"><span>Shoqan</span></div>
               <strong>Shoqan</strong>
+              <span class="trust-card-type">Регистрация товарного знака</span>
+              <p>Усильте защиту своего бренда с помощью регистрации товарного знака.</p>
+              <em>Имя и репутация бренда под надёжной охраной, с сохранением уникальности бизнеса.</em>
+            </article>
+            <article class="trust-card brand-shoqansuits has-logo">
+              <div class="trust-logo"><span>SHOQANSUITS</span></div>
+              <strong>SHOQANSUITS</strong>
               <span class="trust-card-type">Регистрация товарного знака</span>
               <p>Усильте защиту своего бренда с помощью регистрации товарного знака.</p>
               <em>Имя и репутация бренда под надёжной охраной, с сохранением уникальности бизнеса.</em>
@@ -328,13 +369,6 @@
                 провалов.</p>
               <em>Понятная архитектура защиты и спокойное сопровождение.</em>
             </article>
-            <article class="trust-card brand-shoqansuits has-logo">
-              <div class="trust-logo"><span>SHOQANSUITS</span></div>
-              <strong>SHOQANSUITS</strong>
-              <span class="trust-card-type">Регистрация товарного знака</span>
-              <p>Усильте защиту своего бренда с помощью регистрации товарного знака.</p>
-              <em>Имя и репутация бренда под надёжной охраной, с сохранением уникальности бизнеса.</em>
-            </article>
             <article class="trust-card brand-bes-qazan has-logo">
               <div class="trust-logo"><span>Bes Qazan</span></div>
               <strong>Bes Qazan</strong>
@@ -361,6 +395,7 @@
             <span class="client-chip brand-oi-qaragai has-logo">OI QARAGAI</span>
             <span class="client-chip brand-alinex has-logo">ALINEX</span>
             <span class="client-chip brand-shoqan has-logo">SHOQAN</span>
+            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
             <span class="client-chip brand-ushiro has-logo">USHIRO</span>
             <span class="client-chip brand-alina-paint has-logo">ALINA PAINT</span>
             <span class="client-chip brand-desso has-logo">DESSO</span>
@@ -377,13 +412,13 @@
             <span class="client-chip brand-harbor has-logo">HARBOR</span>
             <span class="client-chip brand-ishq has-logo">ISHQ</span>
             <span class="client-chip brand-sisbro has-logo">SIS &amp; BRO</span>
-            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
             <span class="client-chip brand-bes-qazan has-logo">BES QAZAN</span>
             <span class="client-chip brand-lugx has-logo">L'UGX</span>
             <span class="client-chip brand-freedom has-logo">FREEDOM</span>
             <span class="client-chip brand-oi-qaragai has-logo">OI QARAGAI</span>
             <span class="client-chip brand-alinex has-logo">ALINEX</span>
             <span class="client-chip brand-shoqan has-logo">SHOQAN</span>
+            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
             <span class="client-chip brand-ushiro has-logo">USHIRO</span>
             <span class="client-chip brand-alina-paint has-logo">ALINA PAINT</span>
             <span class="client-chip brand-desso has-logo">DESSO</span>
@@ -400,7 +435,6 @@
             <span class="client-chip brand-harbor has-logo">HARBOR</span>
             <span class="client-chip brand-ishq has-logo">ISHQ</span>
             <span class="client-chip brand-sisbro has-logo">SIS &amp; BRO</span>
-            <span class="client-chip brand-shoqansuits has-logo">SHOQANSUITS</span>
             <span class="client-chip brand-bes-qazan has-logo">BES QAZAN</span>
             <span class="client-chip brand-lugx has-logo">L'UGX</span>
           </div>
@@ -412,7 +446,7 @@
           <div class="reviews-intro site-tone">
             <h2>Клиенты<br>рекомендуют</h2>
           </div>
-          <div class="reviews-marquee" data-auto-scroll-smooth="true" style="--marquee-duration: 180s;">
+          <div class="reviews-marquee">
             <div class="reviews-track">
               <!-- 1. SHOQANSUITS -->
               <article class="review-panel">
@@ -795,25 +829,17 @@
           <a class="brand footer-brand" href="#top">Айнура Рысбекова</a>
         </div>
         <div>
-          <h3>Услуги</h3>
+          <h3>Страницы</h3>
           <ul>
-            <li>Товарные знаки</li>
-            <li>Авторское право</li>
-            <li>IP-споры</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Практика</h3>
-          <ul>
-            <li>Лицензии</li>
-            <li>Digital и SaaS</li>
-            <li>Защита бренда</li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="trademark.html">Товарные знаки</a></li>
+            <li><a href="copyright.html">Авторское право</a></li>
+            <li><a href="other.html">Прочие услуги</a></li>
           </ul>
         </div>
         <div>
           <h3>Контакты</h3>
           <ul>
-            <li>Алматы, Казахстан</li>
             <li>+7 705 481-66-99</li>
             <li>rysbekova-ainura@mail.ru</li>
           </ul>
@@ -833,7 +859,7 @@
       </div>
     </footer>
   </div>
-  <script src="auto-scroll.js?v=20260406-mobile46"></script>
+  <script src="auto-scroll.js?v=20260416-trustwheel03"></script>
   <!-- Review Modal Container -->
   <div id="review-modal" class="review-modal" onclick="closeReviewModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
@@ -843,6 +869,49 @@
   </div>
 
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('cert-slider');
+      const nextBtn = document.getElementById('cert-next');
+      const prevBtn = document.getElementById('cert-prev');
+
+      if (slider && nextBtn && prevBtn) {
+        slider.querySelectorAll('img').forEach((img) => {
+          const card = img.closest('.cert-card');
+          if (!card) return;
+
+          const hideBrokenCard = () => {
+            card.remove();
+          };
+
+          if (img.complete && img.naturalWidth === 0) {
+            hideBrokenCard();
+            return;
+          }
+
+          img.addEventListener('error', hideBrokenCard, { once: true });
+        });
+
+        const getScrollAmount = () => {
+          const firstCard = slider.querySelector('.cert-card');
+          if (!firstCard) return 344;
+
+          const gap = parseFloat(getComputedStyle(slider).gap || '24');
+          return firstCard.getBoundingClientRect().width + gap;
+        };
+
+        // Wheel scroll is now handled by auto-scroll.js for all .cert-slider elements
+
+
+        nextBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+      }
+    });
+
     function openReviewModal(imgSrc) {
       const modal = document.getElementById('review-modal');
       const modalImg = document.getElementById('modal-img');

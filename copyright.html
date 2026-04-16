@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=redo2026-v2">
+  <link rel="stylesheet" href="style.css?v=v-full-width-01">
 </head>
 
 <body class="trademark-redesign copyright-page">
@@ -88,9 +88,7 @@
           <div class="apple-display-panel">
             <article class="apple-content-card active" id="tab1">
               <div class="apple-content-text">
-                <h3>Онлайн-школы</h3>
-                <p>Юридическая упаковка всех обучающих модулей и защита от распространения в складчинах. Позволяет
-                  взыскивать до 100-кратной стоимости курса за каждое незаконное копирование.</p>
+                <p>Юридическая упаковка всех обучающих модулей и защита от распространения в складчинах.</p>
               </div>
               <div class="apple-content-image">
                 <div class="premium-svg-wrapper">
@@ -386,8 +384,7 @@
             <div class="timeline-dot">4</div>
             <div class="timeline-content">
               <h3>Свидетельство</h3>
-              <p>Получение свидетельства и полного комплекта документов для подтверждения авторства и защиты контента.
-              </p>
+              <p>Получение свидетельства.</p>
             </div>
           </div>
         </div>
@@ -409,55 +406,22 @@
         </div>
         <div class="certs-slider-wrapper" id="cert-slider">
           <div class="cert-card">
-            <img loading="eager" src="/assets/images/certs/cert1.jpg" alt="Свидетельство 1 [v3]">
+            <img loading="eager" src="/assets/images/certs/cert2.jpg" alt="Свидетельство 1">
           </div>
           <div class="cert-card">
-            <img loading="eager" src="/assets/images/certs/cert2.jpg" alt="Свидетельство 2 [v3]">
+            <img loading="eager" src="/assets/images/certs/cert7.jpg" alt="Свидетельство 2">
           </div>
           <div class="cert-card">
-            <img loading="eager" src="/assets/images/certs/cert3.jpg" alt="Свидетельство 3 [v3]">
+            <img loading="eager" src="/assets/images/certs/cert9.jpg" alt="Свидетельство 3">
           </div>
           <div class="cert-card">
-            <img loading="eager" src="/assets/images/certs/cert4.jpg" alt="Свидетельство 4 [v3]">
+            <img loading="eager" src="/assets/images/certs/cert11.jpg" alt="Свидетельство 4">
           </div>
           <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert5.jpg" alt="Свидетельство 5 [v3]">
+            <img loading="lazy" src="/assets/images/certs/cert15.jpg" alt="Свидетельство 5">
           </div>
           <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert6.jpg" alt="Свидетельство 6 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert7.jpg" alt="Свидетельство 7 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert8.jpg" alt="Свидетельство 8 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert9.jpg" alt="Свидетельство 9 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert10.jpg" alt="Свидетельство 10 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert11.jpg" alt="Свидетельство 11 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert12.jpg" alt="Свидетельство 12 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert13.jpg" alt="Свидетельство 13 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert14.jpg" alt="Свидетельство 14 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert15.jpg" alt="Свидетельство 15 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert16.jpg" alt="Свидетельство 16 [v3]">
-          </div>
-          <div class="cert-card">
-            <img loading="lazy" src="/assets/images/certs/cert17.jpg" alt="Свидетельство 17 [v3]">
+            <img loading="lazy" src="/assets/images/certs/cert16.jpg" alt="Свидетельство 6">
           </div>
         </div>
       </section>
@@ -492,6 +456,22 @@
               const gap = parseFloat(getComputedStyle(slider).gap || '24');
               return firstCard.getBoundingClientRect().width + gap;
             };
+
+            slider.addEventListener('wheel', (event) => {
+              const canScrollHorizontally = slider.scrollWidth > slider.clientWidth + 2;
+              if (!canScrollHorizontally) return;
+
+              const primaryDelta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+              if (primaryDelta === 0) return;
+
+              const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+              const nextScrollLeft = Math.max(0, Math.min(maxScrollLeft, slider.scrollLeft + primaryDelta));
+
+              if (nextScrollLeft === slider.scrollLeft) return;
+
+              event.preventDefault();
+              slider.scrollLeft = nextScrollLeft;
+            }, { passive: false });
             
             nextBtn.addEventListener('click', () => {
               slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
@@ -618,7 +598,7 @@
       observer.observe(item);
     });
   </script>
-  <script src="auto-scroll.js?v=20260406-mobile47"></script>
+  <script src="auto-scroll.js?v=20260416-trustwheel01"></script>
 </body>
 
 </html>
