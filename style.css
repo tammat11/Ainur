@@ -1175,7 +1175,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 8px;
 }
 
 .trust-logo span {
@@ -1401,7 +1401,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-repeat: no-repeat;
   background-size: var(--client-chip-size, contain);
   background-origin: content-box;
-  padding: 10px;
+  padding: 6px;
   box-shadow: 0 8px 20px rgba(49, 35, 20, 0.04);
 }
 
