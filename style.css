@@ -1217,7 +1217,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-alina-paint .trust-logo {
   background-image: url("assets/images/client-logos/alina-paint.svg");
-  --trust-logo-size: auto 90%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-desso .trust-logo {
@@ -1277,7 +1277,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-harbor .trust-logo {
   background-image: url("assets/images/client-logos/harbor.png");
-  --trust-logo-size: auto 90%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-ishq .trust-logo {
@@ -1287,22 +1287,22 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-sisbro .trust-logo {
   background-image: url("assets/images/client-logos/sisbro.png");
-  --trust-logo-size: auto 98%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-shoqansuits .trust-logo {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  --trust-logo-size: auto 96%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-bes-qazan .trust-logo {
   background-image: url("assets/images/client-logos/bes-qazan.png");
-  --trust-logo-size: auto 98%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card.brand-lugx .trust-logo {
   background-image: url("assets/images/client-logos/lugx.jpg");
-  --trust-logo-size: auto 100%;
+  --trust-logo-size: 80% auto;
 }
 
 .trust-card strong {
@@ -1441,7 +1441,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-alina-paint {
   background-image: url("assets/images/client-logos/alina-paint.svg");
-  --client-chip-size: auto 92%;
+  --client-chip-size: 80% auto;
 }
 
 .client-chip.brand-desso {
@@ -1506,7 +1506,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-harbor {
   background-image: url("assets/images/client-logos/harbor.png");
-  --client-chip-size: auto 94%;
+  --client-chip-size: 80% auto;
 }
 
 .client-chip.brand-ishq {
@@ -1516,7 +1516,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-sisbro {
   background-image: url("assets/images/client-logos/sisbro.png");
-  --client-chip-size: auto 112%;
+  --client-chip-size: 80% auto;
 }
 
 .client-chip.brand-shoqansuits {
