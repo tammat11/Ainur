@@ -1202,12 +1202,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-alinex .trust-logo {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --trust-logo-size: 80% auto;
+  --trust-logo-size: 70% auto;
 }
 
 .trust-card.brand-shoqan .trust-logo {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --trust-logo-size: 80% auto;
+  --trust-logo-size: 70% auto;
 }
 
 .trust-card.brand-ushiro .trust-logo {
@@ -1257,12 +1257,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-almaty-soul .trust-logo {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  --trust-logo-size: auto 98%;
+  --trust-logo-size: auto 75%;
 }
 
 .trust-card.brand-aport-alatau .trust-logo {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  --trust-logo-size: auto 98%;
+  --trust-logo-size: auto 75%;
 }
 
 .trust-card.brand-bohoinasia .trust-logo {
@@ -1426,12 +1426,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-alinex {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --client-chip-size: 80% auto;
+  --client-chip-size: 70% auto;
 }
 
 .client-chip.brand-shoqan {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --client-chip-size: 80% auto;
+  --client-chip-size: 70% auto;
 }
 
 .client-chip.brand-ushiro {
@@ -1486,12 +1486,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-almaty-soul {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  --client-chip-size: auto 120%;
+  --client-chip-size: auto 75%;
 }
 
 .client-chip.brand-aport-alatau {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  --client-chip-size: auto 118%;
+  --client-chip-size: auto 75%;
 }
 
 .client-chip.brand-bohoinasia {
