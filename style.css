@@ -1170,7 +1170,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-color: #f7f8f6;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: var(--trust-logo-size, contain);
+  background-size: var(--trust-logo-size, 85%);
   background-origin: content-box;
   display: flex;
   align-items: center;
@@ -1212,7 +1212,8 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-ushiro .trust-logo {
   background-image: url("assets/images/client-logos/ushiro.png");
-  padding: 15px;
+  --trust-logo-size: 140%;
+  padding: 5px;
 }
 
 .trust-card.brand-alina-paint .trust-logo {
@@ -1287,22 +1288,26 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-sisbro .trust-logo {
   background-image: url("assets/images/client-logos/sisbro.png");
-  padding: 20px;
+  --trust-logo-size: 160%;
+  padding: 5px;
 }
 
 .trust-card.brand-shoqansuits .trust-logo {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  padding: 35px;
+  --trust-logo-size: 150%;
+  padding: 5px;
 }
 
 .trust-card.brand-bes-qazan .trust-logo {
   background-image: url("assets/images/client-logos/bes-qazan.png");
-  padding: 35px;
+  --trust-logo-size: 140%;
+  padding: 5px;
 }
 
 .trust-card.brand-lugx .trust-logo {
   background-image: url("assets/images/client-logos/lugx.jpg");
-  padding: 30px;
+  --trust-logo-size: 140%;
+  padding: 5px;
 }
 
 .trust-card strong {
@@ -1399,9 +1404,9 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-color: rgba(255, 255, 255, 0.96);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: var(--client-chip-size, contain);
+  background-size: var(--client-chip-size, 85%);
   background-origin: content-box;
-  padding: 8px;
+  padding: 4px;
   box-shadow: 0 8px 20px rgba(49, 35, 20, 0.04);
 }
 
@@ -1437,7 +1442,8 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-ushiro {
   background-image: url("assets/images/client-logos/ushiro.png");
-  padding: 20px;
+  --client-chip-size: 130%;
+  padding: 2px;
 }
 
 .client-chip.brand-alina-paint {
@@ -1517,22 +1523,26 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-sisbro {
   background-image: url("assets/images/client-logos/sisbro.png");
-  padding: 14px;
+  --client-chip-size: 150%;
+  padding: 0;
 }
 
 .client-chip.brand-shoqansuits {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  padding: 25px;
+  --client-chip-size: 140%;
+  padding: 0;
 }
 
 .client-chip.brand-bes-qazan {
   background-image: url("assets/images/client-logos/bes-qazan.png");
-  --client-chip-size: auto 116%;
+  --client-chip-size: 140%;
+  padding: 0;
 }
 
 .client-chip.brand-lugx {
   background-image: url("assets/images/client-logos/lugx.jpg");
-  --client-chip-size: auto 116%;
+  --client-chip-size: 140%;
+  padding: 0;
 }
 
 .services-showcase-head {
