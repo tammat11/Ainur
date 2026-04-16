@@ -1239,12 +1239,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-aisulu .trust-logo {
   background-image: url("assets/images/logos/logo-4.png");
-  padding: 35px;
+  padding: 45px;
 }
 
 .trust-card.brand-nomads-nature .trust-logo {
   background-image: url("assets/images/logos/logo-5.png");
-  padding: 35px;
+  padding: 45px;
 }
 
 .trust-card.brand-ame .trust-logo {
@@ -1253,17 +1253,17 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-almaty-soul .trust-logo {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  padding: 24px;
+  padding: 35px;
 }
 
 .trust-card.brand-aport-alatau .trust-logo {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  padding: 24px;
+  padding: 35px;
 }
 
 .trust-card.brand-bohoinasia .trust-logo {
   background-image: url("assets/images/client-logos/bohoinasia.png");
-  padding: 30px;
+  padding: 38px;
 }
 
 .trust-card.brand-doctor-green .trust-logo {
@@ -1459,14 +1459,14 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-aisulu {
   background-image: url("assets/images/logos/logo-4.png");
-  --client-chip-size: 80%;
-  padding: 12px;
+  --client-chip-size: 60%;
+  padding: 22px;
 }
 
 .client-chip.brand-nomads-nature {
   background-image: url("assets/images/logos/logo-5.png");
-  --client-chip-size: 80%;
-  padding: 12px;
+  --client-chip-size: 60%;
+  padding: 22px;
 }
 
 .client-chip.brand-ame {
@@ -1476,17 +1476,17 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-almaty-soul {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  padding: 18px;
+  padding: 22px;
 }
 
 .client-chip.brand-aport-alatau {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  padding: 18px;
+  padding: 22px;
 }
 
 .client-chip.brand-bohoinasia {
   background-image: url("assets/images/client-logos/bohoinasia.png");
-  padding: 15px;
+  padding: 20px;
 }
 
 .client-chip.brand-doctor-green {
