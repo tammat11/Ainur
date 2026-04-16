@@ -1170,10 +1170,10 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: var(--trust-logo-size, contain);
+  background-size: var(--trust-logo-size, 65%);
   background-origin: content-box;
   border: 1px solid rgba(0,0,0,0.04);
-  padding: 12px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1194,7 +1194,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-freedom .trust-logo {
   background-image: url("assets/images/client-logos/freedom.png");
-  padding: 26px;
+  padding: 30px;
 }
 
 .trust-card.brand-oi-qaragai .trust-logo {
@@ -1277,7 +1277,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-sisbro .trust-logo {
   background-image: url("assets/images/client-logos/sisbro.png");
-  padding: 24px;
+  padding: 28px;
 }
 
 .trust-card.brand-shoqansuits .trust-logo {
@@ -1387,9 +1387,9 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: var(--client-chip-size, contain);
+  background-size: var(--client-chip-size, 65%);
   background-origin: content-box;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid rgba(0,0,0,0.03);
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
@@ -1406,7 +1406,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-freedom {
   background-image: url("assets/images/client-logos/freedom.png");
-  padding: 16px;
+  padding: 18px;
 }
 
 .client-chip.brand-oi-qaragai {
@@ -1440,36 +1440,32 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-annushka {
   background-image: url("assets/images/logos/logo-1.png");
-  --client-chip-size: 135%;
-  filter: contrast(1.08);
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-id-posh {
   background-image: url("assets/images/logos/logo-2.png");
-  --client-chip-size: 135%;
-  filter: contrast(1.18) brightness(0.96);
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-barlau {
   background-image: url("assets/images/logos/logo-3.png");
-  --client-chip-size: 135%;
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-aisulu {
   background-image: url("assets/images/logos/logo-4.png");
-  --client-chip-size: 135%;
-  filter: contrast(1.15) saturate(1.08);
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-nomads-nature {
   background-image: url("assets/images/logos/logo-5.png");
-  --client-chip-size: 135%;
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-ame {
   background-image: url("assets/images/logos/logo-6.png");
-  --client-chip-size: 135%;
-  filter: contrast(1.2);
+  --client-chip-size: 100%;
 }
 
 .client-chip.brand-almaty-soul {
@@ -1500,7 +1496,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-sisbro {
   background-image: url("assets/images/client-logos/sisbro.png");
-  padding: 12px;
+  padding: 15px;
 }
 
 .client-chip.brand-shoqansuits {
