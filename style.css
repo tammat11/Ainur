@@ -1171,7 +1171,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-position: center;
   background-repeat: no-repeat;
   background-size: var(--trust-logo-size, contain);
-  border: 1px solid var(--border);
+  background-origin: content-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1192,27 +1192,27 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-freedom .trust-logo {
   background-image: url("assets/images/client-logos/freedom.png");
-  --trust-logo-size: auto 82%;
+  padding: 30px;
 }
 
 .trust-card.brand-oi-qaragai .trust-logo {
   background-image: url("assets/images/client-logos/oi-qaragai.svg");
-  --trust-logo-size: auto 75%;
+  padding: 30px;
 }
 
 .trust-card.brand-alinex .trust-logo {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --trust-logo-size: 70% auto;
+  padding: 35px;
 }
 
 .trust-card.brand-shoqan .trust-logo {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --trust-logo-size: 70% auto;
+  padding: 30px;
 }
 
 .trust-card.brand-ushiro .trust-logo {
   background-image: url("assets/images/client-logos/ushiro.png");
-  --trust-logo-size: auto 98%;
+  padding: 30px;
 }
 
 .trust-card.brand-alina-paint .trust-logo {
@@ -1222,87 +1222,87 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .trust-card.brand-desso .trust-logo {
   background-image: url("assets/images/client-logos/desso.png");
-  --trust-logo-size: auto 92%;
+  padding: 30px;
 }
 
 .trust-card.brand-annushka .trust-logo {
   background-image: url("assets/images/logos/logo-1.png");
-  --trust-logo-size: auto 102%;
+  padding: 25px;
 }
 
 .trust-card.brand-id-posh .trust-logo {
   background-image: url("assets/images/logos/logo-2.png");
-  --trust-logo-size: auto 102%;
+  padding: 25px;
 }
 
 .trust-card.brand-barlau .trust-logo {
   background-image: url("assets/images/logos/logo-3.png");
-  --trust-logo-size: auto 96%;
+  padding: 25px;
 }
 
 .trust-card.brand-aisulu .trust-logo {
   background-image: url("assets/images/logos/logo-4.png");
-  --trust-logo-size: auto 98%;
+  padding: 25px;
 }
 
 .trust-card.brand-nomads-nature .trust-logo {
   background-image: url("assets/images/logos/logo-5.png");
-  --trust-logo-size: auto 92%;
+  padding: 25px;
 }
 
 .trust-card.brand-ame .trust-logo {
   background-image: url("assets/images/logos/logo-6.png");
-  --trust-logo-size: auto 90%;
+  padding: 25px;
 }
 
 .trust-card.brand-almaty-soul .trust-logo {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  --trust-logo-size: auto 75%;
+  padding: 35px;
 }
 
 .trust-card.brand-aport-alatau .trust-logo {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  --trust-logo-size: auto 75%;
+  padding: 35px;
 }
 
 .trust-card.brand-bohoinasia .trust-logo {
   background-image: url("assets/images/client-logos/bohoinasia.png");
-  --trust-logo-size: auto 100%;
+  padding: 30px;
 }
 
 .trust-card.brand-doctor-green .trust-logo {
   background-image: url("assets/images/client-logos/doctor-green.png");
-  --trust-logo-size: auto 108%;
+  padding: 25px;
 }
 
 .trust-card.brand-harbor .trust-logo {
   background-image: url("assets/images/client-logos/harbor.png");
-  --trust-logo-size: 80% auto;
+  padding: 35px;
 }
 
 .trust-card.brand-ishq .trust-logo {
   background-image: url("assets/images/client-logos/ishq.png");
-  --trust-logo-size: auto 96%;
+  padding: 30px;
 }
 
 .trust-card.brand-sisbro .trust-logo {
   background-image: url("assets/images/client-logos/sisbro.png");
-  --trust-logo-size: 80% auto;
+  padding: 35px;
 }
 
 .trust-card.brand-shoqansuits .trust-logo {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  --trust-logo-size: 80% auto;
+  padding: 35px;
 }
 
 .trust-card.brand-bes-qazan .trust-logo {
   background-image: url("assets/images/client-logos/bes-qazan.png");
-  --trust-logo-size: 80% auto;
+  padding: 35px;
 }
 
 .trust-card.brand-lugx .trust-logo {
   background-image: url("assets/images/client-logos/lugx.jpg");
-  --trust-logo-size: 80% auto;
+  padding: 30px;
 }
 
 .trust-card strong {
@@ -1399,9 +1399,10 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   background-color: rgba(255, 255, 255, 0.96);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: var(--client-chip-size, auto 82%);
-  border: 1px solid rgba(210, 194, 180, 0.35);
-  box-shadow: 0 8px 20px rgba(49, 35, 20, 0.05);
+  background-size: var(--client-chip-size, contain);
+  background-origin: content-box;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(49, 35, 20, 0.04);
 }
 
 .client-chip.has-logo {
@@ -1416,49 +1417,49 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-freedom {
   background-image: url("assets/images/client-logos/freedom.png");
-  --client-chip-size: auto 88%;
+  padding: 20px;
 }
 
 .client-chip.brand-oi-qaragai {
   background-image: url("assets/images/client-logos/oi-qaragai.svg");
-  --client-chip-size: auto 75%;
+  padding: 20px;
 }
 
 .client-chip.brand-alinex {
   background-image: url("assets/images/client-logos/alinex.webp");
-  --client-chip-size: 70% auto;
+  padding: 22px;
 }
 
 .client-chip.brand-shoqan {
   background-image: url("assets/images/client-logos/shoqan.png");
-  --client-chip-size: 70% auto;
+  padding: 20px;
 }
 
 .client-chip.brand-ushiro {
   background-image: url("assets/images/client-logos/ushiro.png");
-  --client-chip-size: auto 114%;
+  padding: 20px;
 }
 
 .client-chip.brand-alina-paint {
   background-image: url("assets/images/client-logos/alina-paint.svg");
-  --client-chip-size: 80% auto;
+  padding: 22px;
 }
 
 .client-chip.brand-desso {
   background-image: url("assets/images/client-logos/desso.png");
-  --client-chip-size: auto 104%;
+  padding: 18px;
   filter: saturate(1.1) contrast(1.1);
 }
 
 .client-chip.brand-annushka {
   background-image: url("assets/images/logos/logo-1.png");
-  --client-chip-size: auto 112%;
+  padding: 20px;
   filter: contrast(1.08);
 }
 
 .client-chip.brand-id-posh {
   background-image: url("assets/images/logos/logo-2.png");
-  --client-chip-size: auto 126%;
+  padding: 18px;
   filter: contrast(1.18) brightness(0.96);
 }
 
@@ -1486,12 +1487,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-almaty-soul {
   background-image: url("assets/images/client-logos/almaty-soul.png");
-  --client-chip-size: auto 75%;
+  padding: 24px;
 }
 
 .client-chip.brand-aport-alatau {
   background-image: url("assets/images/client-logos/aport-alatau.png");
-  --client-chip-size: auto 75%;
+  padding: 24px;
 }
 
 .client-chip.brand-bohoinasia {
@@ -1506,7 +1507,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-harbor {
   background-image: url("assets/images/client-logos/harbor.png");
-  --client-chip-size: 80% auto;
+  padding: 22px;
 }
 
 .client-chip.brand-ishq {
@@ -1516,12 +1517,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-sisbro {
   background-image: url("assets/images/client-logos/sisbro.png");
-  --client-chip-size: 80% auto;
+  padding: 22px;
 }
 
 .client-chip.brand-shoqansuits {
   background-image: url("assets/images/client-logos/shoqansuits.png");
-  --client-chip-size: auto 112%;
+  padding: 25px;
 }
 
 .client-chip.brand-bes-qazan {
