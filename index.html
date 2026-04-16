@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=redo2026-v2">
+  <link rel="stylesheet" href="style.css?v=redo2026-v3">
 </head>
 
 <body>
@@ -859,7 +859,7 @@
       </div>
     </footer>
   </div>
-  <script src="auto-scroll.js?v=20260416-trustwheel03"></script>
+  <script src="auto-scroll.js?v=20260416-trustwheel09"></script>
   <!-- Review Modal Container -->
   <div id="review-modal" class="review-modal" onclick="closeReviewModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
@@ -894,13 +894,9 @@
         const getScrollAmount = () => {
           const firstCard = slider.querySelector('.cert-card');
           if (!firstCard) return 344;
-
           const gap = parseFloat(getComputedStyle(slider).gap || '24');
           return firstCard.getBoundingClientRect().width + gap;
         };
-
-        // Wheel scroll is now handled by auto-scroll.js for all .cert-slider elements
-
 
         nextBtn.addEventListener('click', () => {
           slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });

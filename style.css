@@ -1126,7 +1126,6 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 2px 0 12px;
-  scroll-snap-type: x proximity;
   scrollbar-width: thin;
   scrollbar-color: rgba(76, 92, 79, 0.52) rgba(227, 220, 211, 0.7);
   -ms-overflow-style: auto;
@@ -1153,7 +1152,6 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 }
 
 .trust-card {
-  scroll-snap-align: start;
   border: 1px solid var(--border);
   border-radius: 24px;
   background: #fff;

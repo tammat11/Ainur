@@ -196,76 +196,67 @@
   });
 })();
 
-/* --- Trust Section (Мои доверители) Custom Logic --- */
+/* --- Universal Horizontal Scroll & Drag --- */
 (() => {
-  const horizontalScrollers = document.querySelectorAll('.trust-scroll, .cert-slider');
+  const horizontalScrollers = document.querySelectorAll('.trust-scroll, #cert-slider, .swipe-track-pricing-compact');
   
-  horizontalScrollers.forEach(scroller => {
-    const canScrollHorizontally = () => scroller.scrollWidth > scroller.clientWidth + 2;
+  horizontalScrollers.forEach(slider => {
+    slider.addEventListener('wheel', (e) => {
+      if (slider.scrollWidth <= slider.clientWidth + 2) return;
 
-    // Mouse wheel and trackpad should move the strip horizontally
-    scroller.addEventListener('wheel', (e) => {
-      if (!canScrollHorizontally()) return;
+      // Only remap purely vertical scrolls (mouse wheel)
+      // Allow native horizontal swipes (trackpad)
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
 
-      // Map vertical scroll (Y) to horizontal (X)
-      const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
-      
+      const delta = e.deltaY;
       if (delta === 0) return;
 
-      const maxScroll = scroller.scrollWidth - scroller.clientWidth;
-      const currentScroll = scroller.scrollLeft;
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+      
+      // Check boundaries
+      // If we are at the edge and trying to scroll further, let the page scroll vertically
+      if (delta < 0 && slider.scrollLeft <= 0) return;
+      if (delta > 0 && slider.scrollLeft >= maxScroll - 1) return;
 
-      // Only prevent default if we're actually going to scroll the element
-      // This allows the page to continue scrolling once the strip reaches its end
-      if ((delta > 0 && currentScroll < maxScroll) || (delta < 0 && currentScroll > 0)) {
-        e.preventDefault();
-        scroller.scrollLeft = Math.max(0, Math.min(maxScroll, currentScroll + delta));
-      }
+      e.preventDefault();
+      slider.scrollLeft += delta;
     }, { passive: false });
 
-    // Pointer-based dragging
+    // Dragging
     let isPointerDragging = false;
     let pointerId = null;
     let startX = 0;
     let startScrollLeft = 0;
 
-    scroller.addEventListener('pointerdown', (event) => {
-      if (!canScrollHorizontally() || event.button !== 0) return;
-
+    slider.addEventListener('pointerdown', (event) => {
+      if (slider.scrollWidth <= slider.clientWidth + 5 || event.button !== 0) return;
       isPointerDragging = true;
       pointerId = event.pointerId;
       startX = event.clientX;
-      startScrollLeft = scroller.scrollLeft;
-      scroller.classList.add('is-dragging');
-
-      if (typeof scroller.setPointerCapture === 'function') {
-        scroller.setPointerCapture(event.pointerId);
+      startScrollLeft = slider.scrollLeft;
+      slider.classList.add('is-dragging');
+      if (typeof slider.setPointerCapture === 'function') {
+        slider.setPointerCapture(event.pointerId);
       }
     });
 
-    scroller.addEventListener('pointermove', (event) => {
+    slider.addEventListener('pointermove', (event) => {
       if (!isPointerDragging || event.pointerId !== pointerId) return;
-
-      const deltaX = event.clientX - startX;
-      scroller.scrollLeft = startScrollLeft - deltaX;
+      slider.scrollLeft = startScrollLeft - (event.clientX - startX);
     });
 
-    const stopDragging = (event) => {
+    const stopDrag = (event) => {
       if (!isPointerDragging || event.pointerId !== pointerId) return;
-
       isPointerDragging = false;
       pointerId = null;
-      scroller.classList.remove('is-dragging');
-
-      if (typeof scroller.releasePointerCapture === 'function') {
-        try {
-          scroller.releasePointerCapture(event.pointerId);
-        } catch (_) {}
+      slider.classList.remove('is-dragging');
+      if (typeof slider.releasePointerCapture === 'function') {
+        try { slider.releasePointerCapture(event.pointerId); } catch (_) {}
       }
     };
 
-    scroller.addEventListener('pointerup', stopDragging);
-    scroller.addEventListener('pointercancel', stopDragging);
+    slider.addEventListener('pointerup', stopDrag);
+    slider.addEventListener('pointercancel', stopDrag);
   });
 })();
 
