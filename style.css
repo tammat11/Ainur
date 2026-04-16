@@ -1955,7 +1955,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .review-panel {
   position: relative;
-  padding: 14px 58px 14px 76px;
+  padding: 16px 58px 16px 108px;
   display: block;
   align-items: start;
   border: 1px solid var(--border);
@@ -1970,10 +1970,10 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   position: absolute;
   left: -1px;
   top: -1px;
-  width: 58px;
-  height: 58px;
+  width: 82px;
+  height: 82px;
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 20px;
   background: #fff;
 }
 
@@ -1983,11 +1983,11 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .review-logo-dot {
   position: absolute;
-  left: 14px;
-  top: 14px;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
+  left: 12px;
+  top: 12px;
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
   background: #f7f8f6 center/contain no-repeat;
   border: 1px solid #e1d7ce;
   z-index: 1;
@@ -9527,6 +9527,12 @@ body:not(.trademark-redesign) .site-footer {
     width: 56px;
     height: 56px;
     border-radius: 16px;
+  }
+
+  .review-panel::before {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
   }
 
   .review-panel h3 {
