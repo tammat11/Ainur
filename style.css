@@ -1955,7 +1955,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .review-panel {
   position: relative;
-  padding: 16px 58px 16px 108px;
+  padding: 18px 58px 18px 126px;
   display: block;
   align-items: start;
   border: 1px solid var(--border);
@@ -1970,8 +1970,8 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
   position: absolute;
   left: -1px;
   top: -1px;
-  width: 82px;
-  height: 82px;
+  width: 100px;
+  height: 100px;
   border: 1px solid var(--border);
   border-radius: 20px;
   background: #fff;
@@ -1983,11 +1983,11 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .review-logo-dot {
   position: absolute;
-  left: 12px;
-  top: 12px;
-  width: 58px;
-  height: 58px;
-  border-radius: 14px;
+  left: 14px;
+  top: 14px;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
   background: #f7f8f6 center/contain no-repeat;
   border: 1px solid #e1d7ce;
   z-index: 1;
@@ -2086,10 +2086,12 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .review-panel.brand-sisbro .review-logo-dot {
   background-image: url("assets/images/client-logos/sisbro.png");
+  background-size: 150%;
 }
 
 .review-panel.brand-shoqansuits .review-logo-dot {
   background-image: url("assets/images/client-logos/shoqansuits.png");
+  background-size: 140%;
 }
 
 .review-panel.brand-bes-qazan .review-logo-dot {
