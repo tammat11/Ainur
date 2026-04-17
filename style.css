@@ -1450,7 +1450,7 @@ body.trademark-redesign .reveal-on-scroll.is-revealed {
 
 .client-chip.brand-annushka {
   background-image: url("assets/images/logos/logo-1.png");
-  --client-chip-size: 100%;
+  --client-chip-size: auto 74%;
 }
 
 .client-chip.brand-id-posh {
